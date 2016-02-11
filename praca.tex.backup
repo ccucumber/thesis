@@ -1,0 +1,332 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphics}
+\usepackage[dvi-ps]{graphicx}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\graphicspath{{./obrazki/}}
+\usepackage{url}
+\usepackage[usenames,dvipsnames]{pstricks}
+\usepackage{epsfig}
+\usepackage{pst-optexp} 
+\usepackage{nicefrac} 
+\usepackage{float}
+\usepackage[final]{pdfpages}
+\usepackage{epsf} 
+
+\usepackage{subfigure}
+%\usepackage{caption}
+%\usepackage{subcaption} %do subfloat ów - wiele obrazków w~jednej figurze
+\usepackage{hyperref} %do linków
+
+\usepackage{fancyhdr} %nagłówki i~stopki
+\usepackage{lastpage} %numerowanie od ostatniej strony
+\usepackage[numbib]{tocbibind} %spis treści i bibliografia w spisie treści + numerowanie bibliografii parametr notlof,notlot,nottoc - bez list/spisu treści w spisie treści
+%\renewcommand\bibname{Literatura} %pakiet tocbibind zmienia nazwę rozdziału Literatura na Bibliografia - w ten sposób można przywrócić poprzenią nazwę
+
+\linespread{1.3} %1.3 daje interlinie 1.5
+
+
+\frenchspacing
+
+\pagestyle{fancy}
+\lhead{\footnotesize \leftmark}
+\chead{}
+\rhead{}%\footnotesize Instytut Fizyki, Uniwersytet Jagielloński}
+\lfoot{}%\footnotesize Grzegorz Pałka, fizyka teoretyczna}
+\cfoot{\thepage{ z }\pageref{LastPage}}
+\rfoot{}%\footnotesize rok akademicki 2011/2012}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
+\renewcommand\abstractname{Abstrakt}
+
+
+%polskie numerowanie sekcji (z kropką na końcu)
+\makeatletter
+ \renewcommand\@seccntformat[1]{\csname the#1\endcsname.\quad}
+ \renewcommand\numberline[1]{#1.\hskip0.7em}
+\makeatother
+
+\date{1 stycznia 2016}
+\title{Zautomatyzowany układ kontroli lasera diodowego do zastosowań w magnetometrii optycznej.}
+\author{Michał Włodarczyk}
+\date{\footnotesize{\today}}
+\begin{document}
+\bibliographystyle{plain}
+
+
+\maketitle
+\vspace{0.25\textheight}
+\begin{large}
+\centering
+Zakład Fotoniki\\
+Instytut Fizyki im. Mariana Smoluchowskiego\\
+Uniwersytet Jagielloński w Krakowie\\
+\end{large}
+\thispagestyle{empty}
+
+\newpage
+\tableofcontents
+\thispagestyle{plain}
+\setcounter{page}{1}
+\newpage
+
+\begin{abstract}
+Zaprojektowano, zbudowano i sprawdzono układy elektroniczne pozwalające zasilać, modulować, i stabilizować długość fali diody laserowej o emisji powierzchniowej z pionową wnęką rezonansową (VCSEL), emitującego światło o długości fali dostrojonej do linii $D1$ rubidu ($794{,}98 \mathrm{nm}$).
+
+Zbadano zastosowanie tego lasera do precyzyjnego pomiaru pola magnetycznego wykorzysującego nieliniowy efekt Faradaya w parach rubidu. Pomiar pola magnetycznego następował poprzez obserwację skręcenia płaszczyzny polaryzacji światła wywołanego modulacją długości fali lasera. Elementem aktywnym optycznie była komórka szklana zawierająca atomy rubidu.  Układ detekcji skręcenia światła zawierał polaryzator Wollastona i dwie fotodiody, a uzyskany fotoprąd podlegał wzmocnieniu i detekcji we wzmacniaczu fazoczułym.  
+\end{abstract}
+
+\section{Cel pracy}
+
+Celem pracy miało być zbudowanie i zbadanie autonomicznego układu optoelektronicznego, który służyłby do optycznej magnetometrii wykorzystującej atomy rubidu.
+
+Atomy rubidu, precesując w polu magnetycznym, oddziaływują ze światłem o długości fali dostrojonej do przejścia atomowego ($794{,}9832$nm).
+Jeśli natężenie światła lub jego długość fali jest modulowane synchronicznie z częstością precesji (Larmora), polaryzacja światła ulega skręceniu, wahając się z podwójną częstością Larmora (w ogólnym przypadku z inną wielokrotnością częstości modulacji).
+Amplituda tego skręcenia jest miarą zgodności częstości modulacji, zadawanej przez nas, z częstością Larmora, proporcjonalnej wprost do wartości pola magnetycznego. 
+
+Budowany układ miałby spełniać następujące zadania:
+\begin{itemize}
+ \item Wytwarzać światło dające się dostroić do linii D1 rubidu, o odpowiedniej stabilności i wąskim profilu spektralnym.
+ \item Pozwalać na modulację amplitudy lub długości fali źródła światła.
+ \item Zawierać komórkę z atomami rubidu, wyposażoną w grzałkę nie zaburzającą pola magnetycznego
+ \item Umożliwiać ciągłe, automatyczne dostrajanie długości fali lasera do przejścia atomowego. 
+ \item Mierzyć amplitudę skręcenia polaryzacji światła po przejściu przez komórkę.
+\end{itemize}
+
+W niniejszej pracy opisano budowę takiego ukłądu, jak również wyniki pomiarów wykonanych przy jego pomocy.
+
+
+\section{Zamysł pomiaru}
+\begin{itemize}
+ \item Źródło światła -laser VCSEL - łatwość modulacji
+ \item Układ pomiarowy: METODA STABILIZACJI NA 1 harmonicznej i DETEKCJI na 2 harmonicznej, może obrazek jakiś?
+ \item Zbudować wszystkie brakujące duperszwance
+\end{itemize}
+
+
+
+\subsection{Laser VCSEL}  %{Zasada działania lasera półprzewodnikowego}
+
+Lasery półprzewodnikowe wykorzystują fakt, że rekombinacja nośników ładunku w półprzewodniku może wiązać się z emisją fotonów o energii równej różnicy energii między pasmem przewodzenia a pasmem walencyjnym. Rekombinacja z emisją promieniowania jest możliwa tylko w materiałach z prostą przerwą energetyczną, tj.takich dla których najniższe stany pasma przewodnictwa i najwyższe stany pasma walencyjnego mają taki sam pęd, czyli leżą w tym samym kierunku w pierwszej strefie Brillouina. Jeżeli tak nie jest, mówi się, że półprzewodnik posiada tzw. przerwę skośną, co ilustruje rysunek (\ref{indirectbandgap}). W takim przypadku bardziej prawdopodobna jest rekombinacja bezpromienista.
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.5\textwidth]{./obrazki/indirect_band_gap.jpeg}
+ % indirect_band_gap.jpeg: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{Skośna przerwa energetyczna w półprzewodniku}
+\label{indirectbandgap}
+\end{figure}
+
+Zetknięcie półprzewodników - domieszkowanego ujemnie (zawierającego dodatkowe elektrony walencyjne) i domieszkowanego dodatnio (zawierającego mniej elektronów walencyjnych niż kryształ macierzysty) powoduje przemieszczenie ładunków znajdujących się na ich granicy i powstanie warstwy zaporowej (zubożonej). Taką dwuelektrodową strukturę nazywa się diodą. Przepuszczając prąd z obszaru o domieszkowaniu \textit{p} do obszaru \textit{n}, wymusza się rekombinację nośników w warstwie zaporowej.  
+
+Zwiększając gęstość prądu, oprócz oczywistego wzrostu natężenia światła, można doprowadzić także do tak licznego obsadzenia pasma przewodnictwa kosztem pasma walecyjnego, że zajdzie inwersja obsadzeń, co z kolei może umożliwić akcję laserową. Drugim koniecznym warunkiem zajścia akcji laserowej jest umieszczenie ośrodka ze wzmocnieniem optycznym w rezonatorze, którego dobroć musi być wystarczająca by natężenie światła emitowanego w sposób wymuszony mogło dominować nad światłem emitowanym spontanicznie.
+
+Pierwszą realizacją lasera półprzewodnikowego jest laser z emitujący światło poprzecznie do kierunku przepływu prądu. Jego schematyczna budowa przedstawiona jest na rysunku (\ref{rys-eel}). Wysoką gęstość prądu uzyskuje się poprzez przestrzenne modelowanie domieszkowania, w skutek czego obszar aktywny, przez który przepływa cały prąd złącza, ma szerokość ok. 10$\mu m$ i grubość rzędu 2$\mu m$. Rezonator optyczny jest utworzony pomiędzy bocznymi krawędziami kryształu, oszlifowanymi równolegle. Jedna z krawędzi jest posrebrzona. Dodatkowe pokrycie odbijające drugiej ścianki nie jest konieczne, ze względu na odbicie powodowane dużą różnicą współczynników załamania kryształu i powietrza.
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.7\textwidth]{./obrazki/rys-eel.png}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{Budowa diody laserowej emitującej światło poprzecznie (na podstawie: \cite{rys-laserki})}
+\label{rys-eel}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.8\textwidth]{./obrazki/rys-vcsel.png}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{Budowa diody z pionową wnęką rezonansową (na podstawie: \cite{rys-laserki})}
+\label{rys-vcsel}
+\end{figure}
+
+Taka konstrukcja diody laserowej ma jednak liczne wady. Są to:
+\begin{itemize}
+ \item Wysoki koszt - producja wymaga nietypowego procesu, jakim jest dokładna obróbka bocznych krawędzi struktury.
+ \item Duży prąd progowy dla laserowania, przez co niska sprawność - ze względu na relatywnie dużą powierzchnię złącza.
+ \item Długi obszar aktywny (od kilku do kilkuset $\mu m$) sprawia, że laser może pracować w wielu modach podłużnych.
+ \item Astygmatyzm emitowanego światła, ze względu na asymetryczne wymiary obszaru aktywnego.
+ \item Wrażliwość na pasożytnicze sprzężenia optyczne ze względu na niską dobroć rezonatora
+\end{itemize}
+
+Wolna od powyższych wad jest konstrukcja lasera o emisji powierzchniowej z pionową wnęką rezonansową (VCSEL -\textit{Vertical Cavity Surface Emitting Laser}). Jego budowa jest przedstawiona na rysunku (\ref{rys-vcsel}). W takim laserze prąd przepływa przez obszar mający postać punktu, nie paska, a emisja światła zachodzi w kierunku powierzchni kryształu. W takiej sytuacji nie jest możliwe stworzenie rezonatora na samych jedynie powierzchniach kryształu. Jako że tworzenie warstw równolegle do powierzchni półprzewodnika, o precyzyjnie regulowanej grubości, nie nastręcza żadnych technologicznych trudności, zwierciadła są wykonane jako tzw. rozproszone zwierciadła Bragga, czyli wiele naprzemiennych warstw substancji o różnych współczynnikach załamania. Dla określonej długości fali pomiędzy falami odbitymi od kolejnych granic ośrodków zachodzi konstruktywna interferencja, co pozwala takiej strukturze bardzo efektywnie odbijać światło, pełniąc przy okazji rolę filtra pasmowego, umożliwiając wzmocnienie tylko jednej długości fali. Typowe wartości współczynnika odbicia to $99\%$ dla zwierciadła przedniego i $99{,}9\%$ dla tylnego. Tak utworzony rezonator, optyczny ma szereg wyróżniających cech. Jest bardzo krótki, przez co mody są bardzo dobrze rozseparowane, co bardzo ułątwia pracę w jednym modzie poprzecznym. Ze względu na bardzo wysoką dobroć rezonatora, pomimo niewielkiej jego długości, udaje się uzyskać niewielką szerokość linii. Wysoka dobroć sprawia również, że lasery VCSEL są praktycznie niewrażliwe na pasożytnicze sprzężenia optyczne.
+Ze względu na warstwową budowę, obszar aktywny ma emisję poprzeczną, co pozwala laserom VCSEL emitować światło o praktycznie idealnym rozkładzie przestrzennym (M$\cong 0$). Wysoka gęstość prądu przepływająca przez punktowy obszar aktywny pozwala uzyskać niski prąd progu laserowania, co sprawia, że lasery VCSEL są jednymi z najbardziej wydajnych źródeł światła jakie dotychczas wynaleziono. Brak konieczności obróbki krawędzi bocznych pozwala testować gotowe struktury jeszcze na waflu (krysztale bazowym), jak również oddzielać je od siebie standardowymi metodami, tj. przez cięcie piłą. 
+
+
+
+
+
+\section{Zbudowana aparatura}
+
+\subsection{Użyta dioda}
+
+Do wykonania pomiarów została użyta dioda wyprodukowana przez firmę $Vixar$, o oznaczeniu
+W strukturze, przedstawionej na rys. (\ref{struktura}), producent umieścił cztery identyczne złącza. Niestety, po i ch sprawdzeniu i wybraniu najlepszej z nich, z sobie tylko znanych powodów zdecydował się odłączyć pozostałe trzy.
+
+W trakcie pomiarów dioda uległa uszkodzeniu. Wycieczka na AGH zaowocowała przyłączeniem pozostałych struktur, który okazały się działać bardzo dobrze. PODZIĘKOWAĆ PANU IDZIKOWI Z KOLEGAMI.
+
+Parametry jej pracy to:
+\begin{center}
+\begin{tabular}{ll}
+Prąd maksymalny & $4mA$\\
+Próg laserowania & $0.6mA$\\
+Maksymalny prąd pracy jednomodowej & $1.6mA$\\
+Moc nominalna & $150\mu W$\\
+Moc przy pracy jednomodowej & $60\mu W$\\
+Szerokość linii & $100MHz$\\
+Stała strojenia prądem & COŚTAM\\
+Stała strojenia temperaturą & $0.05 nm/{}^{\circ}C$\\
+Optymalny prąd & $1,5mA$\\
+Optymalna temperatura & $26^{\circ}C$ \\
+Obudowa & TO-46 z pięcioma nogami
+\end{tabular}
+\end{center}
+
+
+\subsection{Układ zasilania}
+
+Na rysunku (\ref{sch-psu}) przedstawiony jest schemat pierwszego z układów elektronicznych użytych w pracy -- zasilacza diody. Jego zadaniem jest zasilanie diody laserowej prądem o regulowanej, stabilnej w czasie wartości i jak najniższej fluktuacji (szumie). Zbyt duży poziom szumu obecny w niededykowanym zasilaczu znanej firmy był jednym z powodów zaprzestania prac z laserem o emisji powierzchniowej, co jest opisane w pracy mgr. Justyny Mech \cite{mgrJustynaMech}.
+
+Działanie układu najwygodniej opisać od strony lasera. Z dodatniego napięcia zasilającego, przez tranzystor \textit{Q2} i rezystor pomiarowy \textit{R5}, prąd płynie do anody diody laserowej, dołączoną do złącza P1. Katoda diody jest dołączona do masy, co czyni diodę bardziej odporną na przepięcia i przypadkowe zwarcie niż w sytuacji, gdyby obydwa końce były ,,pływające``.  
+Właściwe źródło prądowe jest bardzo proste -- formuje je rezystor R3 zasilając z kondensatora C1 bazę tranzystora \textit{Q2}. Tranzystor Q1 i rezystor R1 stanowią obwód zabezpieczający i można je pominąć przy analizie normalnej pracy układu. Prąd kolektora Q2 jest już właściwym prądem diody laserowej. Warto zaznaczyć, że w tym układzie nie występuje praktycznie żaden szum nadmiarowy -- pod wpływem stałego napięcia na kondensatorze przez rezystor o sporej wartości przepływa stały prąd, który jest praktycznie idealnie bezszumnie wzmacniany przez pojedynczy tranzystor. Wysoki opór różniczkowy kolektora \textit{Q2}, sprawia, że układ stanowi dobre źródło prądowe, tj. prąd nie zależy od napięcia na obciążeniu. Oczywiście, ponieważ zakładamy niezmienność napięcia na C1 oraz napięcia baza-emiter i wzmocnienia Q2, taki obraz jest poprawny tylko dla wysokich częstotliwości. Długoczasową stabilizację prądu zapewnia wzmacniacz U1, który działa w układzie wzmacniacza pomiarowego który zapewnia na swoim wyjściu takie napięcie, by napięcie na rezystorze pomiarowym R5 poprzez rezystory R4 i R7 równoważyło napięcie zadawane między wyjściem U2 a masą, przez rezystory  R8 i R11.
+DOdatkowe rezystory R9 i R10 pozwalają w niewielkim zakresie podmodulować prąd diody, napięciem podanym przez złącze P2.
+Napięciu 1V na wyjściu U2 odpowiada 1mA prądu płynącego przez diodę.
+
+Układ U2 stanowi filtr dolnoprzepustowy, o niskiej częstości odcięcia (rzędu 10Hz), eliminujący szum i trzaski z napięcia pochodzącego z potencjometru PR1, którym ustawia się prąd. Zwora JP1 pozwala wybrać pomiędzy zakresem 0-3.5mA a 0-7mA.
+
+Napięcie wzorcowe, dostarczane na nóżkę 3 potencjometru pochodzi z diody Zenera D1. Dioda ta to wysoce stabilna dioda o tzw. strukturze zagrzebanej, zintegrowana wraz z termostatem. Decyduje to o doskonałej stabilności cieplnej ($0.5ppm/{}^{\circ}C$) i długoczasowej.  Wzmacniacz U3 zasila diodę stałym prądem, zadawanym jej własnym napięciem Zenera. Jest on zasilany inaczej niż pozostałe, pojedynczym napięciem. Uniemożliwia to ,,zatrzaśnięcie'' się układu na napięciu przewodzenia diody (ujemnym) zamiast na napięciu Zenera (dodatnim). 
+
+\begin{figure}
+\begin{center}
+ \includegraphics{./obrazki/VcselPSU.pdf}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{Schemat zasilacza diody}
+\label{sch-psu}
+\end{figure}
+
+\subsection{Modulacja}
+
+Po zbadaniu tematu, próbach, błędach...
+Celem było zbadanie, jak szybko można modulować prąd diody, co ma na celu szybką zmianę długości fali. Jako że te diody służą do transmisji danych z prędkością kilku gigabitów na sekundę, modulacja częstościami na poziomie kilkuset MHz powinna być realna. 
+
+Elektryczny schemat zastępczy diody laserowej przedstawiony jest na rysunku \ref{sch-mod1}.
+
+\begin{figure}
+\begin{center}
+ \includegraphics{./obrazki/sch_mod1.pdf}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{Uproszczony schemat zastępczy diody laserowej}
+\label{sch-mod1}
+\end{figure}
+
+Na jego podstawie można założyć, że na dynamikę modulacji prądu, tj. jej maksymalną szybkość oraz przesunięcie fazowe mają wpływ jedynie wartości pasożytniczych pojemności i indukcyjności, oraz opór wewnętrzny diody. Konsekwencją tego założenia jest możliwość kompensacji wpływu pasożytniczych elementów poprzez manipulacje jedynie impedancjią źródła sygnału, w efekcie uzyskując płaską zależność amplitudy modulacji światła od częstotliwości.
+Dla najwyższych częstotliwości (gigaherce) model ten może przestawać odzwierciedlać rzeczywidość, ze względu na wpływ skończonego czasu potrzebnego do osiągnięcia równowagi między pompowaniem a emisją promieniowania z rezonatora. Poczyniono nieme założenie, że modulacja jasności jest równoznaczna modulacji długości fali. Jest ono spełnione, jeśli procesy optyczne (pompowanie i relaksacja) zachodzą znacznie szybciej niż zmiany prądu w strukturze.
+
+Zbudowano układ umożliwiający szybką modulację prądu sygnałem dostarczanym standardowym kablem koncentrycznym ze złączem SMA.
+
+Jego zadania są następujące:
+\begin{itemize}
+ \item Dopasowanie impedancji wejściowej do kabla ($50 \Omega$).
+ \item Osłabienie sygnału (docelowe zmiany prądu mają być rzędu $\mu A$)
+ \item Uzyskanie płaskiej charakterystyki modulacji światła od częstotliwości przy stałym poziomie sygnału wejściowego
+\end{itemize}
+
+Ostatni cel został osiągniety głównie metodą prób i błędów. Opór wewnętrzny diody (przy prądzie pracy) został zmierzony jako $PINCET OMOW$.
+Docelowy układ przedstawia rysunek \ref{sch-mod1}. Na płytce znajdują się diody zabezpieczające (specjalne diody zabezpieczające przed ESD, bardzo szybkie i o niskim prądzie upływu) oraz złącza doprowadzające prąd z zasilacza i sygnał modulujący z generatora. Pojemność kondensatora kompensacyjnego został dobrana tak, by uzyskać możliwie płaską charakterystykę modulacji. Zależność odpowiedzi częstotliwościowej od jego pojemności znajduje się na rysunku \ref{wyk-mod}.
+
+\begin{figure}
+\begin{center}
+ \includegraphics{./obrazki/dings.pdf}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{Schemat płytki znajdującej się przy diodzie laserowej}
+\label{sch-mod}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.8\textwidth]{./obrazki/bw.pdf}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{Zależność charakterystyki częstotliwościowej modulacji od pojemności kondensatora kompensacyjnego}
+\label{wyk-mod}
+\end{figure}
+
+\subsection{Cyfrowe strojenie}
+
+\subsection{Stabilizacja długości fali}
+
+Po dostrojeniu lasera zachodzi konieczność ciągłej korekty długości fali, tak by pozostać na linii absorpcyjnej.
+
+Jest to realizowane metodą opisaną w poprzednim rozdziale, na podstawie sygnału z wzmacniacza fazoczułego. %KTÓRYM ROZDZIALE?
+Jako że sygnał ze wzmacniacza fazoczułego jest proporcjonalny do odstrojenia lasera od zadanej długości fali, koncepcja układu stabilizującego jest prosta.
+Jest to typowy regulator proporcjonalno-całkująco-różniczkujący. Schemat jest przedstawiony na rysunku \ref{sch-pid}.
+
+\begin{figure}
+\begin{center}
+ \includegraphics{./obrazki/pidella.pdf}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{Schemat regulatora PID}
+\label{sch-pid}
+\end{figure}
+
+Układ posiada dwa wejścia, przy czym jedno z nich może być odłączone i zastąpione przez potencjał ustawiany potencjometrem P4. Przełącznik SW3 ustawia wstępne wzmocnienie.
+Dalej sygnał jest rozdzielany do trzech członów -- od góry: proporcjonalnego, różniczkującego i całkującego.
+Wzmocnienie pierwszego ustalane jest skokowo przez SW4 i płynnie przez potencjometr P2, analogicznie ustawiana jest stała czasowa członu różniczkującego (SW2 i P5) i całkującego ( SW5, P1). Zwora JP2 wyłącza człon całkujący na czas wstępnego dostrojenia.
+Sygnały z trzech członów są sumowane przez wzmacniacz U3C. Zwora JP1 pozwala zmienić polaryzację sygnału wyjściowego na przeciwną.
+
+Dodatkowe wyjście Z4 pozwala na monitorowanie sygnału wybranego zworą P3.
+
+\subsection{Detektor}
+
+Laser, dostrojony do pożądanego przejścia atomowego, oddziałuje z atomami rubidu w komórce.
+Skutkiem tego oddziaływania jest osłabienie wiązki -- absorpcja oraz rotacja płaszczyzny polaryzacji światła.
+Precyzyjny pomiar powyższych ma kluczowe znaczenie dla dokładności magnetometrii optycznej.
+
+\begin{figure}
+\begin{center}
+ \includegraphics[scale=0.5]{./obrazki/polarymetr.pdf}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{Schemat polarymetru}
+\label{sch-mod}
+\end{figure}
+
+Polarymetr posiada dwie fotodiody i wytwarza dwa sygnały - o amplitudzie proporcjonalnej do różnicy i sumy natężeń światła padającego na fotodiody.
+Sygnał różnicy służy do pomiaru skręcenia polaryzacji, która bezpośrednio.  Sygnał sumy pozwala zaś śledzić absorpcję w komórce, co umożliwia stabilizację lasera na linii.
+
+Sygnał różnicy jest wytwarzany przez wzmacniacz U3A, pracujący w typowej konfiguracji transimpendancyjnej. Wzmacnia on prąd pochodzący z węzła pomiędzy fotodiodami D1 i D2.
+Elementy R9 i C3 ustalają odpowiednio wzmocnienie i pasmo tego wzmacniacza.
+
+Warto szerzej opisać to rozwiązanie. Taka konfiguracja ma szereg zalet ponad odejmowaniem sygnałów z dwóch niezależnych wzmacniaczy transimpendacyjnych z pojedynczymi fotodiodami.
+Pierwszą zaletą jest mniejszy szum -- w układzie z dwoma wzmacniaczami, mimo, że sygnały są odejmowane, szumy się dodają. Drugi problem jest mniej oczywisty -- odmienna charakterystyka częstotliwościowa różnych wzmacniaczy może osłabiać tłumienie sygnału wspólnego wraz ze wzrostem częstotliwości, jako że sygnały te nie będą już przesunięte w fazie o dokładnie $180^{\circ}$. Tłumienie sygnału współbieżnego ma kluczowe znaczenie przy dokładnej detekcji niewielkich skręceń.
+
+Gdyby zastosować dwa oddzielne wzmacniacze dla fotodiod, generacja sygnału sumy nie nastręczałaby większego problemu. W zaistniałej sytuacji jednak konieczne jest zastosowanie dwóch luster prądowych (tranzystory podwójne Q1 i Q2) przed wzmacniaczem sumującym U3B. Górne lustro prądowe jest obciążone pojemnością nieodwracającego wejścia wzmacniacza, podczas gdy dolne lustro jest obciążone jedynie rezystancyjnie. Sytuację tę wyrównuje kondensator C3. 
+
+Wyjścia obydwu torów są doprowadzone do dzielników 20:1, które mają na celu dopasowanie impendancji wyjściowej do kabla $50\Omega$. To z pozoru kontrowersyjne rozwiązanie nie pogarsza precyzji pomiaru -- dalsze przyrządy pomiarowe po prostu pracują na czulszym zakresie.
+
+\section{Uruchomienie układu}
+
+
+\section{Pomiary}
+
+
+\begin{thebibliography}{99}
+\bibitem{rys-indirect} Goetzberger, Adolf et.al. \emph{Crystalline Silicon Solar Cells}, Chichester: John Wiley \& Sons Ltd., 1998.
+\bibitem{rys-laserki} \url{http://wwwold.fi.isc.cnr.it/users/giovanni.giacomelli/Semic/Samples/samples.html}, dostęp 7.12.2015
+\bibitem{mgrJustynaMech}  Mech, Justyna \emph{Lasery VCSEL do zastosowa« w spektroskopii}, praca magisterska pod kierunkiem Jerzego Zachorowskiego, 2009
+\bibitem{steck} Daniel A. Steck, \emph{Rubidium 87 D Line Data, Rubidium 85 D Line Data}~,\url{http://steck.us/alkalidata}
+
+\end{thebibliography}
+
+\end{document}

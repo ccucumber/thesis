@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"  standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="600" height="480" viewBox="0 0 600 480"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<desc>Produced by GNUPLOT 4.2 patchlevel 2  </desc>
+
+<defs>
+
+
+	<circle id='gpDot' r='1'/>
+	<path id='gpPt0' style='stroke-width:0.222' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' style='stroke-width:0.222' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' style='stroke-width:0.222' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' style='stroke-width:0.222' x='-1' y='-1' width='2' height='2'/>
+	<use xlink:href='#gpPt3' id='gpPt4' style='fill:currentColor; stroke:none'/>
+	<circle id='gpPt5' style='stroke-width:0.222' cx='0' cy='0' r='1'/>
+	<use xlink:href='#gpPt5' id='gpPt6' style='fill:currentColor; stroke:none'/>
+	<path id='gpPt7' style='stroke-width:0.222' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<use xlink:href='#gpPt7' id='gpPt8' style='fill:currentColor; stroke:none'/>
+	<use xlink:href='#gpPt7' id='gpPt9' transform='rotate(180)'/>
+	<use xlink:href='#gpPt9' id='gpPt10' style='fill:currentColor; stroke:none'/>
+	<use xlink:href='#gpPt3' id='gpPt11' transform='rotate(45)'/>
+	<use xlink:href='#gpPt11' id='gpPt12' style='fill:currentColor; stroke:none'/>
+</defs>
+<g style="fill:none; color:white; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path d='M36.0,54.0 L36.0,453.0 L582.0,453.0 L582.0,54.0 L36.0,54.0 Z '></path>
+	<g transform="translate(22.5,253.5) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text>Energy</text>
+	</g>
+	<g transform="translate(604.4,253.5) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text></text>
+	</g>
+	<g transform="translate(309.0,475.5)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text>Momentum</text>
+	</g>
+	<g transform="translate(309.0,31.5)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text>Direct Band Gap</text>
+	</g>
+	<g transform="translate(309.0,67.6)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text></text>
+	</g>
+	<g transform="translate(36.0,475.5)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text></text>
+	</g>
+	<g transform="translate(256.9,125.0)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>Conduction Band</text>
+	</g>
+	<g transform="translate(256.9,391.0)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>Valence Band</text>
+	</g>
+	<path d='M313.6,204.3 L309.0,187.0 L304.4,204.3 M309.0,320.0 L309.0,187.0 '></path>
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path d='M36.0,453.0 L41.5,448.8 L47.0,444.6 L52.5,440.4 L58.1,436.2 L63.6,432.0 L69.1,427.8 L74.6,423.7 
+		L80.1,419.6 L85.6,415.5 L91.2,411.5 L96.7,407.5 L102.2,403.6 L107.7,399.7 L113.2,395.8 L118.7,392.1 
+		L124.2,388.3 L129.8,384.7 L135.3,381.1 L140.8,377.6 L146.3,374.1 L151.8,370.8 L157.3,367.5 L162.8,364.3 
+		L168.4,361.2 L173.9,358.2 L179.4,355.3 L184.9,352.5 L190.4,349.8 L195.9,347.2 L201.5,344.7 L207.0,342.3 
+		L212.5,340.0 L218.0,337.8 L223.5,335.8 L229.0,333.8 L234.5,332.0 L240.1,330.3 L245.6,328.8 L251.1,327.3 
+		L256.6,326.0 L262.1,324.8 L267.6,323.7 L273.2,322.8 L278.7,322.0 L284.2,321.4 L289.7,320.8 L295.2,320.4 
+		L300.7,320.2 L306.2,320.0 L311.8,320.0 L317.3,320.2 L322.8,320.4 L328.3,320.8 L333.8,321.4 L339.3,322.0 
+		L344.8,322.8 L350.4,323.7 L355.9,324.8 L361.4,326.0 L366.9,327.3 L372.4,328.8 L377.9,330.3 L383.5,332.0 
+		L389.0,333.8 L394.5,335.8 L400.0,337.8 L405.5,340.0 L411.0,342.3 L416.5,344.7 L422.1,347.2 L427.6,349.8 
+		L433.1,352.5 L438.6,355.3 L444.1,358.2 L449.6,361.2 L455.2,364.3 L460.7,367.5 L466.2,370.8 L471.7,374.1 
+		L477.2,377.6 L482.7,381.1 L488.2,384.7 L493.8,388.3 L499.3,392.1 L504.8,395.8 L510.3,399.7 L515.8,403.6 
+		L521.3,407.5 L526.8,411.5 L532.4,415.5 L537.9,419.6 L543.4,423.7 L548.9,427.8 L554.4,432.0 L559.9,436.2 
+		L565.5,440.4 L571.0,444.6 L576.5,448.8 L582.0,453.0 '></path>
+</g>
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path d='M36.0,54.0 L41.5,58.2 L47.0,62.4 L52.5,66.6 L58.1,70.8 L63.6,75.0 L69.1,79.2 L74.6,83.3 
+		L80.1,87.4 L85.6,91.5 L91.2,95.5 L96.7,99.5 L102.2,103.4 L107.7,107.3 L113.2,111.2 L118.7,114.9 
+		L124.2,118.7 L129.8,122.3 L135.3,125.9 L140.8,129.4 L146.3,132.9 L151.8,136.2 L157.3,139.5 L162.8,142.7 
+		L168.4,145.8 L173.9,148.8 L179.4,151.7 L184.9,154.5 L190.4,157.2 L195.9,159.8 L201.5,162.3 L207.0,164.7 
+		L212.5,167.0 L218.0,169.2 L223.5,171.2 L229.0,173.2 L234.5,175.0 L240.1,176.7 L245.6,178.2 L251.1,179.7 
+		L256.6,181.0 L262.1,182.2 L267.6,183.3 L273.2,184.2 L278.7,185.0 L284.2,185.6 L289.7,186.2 L295.2,186.6 
+		L300.7,186.8 L306.2,187.0 L311.8,187.0 L317.3,186.8 L322.8,186.6 L328.3,186.2 L333.8,185.6 L339.3,185.0 
+		L344.8,184.2 L350.4,183.3 L355.9,182.2 L361.4,181.0 L366.9,179.7 L372.4,178.2 L377.9,176.7 L383.5,175.0 
+		L389.0,173.2 L394.5,171.2 L400.0,169.2 L405.5,167.0 L411.0,164.7 L416.5,162.3 L422.1,159.8 L427.6,157.2 
+		L433.1,154.5 L438.6,151.7 L444.1,148.8 L449.6,145.8 L455.2,142.7 L460.7,139.5 L466.2,136.2 L471.7,132.9 
+		L477.2,129.4 L482.7,125.9 L488.2,122.3 L493.8,118.7 L499.3,114.9 L504.8,111.2 L510.3,107.3 L515.8,103.4 
+		L521.3,99.5 L526.8,95.5 L532.4,91.5 L537.9,87.4 L543.4,83.3 L548.9,79.2 L554.4,75.0 L559.9,70.8 
+		L565.5,66.6 L571.0,62.4 L576.5,58.2 L582.0,54.0 '></path>
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path d='M36.0,54.0 L36.0,453.0 L582.0,453.0 L582.0,54.0 L36.0,54.0 Z '></path>
+</g>
+</svg>
+
