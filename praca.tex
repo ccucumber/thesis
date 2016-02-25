@@ -240,8 +240,8 @@ Jego zadania są następujące:
  \item Uzyskanie płaskiej charakterystyki modulacji światła od częstotliwości przy stałym poziomie sygnału wejściowego
 \end{itemize}
 
-Ostatni cel został osiągniety głównie metodą prób i błędów. Opór wewnętrzny diody (przy prądzie pracy) został zmierzony jako $PINCET OMOW$.
-Docelowy układ przedstawia rysunek \ref{sch-mod1}. Na płytce znajdują się diody zabezpieczające (specjalne diody zabezpieczające przed ESD, bardzo szybkie i o niskim prądzie upływu) oraz złącza doprowadzające prąd z zasilacza i sygnał modulujący z generatora. Pojemność kondensatora kompensacyjnego został dobrana tak, by uzyskać możliwie płaską charakterystykę modulacji. Zależność odpowiedzi częstotliwościowej od jego pojemności znajduje się na rysunku \ref{wyk-mod}.
+Ostatni cel został osiągniety głównie metodą prób i błędów. Opór wewnętrzny diody (przy prądzie pracy) został zmierzony jako $61 \Omega$.
+Docelowy układ przedstawia rysunek \ref{sch-mod1}. Na płytce znajdują się diody zabezpieczające (specjalne diody zabezpieczające przed elektrostatycznymi wyładowaniami, bardzo szybkie i o niskim prądzie upływu) oraz złącza doprowadzające prąd z zasilacza i sygnał modulujący z generatora. Pojemność kondensatora kompensacyjnego został dobrana tak, by uzyskać możliwie płaską charakterystykę modulacji. Zależność odpowiedzi częstotliwościowej od jego pojemności znajduje się na rysunku \ref{wyk-mod}.
 
 \begin{figure}
 \begin{center}
@@ -315,10 +315,178 @@ Gdyby zastosować dwa oddzielne wzmacniacze dla fotodiod, generacja sygnału sum
 
 Wyjścia obydwu torów są doprowadzone do dzielników 20:1, które mają na celu dopasowanie impendancji wyjściowej do kabla $50\Omega$. To z pozoru kontrowersyjne rozwiązanie nie pogarsza precyzji pomiaru -- dalsze przyrządy pomiarowe po prostu pracują na czulszym zakresie.
 
-\section{Uruchomienie układu}
+\section{Uruchomienie układu pomiarowego}
 
 
-\section{Pomiary}
+\section{Wyniki i jakiś opis pomiarów}
+
+\begin{itemize}
+ \item O co chodzi ze stab. na 1H i pomiarem na 2H
+ \item Po co komórki mają pokrycie parafinowe / gaz. Co to robi za różnicę.
+\end{itemize}
+
+
+
+\subsection{Spektroskopia rubidu}
+
+Aby uwiarygodnić wskazania miernika długości fali, oraz by w dalszych pomiarach móc związać kształt sygnału absorpcji w komórce (zwanego dalej spektroskopią), przeprowadzono dosyć nietypowy pomiar.
+Zmierzono absorpcję w komórce dla wielu pojedynczych długości fali, zmierzonych $\lambda-$metrem. Z tych wyników skonstruowano wykres.
+Wynik pomiaru z komórki o pokryciu parafinowym przedstawia rys. \ref{fig:spekpara}, a z komórki z gazem buforowym rys. \ref{fig:spekgaz}.
+
+Widać, że w komórce z gazem buforowym nastąpiło bardzo znaczące obniżenie absorpcji (z ok. 50\% do ok. 5\%), jak również poszerzenie linii. Przesunięcie centrum linii było mniejsze od niepewności pomiaru. Obniżenie absorpcji o rząd wielkości sprawiło, że komórka ta nie była użyteczna w dalszych pomiarach.
+
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{spek_para.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Spektroskopia komórki z pokryciem parafinowym. Pomiar w $T=50^{\circ}C$}
+ \label{fig:spekpara}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{spek_gaz.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Spektroskopia komórki z gazem. Widoczne znaczne poszerzenie linii i obniżona transmisja. $T=50^{\circ}C$}
+ \label{fig:spekgaz}
+\end{figure}
+
+
+\section{Sygnał błędu}
+
+Zmierzono zależność sygnału błędu stabilizacji długości fali, to jest zależność amplitudy sygnału z wyjścia wzmacniacza fazoczułego pracującego na częstotliwości modulacji (,,pierwszej harmonicznej``). Sygnał ten można interpretować jako wartość pochodnej krzywej absorpcji.
+
+Na rysunku \ref{panoda} przedstawiona jest zależność tego sygnału od amplitudy modulacji. Widać, że wraz ze wzrostem amplitudy modulacji amplituda sygnału pochodnej rośnie, ale następuje też jego poszerzenie wzdłuż osi odciętych. Jest to spowodowane tym, że transmisja w komórce, podczas gdy długość fali lasera jest modulowana w coraz szerszym zakresie, waha się w coraz szerszym zakresie. Powyżej pewnej amplitudy modulacji nie następuje już dalszy wzrost amplitudy sygnału błędu, a jedynie jego dalsze poszerzanie. Można to dostrzec na trzech najwyższych przebiegach na rys. \ref{panoda}.
+
+Rysunek \ref{panodp} przedstawia zależność sygnału błędu od mocy światła przechodzącego przez komórkę. Poszerzenie sygnału ze wzrostem mocy światła praktycznie nie występuje. Oznacza to, że moc światła nie jest zbyt wysokoa, tj. nie wysyca populacji atomów w komórce.
+
+DODAĆ PORZĄDNE OSIE X.
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{panoramy_1H_oda.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zależność sygnału błędu od amplitudy modulacji długości fali. $f_{mod}=101kHz, P_{las}=20 \mu W$}
+ \label{fig:panoda}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{panoramy_1H_odp.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zależność sygnału błędu od amplitudy mocy lasera. $f_{mod}=101kHz, A_{mod}=1000mV$}
+ \label{fig:panodp}
+\end{figure}
+
+\section{Magnetorotacja}
+
+Zmieniając częstotliwość modulacji długości fali lasera, możemy doprowadzić do sytuacji, gdy ta częstotliwość pokrywa się z częstotliwością precesji atomów w polu magnetycznym.
+Zachodzi wtedy skręcenie polaryzacji (liniowo spolaryzowanego) światła padającego na komórkę. Skręcenie jest mierzone przez polarymetr, a jego amplitudę wyznacza wzmacniacz fazoczuły, który może mierzyć sygnał na częstotliwości modulacji oraz jej harmonicznych. Zależność amplitudy skręcenia w zależności od indukcji pola magnetycznego w komórce przedstawia rys. \ref{fig:magnetorot1}. Widać, że przebieg tej zależności ma postać krzywej rezonansowej.
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{magnetorot1.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Przykładowa zależność magnetorotacji, po detekcji fazoczułej, w zależności od pola magnetycznego. Pole magnetyczne wyrażone w jednostkach częstości Larmora dla ${}^{87} Rb$.
+ $f_{mod}=101kHz, P_{las}=15 \mu W$}
+ \label{fig:magnetorot1}
+\end{figure}
+
+Jednym z podstawowych celów niniejszej pracy była weryfikacja parametrów magnetorotacji, którą można uzyskać przez interakcję światła ze zbudowanego lasera z atomami.
+Parametrami charakteryzującymi taki rezonans są jego  szerokość -- węższy rezonans pozwala dokładniej wyznaczyć pole magnetyczne, oraz amplituda -- większa również pozwala dokładniej mierzyć pole (przez poprawę stosunku sygnału do szumu).
+
+Na rysunku \ref{wykresikioda} znajduje się zależność szerokosći i amplitudy sygnału magnetorotacji od amplitudy modulacji. Widać, że zbyt duża amplituda modulacji powoduje zmniejszenie skręcenia. Jest to związane z tym, że przy zbyt szerokiej modulacji światło jest przez coraz dłuższy ułamek okresu modulacji odstrojone od profilu absorpcji atomów. 
+
+\begin{figure}[h!]
+\centering
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_AodA1H.eps}
+\label{fig:goda1H}
+}
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_GodA1H.eps} 
+\label{fig:aoda1H}
+}
+
+
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_AodA2H.eps}
+\label{fig:goda1H}
+}
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_GodA2H.eps} 
+\label{fig:aoda1H}
+}
+\caption{ a) Amplituda rezonansu na 1 harmonicznej w zależności od $A_m$ b) Szerokość rezonansu na 1 harmonicznej w zależności od $A_m$ 
+c) Amplituda rezonansu na 2 harmonicznej w zależności od $A_m$ d) Szerokość rezonansu na 2 harmonicznej w zależności od $A_m$}
+\label{wykresikioda}
+\end{figure}
+
+
+Na rysunku \ref{wykresikiodp} znajduje się zaś zależność powyższych parametrów od od mocy światła padającego na komórkę. Amplituda sygnału magnetorotacji jest wprost proporcjonalna od mocy lasera, ponieważ mierzona jest różnica natężeń światła w dwóch polaryzacjach. Zwiększanie mocy światła powoduje jednak poszerzenie rezonansu.
+
+
+\begin{figure}[h!]
+\centering
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_AodP1H.eps}
+\label{fig:goda1H}
+}
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_GodP1H.eps} 
+\label{fig:aoda1H}
+}
+
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_AodP2H.eps}
+\label{fig:goda1H}
+}
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_GodP2H.eps} 
+\label{fig:aoda1H}
+}
+\caption{ a) Amplituda rezonansu na 1 harmonicznej w zależności od $P_{las}$ b) Szerokość rezonansu na 1 harmonicznej w zależności od $P_{las}$ 
+c) Amplituda rezonansu na 2 harmonicznej w zależności od $P_{las}$ d) Szerokość rezonansu na 2 harmonicznej w zależności od $P_{las}$}
+\label{wykresikiodP}
+\end{figure}
+
+Powyższe pomiary zostały zrobione przy działającym układzie stabilizacji długości fali. Dostrajał on laser do długości fali, przy której sygnał błędu przechodził przez zero (przy przejściu $F=2 \rightarrow F'=2$).
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{panoramy_1H_odf.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zależność magnetorotacji od częstości modulacji. 1 harm. $f_{mod}=101kHz, P_{las}=20 \mu W, A_{mod}=1000mV W$}
+ \label{fig:panodf1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{panoramy_2H_odf.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zależność magnetorotacji od częstości modulacji. 2 harm. $f_{mod}=101kHz, P_{las}=20 \mu W, A_{mod}=1000mV W$}
+ \label{fig:panodf2}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{panoramy_1H_odam.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zależność magnetorotacji od częstości modulacji. 1 harm. $f_{mod}=101kHz, P_{las}=20 \mu W, A_{mod}=1000mV W$}
+ \label{fig:panodam1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{panoramy_2H_odam.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zależność magnetorotacji od częstości modulacji. 2 harm. $f_{mod}=101kHz, P_{las}=20 \mu W, A_{mod}=1000mV W$}
+ \label{fig:panodam2}
+\end{figure}
+
 
 
 \begin{thebibliography}{99}
