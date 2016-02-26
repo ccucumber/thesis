@@ -241,7 +241,7 @@ Jego zadania są następujące:
 \end{itemize}
 
 Ostatni cel został osiągniety głównie metodą prób i błędów. Opór wewnętrzny diody (przy prądzie pracy) został zmierzony jako $61 \Omega$.
-Docelowy układ przedstawia rysunek \ref{sch-mod1}. Na płytce znajdują się diody zabezpieczające (specjalne diody zabezpieczające przed elektrosta, bardzo szybkie i o niskim prądzie upływu) oraz złącza doprowadzające prąd z zasilacza i sygnał modulujący z generatora. Pojemność kondensatora kompensacyjnego został dobrana tak, by uzyskać możliwie płaską charakterystykę modulacji. Zależność odpowiedzi częstotliwościowej od jego pojemności znajduje się na rysunku \ref{wyk-mod}.
+Docelowy układ przedstawia rysunek \ref{sch-mod1}. Na płytce znajdują się diody zabezpieczające (specjalne diody zabezpieczające przed elektrostatycznymi wyładowaniami, bardzo szybkie i o niskim prądzie upływu) oraz złącza doprowadzające prąd z zasilacza i sygnał modulujący z generatora. Pojemność kondensatora kompensacyjnego został dobrana tak, by uzyskać możliwie płaską charakterystykę modulacji. Zależność odpowiedzi częstotliwościowej od jego pojemności znajduje się na rysunku \ref{wyk-mod}.
 
 \begin{figure}
 \begin{center}
@@ -262,6 +262,53 @@ Docelowy układ przedstawia rysunek \ref{sch-mod1}. Na płytce znajdują się di
 \end{figure}
 
 \subsection{Cyfrowe strojenie}
+
+Aby uprościć proces dostrajania do linii po uruchomieniu lasera, opracowano układ pozwalający na sterowanie prądem lasera z programu uruchomionego na komputerze.
+Umożliwia on rejestrację zależności absorpcji w komórce od prądu, detekcję linii absorpcyjnych, a później automatyczne dostrojenie lasera do wybranej linii.
+
+Moduł strojenia podłącza się zamiast potencjometru regulacji prądu. Układ składa się z mnożącego przetwornika cyfrowo-analogowego, o rozdzielczości 16 bitów, mikrokontrolera i układu konwertera USB $\leftrightarrow$ RS-232. Rozdzielczość przetwornika jest więcej niż wystarczająca, a układ jest znacznie stabilniejszy od potencjometru. Dane między modułem a komputerem wymieniane są za pośrednictwem złącza USB.
+
+Moduł jest sterowany przy pomocy programu na komputer PC. Jest on napisany w języku Python, z wykorzystaniem interfejsu graficznego Qt. Kod źródłowy programu można znaleźć w \url{https://github.com/ccucumber/laserscan}. Okno główne programu przedstawione jest na rysunku \ref{scr-main}.
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.8\textwidth]{./obrazki/scr-main.png}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{Główne okno programu}
+\label{scr-main}
+\end{figure}
+
+
+Po lewej stronie okna programu znajduje się szereg przycisków, oferując następujące możliwości:
+
+\begin{itemize}
+ \item Uruchomienie skanowania lasera, w zakresie od ,,Start`` do ,,Stop``, z krokiem ,,Step''. Absorpcja jest przedstawiana na wykresie, a postęp skanowania jest widoczny na pasku postępu.
+ \item Zapis i odczyt zmierzonych wartości absorpcji do/z pliku.
+ \item Automatyczne szukanie linii absorpcyjnych
+ \item Dostrojenie do wybranej z listy, znalezionej w poprzednim kroku pozycji linii absorpcyjnej.
+\end{itemize}
+
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.8\textwidth]{./obrazki/scr-anal.png}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{Okno szukania linii absorpcyjnych}
+\label{scr-anal}
+\end{figure}
+
+Po naciśnięciu przycisku ,,Analyze`` program wyświetla okno pokazane na \ref{scr-anal}, zaznaczając znalezione linie absorpcyjne na wykresie.
+Aby uzyskać ten efekt, wykonywane są następujące operacje:
+\begin{enumerate}
+ \item Następuje odcięcie składowej stałej przez dopasowanie i odjęcie wielomianu niskiego stopnia.
+ \item Przebieg jest wygładzany przez uśrednienie kilku sąsiednich próbek
+ \item Znajdowane są
+\end{enumerate}
+
+
+
 
 \subsection{Stabilizacja długości fali}
 
