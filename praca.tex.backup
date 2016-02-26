@@ -167,6 +167,15 @@ Ze względu na warstwową budowę, obszar aktywny ma emisję poprzeczną, co poz
 
 \subsection{Użyta dioda}
 
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.8\textwidth]{./obrazki/vcsel_struktura.png}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{Użyta dioda laserowa (Vixar Inc.)}
+\label{struktura}
+\end{figure}
+
 Do wykonania pomiarów została użyta dioda wyprodukowana przez firmę $Vixar$, o oznaczeniu
 W strukturze, przedstawionej na rys. (\ref{struktura}), producent umieścił cztery identyczne złącza. Niestety, po i ch sprawdzeniu i wybraniu najlepszej z nich, z sobie tylko znanych powodów zdecydował się odłączyć pozostałe trzy.
 
@@ -175,16 +184,16 @@ W trakcie pomiarów dioda uległa uszkodzeniu. Wycieczka na AGH zaowocowała prz
 Parametry jej pracy to:
 \begin{center}
 \begin{tabular}{ll}
-Prąd maksymalny & $4mA$\\
-Próg laserowania & $0.6mA$\\
-Maksymalny prąd pracy jednomodowej & $1.6mA$\\
-Moc nominalna & $150\mu W$\\
-Moc przy pracy jednomodowej & $60\mu W$\\
-Szerokość linii & $100MHz$\\
-Stała strojenia prądem & COŚTAM\\
-Stała strojenia temperaturą & $0.05 nm/{}^{\circ}C$\\
-Optymalny prąd & $1,5mA$\\
-Optymalna temperatura & $26^{\circ}C$ \\
+Prąd maksymalny & $4 ~\mathrm{mA}$\\
+Próg laserowania & $0{,}6~\mathrm{mA}$\\
+Maksymalny prąd pracy jednomodowej & $1{,}6~\mathrm{mA}$\\
+Moc nominalna & $150~\mathrm{\mu }W$\\
+Moc przy pracy jednomodowej & $60~\mathrm{\mu W}$\\
+Szerokość linii & $100~\mathrm{MHz}$\\
+Stała strojenia prądem & COŚCOŚTAM\\
+Stała strojenia temperaturą & $0.05 ~\mathrm{nm/{}^{\circ}C$}\\
+Optymalny prąd & $1{,}5 ~\mathrm{mA}$\\
+Optymalna temperatura & $26~\mathrm{ {}^{\circ}C$} \\
 Obudowa & TO-46 z pięcioma nogami
 \end{tabular}
 \end{center}
@@ -195,13 +204,13 @@ Obudowa & TO-46 z pięcioma nogami
 Na rysunku (\ref{sch-psu}) przedstawiony jest schemat pierwszego z układów elektronicznych użytych w pracy -- zasilacza diody. Jego zadaniem jest zasilanie diody laserowej prądem o regulowanej, stabilnej w czasie wartości i jak najniższej fluktuacji (szumie). Zbyt duży poziom szumu obecny w niededykowanym zasilaczu znanej firmy był jednym z powodów zaprzestania prac z laserem o emisji powierzchniowej, co jest opisane w pracy mgr. Justyny Mech \cite{mgrJustynaMech}.
 
 Działanie układu najwygodniej opisać od strony lasera. Z dodatniego napięcia zasilającego, przez tranzystor \textit{Q2} i rezystor pomiarowy \textit{R5}, prąd płynie do anody diody laserowej, dołączoną do złącza P1. Katoda diody jest dołączona do masy, co czyni diodę bardziej odporną na przepięcia i przypadkowe zwarcie niż w sytuacji, gdyby obydwa końce były ,,pływające``.  
-Właściwe źródło prądowe jest bardzo proste -- formuje je rezystor R3 zasilając z kondensatora C1 bazę tranzystora \textit{Q2}. Tranzystor Q1 i rezystor R1 stanowią obwód zabezpieczający i można je pominąć przy analizie normalnej pracy układu. Prąd kolektora Q2 jest już właściwym prądem diody laserowej. Warto zaznaczyć, że w tym układzie nie występuje praktycznie żaden szum nadmiarowy -- pod wpływem stałego napięcia na kondensatorze przez rezystor o sporej wartości przepływa stały prąd, który jest praktycznie idealnie bezszumnie wzmacniany przez pojedynczy tranzystor. Wysoki opór różniczkowy kolektora \textit{Q2}, sprawia, że układ stanowi dobre źródło prądowe, tj. prąd nie zależy od napięcia na obciążeniu. Oczywiście, ponieważ zakładamy niezmienność napięcia na C1 oraz napięcia baza-emiter i wzmocnienia Q2, taki obraz jest poprawny tylko dla wysokich częstotliwości. Długoczasową stabilizację prądu zapewnia wzmacniacz U1, który działa w układzie wzmacniacza pomiarowego który zapewnia na swoim wyjściu takie napięcie, by napięcie na rezystorze pomiarowym R5 poprzez rezystory R4 i R7 równoważyło napięcie zadawane między wyjściem U2 a masą, przez rezystory  R8 i R11.
-DOdatkowe rezystory R9 i R10 pozwalają w niewielkim zakresie podmodulować prąd diody, napięciem podanym przez złącze P2.
-Napięciu 1V na wyjściu U2 odpowiada 1mA prądu płynącego przez diodę.
+Właściwe źródło prądowe jest bardzo proste -- formuje je rezystor R3 zasilając z kondensatora C1 bazę tranzystora \textit{Q2}. Tranzystor Q1 i rezystor R1 stanowią obwód zabezpieczający i można je pominąć przy analizie normalnej pracy układu. Prąd kolektora Q2 jest już właściwym prądem diody laserowej. Warto zaznaczyć, że w tym układzie nie występuje praktycznie żaden szum nadmiarowy -- pod wpływem stałego napięcia na kondensatorze przez rezystor o sporej wartości przepływa stały prąd, który jest praktycznie idealnie bezszumnie wzmacniany przez pojedynczy tranzystor. Wysoki opór różniczkowy kolektora tranzystora \textit{Q2}, sprawia, że układ stanowi dobre źródło prądowe, tj. prąd nie zależy od napięcia na obciążeniu. Oczywiście, ponieważ zakładamy niezmienność napięcia na C1 oraz napięcia baza-emiter i wzmocnienia tranzystora Q2, taki obraz jest poprawny tylko dla wysokich częstotliwości. Długoczasową stabilizację prądu zapewnia wzmacniacz U1, który działa w układzie wzmacniacza pomiarowego, zapewniając na swoim wyjściu takie napięcie, by napięcie na rezystorze pomiarowym R5 poprzez rezystory R4 i R7 równoważyło napięcie zadawane między wyjściem U2 a masą, przez rezystory  R8 i R11.
+Dodatkowe rezystory R9 i R10 pozwalają w niewielkim zakresie podmodulować prąd diody, napięciem podanym przez złącze P2.
+Napięciu 1V na wyjściu U2 odpowiada 1 mA prądu płynącego przez diodę.
 
-Układ U2 stanowi filtr dolnoprzepustowy, o niskiej częstości odcięcia (rzędu 10Hz), eliminujący szum i trzaski z napięcia pochodzącego z potencjometru PR1, którym ustawia się prąd. Zwora JP1 pozwala wybrać pomiędzy zakresem 0-3.5mA a 0-7mA.
+Układ U2 stanowi filtr dolnoprzepustowy, o niskiej częstości odcięcia (rzędu 10 Hz), eliminujący szum i trzaski z napięcia pochodzącego z potencjometru PR1, którym ustawia się prąd. Zwora JP1 pozwala wybrać pomiędzy zakresem $0-3{,}5$ mA a 0-7 mA.
 
-Napięcie wzorcowe, dostarczane na nóżkę 3 potencjometru pochodzi z diody Zenera D1. Dioda ta to wysoce stabilna dioda o tzw. strukturze zagrzebanej, zintegrowana wraz z termostatem. Decyduje to o doskonałej stabilności cieplnej ($0.5ppm/{}^{\circ}C$) i długoczasowej.  Wzmacniacz U3 zasila diodę stałym prądem, zadawanym jej własnym napięciem Zenera. Jest on zasilany inaczej niż pozostałe, pojedynczym napięciem. Uniemożliwia to ,,zatrzaśnięcie'' się układu na napięciu przewodzenia diody (ujemnym) zamiast na napięciu Zenera (dodatnim). 
+Napięcie wzorcowe, dostarczane na nóżkę 3 potencjometru pochodzi z diody Zenera D1. Dioda ta to wysoce stabilna dioda o tzw. strukturze zagrzebanej, zintegrowana wraz z termostatem. Decyduje to o doskonałej stabilności cieplnej ($0.5~\mathrm{ppm}/{}^{\circ}C$) i długoczasowej.  Wzmacniacz U3 zasila diodę stałym prądem, zadawanym jej własnym napięciem Zenera. Jest on zasilany inaczej niż pozostałe, pojedynczym napięciem. Uniemożliwia to ,,zatrzaśnięcie'' się układu na napięciu przewodzenia diody (ujemnym) zamiast na napięciu Zenera (dodatnim). 
 
 \begin{figure}
 \begin{center}
@@ -212,13 +221,11 @@ Napięcie wzorcowe, dostarczane na nóżkę 3 potencjometru pochodzi z diody Zen
 \label{sch-psu}
 \end{figure}
 
-\subsection{Modulacja}
+\subsection{Układ modulacji}
 
-Po zbadaniu tematu, próbach, błędach...
-Celem było zbadanie, jak szybko można modulować prąd diody, co ma na celu szybką zmianę długości fali. Jako że te diody służą do transmisji danych z prędkością kilku gigabitów na sekundę, modulacja częstościami na poziomie kilkuset MHz powinna być realna. 
+Po zbadaniu modułu zasilania, kolejnym krokiem było zbadanie, jak szybko można modulować prąd diody, co ma na celu szybką zmianę długości fali. Jako że te diody służą do transmisji danych z prędkością kilku Gb/s, modulacja częstościami na poziomie kilkuset MHz powinna być realna. 
 
-Elektryczny schemat zastępczy diody laserowej przedstawiony jest na rysunku \ref{sch-mod1}.
-
+Elektryczny schemat zastępczy diody laserowej przedstawiony jest na rysunku \ref{sch-mod1}. 
 \begin{figure}
 \begin{center}
  \includegraphics{./obrazki/sch_mod1.pdf}
@@ -227,13 +234,12 @@ Elektryczny schemat zastępczy diody laserowej przedstawiony jest na rysunku \re
 \caption{Uproszczony schemat zastępczy diody laserowej}
 \label{sch-mod1}
 \end{figure}
-
-Na jego podstawie można założyć, że na dynamikę modulacji prądu, tj. jej maksymalną szybkość oraz przesunięcie fazowe mają wpływ jedynie wartości pasożytniczych pojemności i indukcyjności, oraz opór wewnętrzny diody. Konsekwencją tego założenia jest możliwość kompensacji wpływu pasożytniczych elementów poprzez manipulacje jedynie impedancjią źródła sygnału, w efekcie uzyskując płaską zależność amplitudy modulacji światła od częstotliwości.
+Na jego podstawie można założyć, że na dynamikę modulacji prądu, tj. jej maksymalną szybkość oraz przesunięcie fazowe mają wpływ jedynie wartości pasożytniczych pojemności i indukcyjności, oraz opór wewnętrzny diody. Konsekwencją tego założenia jest możliwość kompensacji wpływu pasożytniczych elementów poprzez manipulacje jedynie impedancją źródła sygnału, w efekcie uzyskując płaską zależność amplitudy modulacji światła od częstotliwości.
 Dla najwyższych częstotliwości (gigaherce) model ten może przestawać odzwierciedlać rzeczywidość, ze względu na wpływ skończonego czasu potrzebnego do osiągnięcia równowagi między pompowaniem a emisją promieniowania z rezonatora. Poczyniono nieme założenie, że modulacja jasności jest równoznaczna modulacji długości fali. Jest ono spełnione, jeśli procesy optyczne (pompowanie i relaksacja) zachodzą znacznie szybciej niż zmiany prądu w strukturze.
 
 Zbudowano układ umożliwiający szybką modulację prądu sygnałem dostarczanym standardowym kablem koncentrycznym ze złączem SMA.
 
-Jego zadania są następujące:
+Zadania układu są następujące:
 \begin{itemize}
  \item Dopasowanie impedancji wejściowej do kabla ($50 \Omega$).
  \item Osłabienie sygnału (docelowe zmiany prądu mają być rzędu $\mu A$)
@@ -272,7 +278,7 @@ Moduł jest sterowany przy pomocy programu na komputer PC. Jest on napisany w j�
 
 \begin{figure}
 \begin{center}
- \includegraphics[width=0.8\textwidth]{./obrazki/scr-main.png}
+ \includegraphics[width=0.8\textwidth]{./obrazki/scr_main.png}
  % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
 \end{center}
 \caption{Główne okno programu}
@@ -292,20 +298,21 @@ Po lewej stronie okna programu znajduje się szereg przycisków, oferując nast�
 
 \begin{figure}
 \begin{center}
- \includegraphics[width=0.8\textwidth]{./obrazki/scr-anal.png}
+ \includegraphics[width=0.8\textwidth]{./obrazki/scr_anal.png}
  % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
 \end{center}
 \caption{Okno szukania linii absorpcyjnych}
 \label{scr-anal}
 \end{figure}
 
-Po naciśnięciu przycisku ,,Analyze`` program wyświetla okno pokazane na \ref{scr-anal}, zaznaczając znalezione linie absorpcyjne na wykresie.
+Po naciśnięciu przycisku ,,Analyze`` program wyświetla okno pokazane na \ref{scr-anal}.
 Aby uzyskać ten efekt, wykonywane są następujące operacje:
 \begin{enumerate}
  \item Następuje odcięcie składowej stałej przez dopasowanie i odjęcie wielomianu niskiego stopnia.
  \item Przebieg jest wygładzany przez uśrednienie kilku sąsiednich próbek
- \item Znajdowane są
+ \item Znajdowane i zaznaczane na wykresie są linie absorpcyjne o dostatecznej głębokości
 \end{enumerate}
+
 
 
 
@@ -314,13 +321,13 @@ Aby uzyskać ten efekt, wykonywane są następujące operacje:
 
 Po dostrojeniu lasera zachodzi konieczność ciągłej korekty długości fali, tak by pozostać na linii absorpcyjnej.
 
-Jest to realizowane metodą opisaną w poprzednim rozdziale, na podstawie sygnału z wzmacniacza fazoczułego. %KTÓRYM ROZDZIALE?
+Jest to realizowane metodą opisaną w następnym rozdziale, na podstawie sygnału z wzmacniacza fazoczułego. %KTÓRYM ROZDZIALE?
 Jako że sygnał ze wzmacniacza fazoczułego jest proporcjonalny do odstrojenia lasera od zadanej długości fali, koncepcja układu stabilizującego jest prosta.
 Jest to typowy regulator proporcjonalno-całkująco-różniczkujący. Schemat jest przedstawiony na rysunku \ref{sch-pid}.
 
 \begin{figure}
 \begin{center}
- \includegraphics[scale=0.4]{./obrazki/pidella.pdf}
+ \includegraphics[scale=0.58, angle =90 ]{./obrazki/pidella.pdf}
  % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
 \end{center}
 \caption{Schemat regulatora PID}
@@ -334,7 +341,7 @@ Sygnały z trzech członów są sumowane przez wzmacniacz U3C. Zwora JP1 pozwala
 
 Dodatkowe wyjście Z4 pozwala na monitorowanie sygnału wybranego zworą P3.
 
-\subsection{Detektor}
+\subsection{Polarymetr wraz z układem detekcji}
 
 Laser, dostrojony do pożądanego przejścia atomowego, oddziałuje z atomami rubidu w komórce.
 Skutkiem tego oddziaływania jest osłabienie wiązki -- absorpcja oraz rotacja płaszczyzny polaryzacji światła.
