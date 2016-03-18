@@ -41,7 +41,7 @@
 \renewcommand{\headrulewidth}{0.3pt}
 \renewcommand{\footrulewidth}{0.3pt}
 
-\renewcommand\abstractname{Abstrakt}
+%\renewcommand\abstractname{Abstrakt} !(Jaworska-Gołąb stajl)
 
 
 %polskie numerowanie sekcji (z kropką na końcu)
@@ -97,7 +97,7 @@ Budowany układ miałby spełniać następujące zadania:
  \item Mierzyć amplitudę skręcenia polaryzacji światła po przejściu przez komórkę.
 \end{itemize}
 
-W niniejszej pracy opisano budowę takiego ukłądu, jak również wyniki pomiarów wykonanych przy jego pomocy.
+W niniejszej pracy opisano budowę takiego układu, jak również wyniki pomiarów wykonanych przy jego pomocy.
 
 
 \section{Zamysł pomiaru}
@@ -124,7 +124,7 @@ Lasery półprzewodnikowe wykorzystują fakt, że rekombinacja nośników ładun
 
 Zetknięcie półprzewodników - domieszkowanego ujemnie (zawierającego dodatkowe elektrony walencyjne) i domieszkowanego dodatnio (zawierającego mniej elektronów walencyjnych niż kryształ macierzysty) powoduje przemieszczenie ładunków znajdujących się na ich granicy i powstanie warstwy zaporowej (zubożonej). Taką dwuelektrodową strukturę nazywa się diodą. Przepuszczając prąd z obszaru o domieszkowaniu \textit{p} do obszaru \textit{n}, wymusza się rekombinację nośników w warstwie zaporowej.  
 
-Zwiększając gęstość prądu, oprócz oczywistego wzrostu natężenia światła, można doprowadzić także do tak licznego obsadzenia pasma przewodnictwa kosztem pasma walecyjnego, że zajdzie inwersja obsadzeń, co z kolei może umożliwić akcję laserową. Drugim koniecznym warunkiem zajścia akcji laserowej jest umieszczenie ośrodka ze wzmocnieniem optycznym w rezonatorze, którego dobroć musi być wystarczająca by natężenie światła emitowanego w sposób wymuszony mogło dominować nad światłem emitowanym spontanicznie.
+Zwiększając gęstość prądu, oprócz oczywistego wzrostu natężenia światła, można doprowadzić także do tak licznego obsadzenia pasma przewodnictwa kosztem pasma walencyjnego, że zajdzie inwersja obsadzeń, co z kolei może umożliwić akcję laserową. Drugim koniecznym warunkiem zajścia akcji laserowej jest umieszczenie ośrodka ze wzmocnieniem optycznym w rezonatorze, którego dobroć musi być wystarczająca by natężenie światła emitowanego w sposób wymuszony mogło dominować nad światłem emitowanym spontanicznie.
 
 Pierwszą realizacją lasera półprzewodnikowego jest laser z emitujący światło poprzecznie do kierunku przepływu prądu. Jego schematyczna budowa przedstawiona jest na rysunku (\ref{rys-eel}). Wysoką gęstość prądu uzyskuje się poprzez przestrzenne modelowanie domieszkowania, w skutek czego obszar aktywny, przez który przepływa cały prąd złącza, ma szerokość ok. 10$\mu m$ i grubość rzędu 2$\mu m$. Rezonator optyczny jest utworzony pomiędzy bocznymi krawędziami kryształu, oszlifowanymi równolegle. Jedna z krawędzi jest posrebrzona. Dodatkowe pokrycie odbijające drugiej ścianki nie jest konieczne, ze względu na odbicie powodowane dużą różnicą współczynników załamania kryształu i powietrza.
 
@@ -149,14 +149,14 @@ Pierwszą realizacją lasera półprzewodnikowego jest laser z emitujący świat
 
 Taka konstrukcja diody laserowej ma jednak liczne wady. Są to:
 \begin{itemize}
- \item Wysoki koszt - producja wymaga nietypowego procesu, jakim jest dokładna obróbka bocznych krawędzi struktury.
+ \item Wysoki koszt - produkcja wymaga nietypowego procesu, jakim jest dokładna obróbka bocznych krawędzi struktury.
  \item Duży prąd progowy dla laserowania, przez co niska sprawność - ze względu na relatywnie dużą powierzchnię złącza.
  \item Długi obszar aktywny (od kilku do kilkuset $\mu m$) sprawia, że laser może pracować w wielu modach podłużnych.
  \item Astygmatyzm emitowanego światła, ze względu na asymetryczne wymiary obszaru aktywnego.
  \item Wrażliwość na pasożytnicze sprzężenia optyczne ze względu na niską dobroć rezonatora
 \end{itemize}
 
-Wolna od powyższych wad jest konstrukcja lasera o emisji powierzchniowej z pionową wnęką rezonansową (VCSEL -\textit{Vertical Cavity Surface Emitting Laser}). Jego budowa jest przedstawiona na rysunku (\ref{rys-vcsel}). W takim laserze prąd przepływa przez obszar mający postać punktu, nie paska, a emisja światła zachodzi w kierunku powierzchni kryształu. W takiej sytuacji nie jest możliwe stworzenie rezonatora na samych jedynie powierzchniach kryształu. Jako że tworzenie warstw równolegle do powierzchni półprzewodnika, o precyzyjnie regulowanej grubości, nie nastręcza żadnych technologicznych trudności, zwierciadła są wykonane jako tzw. rozproszone zwierciadła Bragga, czyli wiele naprzemiennych warstw substancji o różnych współczynnikach załamania. Dla określonej długości fali pomiędzy falami odbitymi od kolejnych granic ośrodków zachodzi konstruktywna interferencja, co pozwala takiej strukturze bardzo efektywnie odbijać światło, pełniąc przy okazji rolę filtra pasmowego, umożliwiając wzmocnienie tylko jednej długości fali. Typowe wartości współczynnika odbicia to $99\%$ dla zwierciadła przedniego i $99{,}9\%$ dla tylnego. Tak utworzony rezonator, optyczny ma szereg wyróżniających cech. Jest bardzo krótki, przez co mody są bardzo dobrze rozseparowane, co bardzo ułątwia pracę w jednym modzie poprzecznym. Ze względu na bardzo wysoką dobroć rezonatora, pomimo niewielkiej jego długości, udaje się uzyskać niewielką szerokość linii. Wysoka dobroć sprawia również, że lasery VCSEL są praktycznie niewrażliwe na pasożytnicze sprzężenia optyczne.
+Wolna od powyższych wad jest konstrukcja lasera o emisji powierzchniowej z pionową wnęką rezonansową (VCSEL -\textit{Vertical Cavaty Surface Emitting Laser}). Jego budowa jest przedstawiona na rysunku (\ref{rys-vcsel}). W takim laserze prąd przepływa przez obszar mający postać punktu, nie paska, a emisja światła zachodzi w kierunku powierzchni kryształu. W takiej sytuacji nie jest możliwe stworzenie rezonatora na samych jedynie powierzchniach kryształu. Jako że tworzenie warstw równolegle do powierzchni półprzewodnika, o precyzyjnie regulowanej grubości, nie nastręcza żadnych technologicznych trudności, zwierciadła są wykonane jako tzw. rozproszone zwierciadła Bragga, czyli wiele naprzemiennych warstw substancji o różnych współczynnikach załamania. Dla określonej długości fali pomiędzy falami odbitymi od kolejnych granic ośrodków zachodzi konstruktywna interferencja, co pozwala takiej strukturze bardzo efektywnie odbijać światło, pełniąc przy okazji rolę filtra pasmowego, umożliwiając wzmocnienie tylko jednej długości fali. Typowe wartości współczynnika odbicia to $99\%$ dla zwierciadła przedniego i $99{,}9\%$ dla tylnego. Tak utworzony rezonator, optyczny ma szereg wyróżniających cech. Jest bardzo krótki, przez co mody są bardzo dobrze odseparowane, co bardzo ułatwia pracę w jednym modzie poprzecznym. Ze względu na bardzo wysoką dobroć rezonatora, pomimo niewielkiej jego długości, udaje się uzyskać niewielką szerokość linii. Wysoka dobroć sprawia również, że lasery VCSEL są praktycznie niewrażliwe na pasożytnicze sprzężenia optyczne.
 Ze względu na warstwową budowę, obszar aktywny ma emisję poprzeczną, co pozwala laserom VCSEL emitować światło o praktycznie idealnym rozkładzie przestrzennym (M$\cong 0$). Wysoka gęstość prądu przepływająca przez punktowy obszar aktywny pozwala uzyskać niski prąd progu laserowania, co sprawia, że lasery VCSEL są jednymi z najbardziej wydajnych źródeł światła jakie dotychczas wynaleziono. Brak konieczności obróbki krawędzi bocznych pozwala testować gotowe struktury jeszcze na waflu (krysztale bazowym), jak również oddzielać je od siebie standardowymi metodami, tj. przez cięcie piłą. 
 
 
@@ -272,7 +272,7 @@ Docelowy układ przedstawia rysunek \ref{sch-mod1}. Na płytce znajdują się di
 Aby uprościć proces dostrajania do linii po uruchomieniu lasera, opracowano układ pozwalający na sterowanie prądem lasera z programu uruchomionego na komputerze.
 Umożliwia on rejestrację zależności absorpcji w komórce od prądu, detekcję linii absorpcyjnych, a później automatyczne dostrojenie lasera do wybranej linii.
 
-Moduł strojenia podłącza się zamiast potencjometru regulacji prądu. Układ składa się z mnożącego przetwornika cyfrowo-analogowego, o rozdzielczości 16 bitów, mikrokontrolera i układu konwertera USB $\leftrightarrow$ RS-232. Rozdzielczość przetwornika jest więcej niż wystarczająca, a układ jest znacznie stabilniejszy od potencjometru. Dane między modułem a komputerem wymieniane są za pośrednictwem złącza USB.
+Moduł strojenia podłącza się zamiast potencjometru regulacji prądu. Układ składa się z mnożącego przetwornika cyfrowo-analogowego, o rozdzielczości 16 bitów, mikrokontrolera i układu konwertera USB $\leftrightarrow$ RS-232. W trakcie testów stwierdzono, że rozdzielczość przetwornika jest więcej niż wystarczająca (linie absorpcyjne mają szerokość ok. 100LSB przetwornika), a układ jest znacznie stabilniejszy od potencjometru (dryf i szum są znacznie mniejsze niż 1LSB). Dane między modułem a komputerem wymieniane są za pośrednictwem złącza USB.
 
 Moduł jest sterowany przy pomocy programu na komputer PC. Jest on napisany w języku Python, z wykorzystaniem interfejsu graficznego Qt. Kod źródłowy programu można znaleźć w \url{https://github.com/ccucumber/laserscan}. Okno główne programu przedstawione jest na rysunku \ref{scr-main}.
 
@@ -310,7 +310,7 @@ Aby uzyskać ten efekt, wykonywane są następujące operacje:
 \begin{enumerate}
  \item Następuje odcięcie składowej stałej przez dopasowanie i odjęcie wielomianu niskiego stopnia.
  \item Przebieg jest wygładzany przez uśrednienie kilku sąsiednich próbek
- \item Znajdowane i zaznaczane na wykresie są linie absorpcyjne o dostatecznej głębokości
+ \item Znajdowane i zaznaczane na wykresie są linie absorpcyjne o dostatecznej głębokości względem aktualnie zarejestrowanego maksimum absorpcji
 \end{enumerate}
 
 
@@ -357,7 +357,7 @@ Precyzyjny pomiar powyższych ma kluczowe znaczenie dla dokładności magnetomet
 \end{figure}
 
 Polarymetr posiada dwie fotodiody i wytwarza dwa sygnały - o amplitudzie proporcjonalnej do różnicy i sumy natężeń światła padającego na fotodiody.
-Sygnał różnicy służy do pomiaru skręcenia polaryzacji, która bezpośrednio.  Sygnał sumy pozwala zaś śledzić absorpcję w komórce, co umożliwia stabilizację lasera na linii.
+Sygnał różnicy służy do pomiaru skręcenia polaryzacji, która bezpośrednio zależy od pola magnetycznego.  Sygnał sumy pozwala zaś śledzić absorpcję w komórce, co umożliwia stabilizację lasera na linii.
 
 Sygnał różnicy jest wytwarzany przez wzmacniacz U3A, pracujący w typowej konfiguracji transimpendancyjnej. Wzmacnia on prąd pochodzący z węzła pomiędzy fotodiodami D1 i D2.
 Elementy R9 i C3 ustalają odpowiednio wzmocnienie i pasmo tego wzmacniacza.
@@ -378,6 +378,54 @@ Wyjścia obydwu torów są doprowadzone do dzielników 20:1, które mają na cel
  \item O co chodzi ze stab. na 1H i pomiarem na 2H
  \item Po co komórki mają pokrycie parafinowe / gaz. Co to robi za różnicę.
 \end{itemize}
+
+\subsection{Detekcja magnetorotacji}
+
+Światło dostrojone do przejścia atomowego powoduje powstanie pewnego rodzaju uporządkowania w populacji atomów.
+Proces ten nazywany jest pompowaniem optycznym. Fotony, mając określony moment pędu, mogą oddziaływać tylko z atomami w określonym stanie, który także można opisać poprzez orientację momentu pędu atomu w przestrzeni.
+
+//CO NIECO O STANACH m, MoŻE RYSUNECZEK "POMPOWANIE OPTYCZNE", może alignmenty?//
+
+Ścisły opis pompowania optycznego wykorzystuje macierz gęstości i jej równanie ewolucji - r.  Liouville'a -- von Neumanna, w niniejszej pracy skupię się jednak na omawianiu obserwowalnych efektów, a nie teorii jaka za nimi stoi.
+
+Populacja atomów, z wytworzoną orientacją momentów magnetycznych, wykazuje inny współczynnik absorpcji dla poszczególnych polaryzacji światła. Orientacja wytworzona przez światło o polaryzacji kołowej prawoskrętnej będzie słabo absorbować polaryzację prawoskrętną (optyczne ,,napompowanie") i bardzo silnie polaryzację ortogonalną - prawoskrętną. Skoro absorpcje są różne, również rzeczywiste części współczynników załamania muszą się różnić między polaryzacjami -- występuje anizotropia optyczna ośrodka. Zjawisko to dla polaryzacji liniowej zachodzi dokładnie tak samo, choć nieco różni się w opisie teoretycznym.
+
+Kluczowym dla możliwości pomiaru pola magnetycznego jest fakt, że momenty magnetyczne atomów precesują w polu magnetycznym -- jest to precesja Larmora. Precesja ta jest tożsama z obrotem wszystkich obserwabli w przestrzeni.
+Umieszczenie populacji atomów napompowanych światłem spolaryzowanym liniowo w słabym polu magnetycznym sprawi więc, że wyróżniona przez atomy płaszczyzna polaryzacji światła zacznie się obracać względem kierunku pola magnetycznego, z częstością Larmora.
+
+Powstanie powyższej płaszczyzny jest jednak efektem pompowania światłem, którego płaszczyzna polaryzacji jest nieruchoma. W miarę jak orientacja momentów magnetycznych ,,próbuje" się obrócić w skutek precesji Larmora, światło pompujące ,,na bieżąco" przywraca orientacje atomów zgodną z płaszczyzną polaryzacji światła,
+w skutek czego orientacja atomów nie obraca się w przestrzeni, tym niemniej jest ,,przekręcona" względem pierwotnego położenia.
+Polaryzacja światła liniowo spolaryzowanego, o p pol niewspółliniowej z orientacją atomów ulega skręceniu w stronę, w którą zachodzi precesja Larmora. Zmiana kierunku pola magnetycznego powoduje więc zmianę kierunku skręcenia na przeciwną.
+
+Opisane zjawisko pozwala jedynie precyzyjnie wyznaczyć zero pola magnetycznego -- skręcenie płaszczyzny polaryzacji światła jest wtedy zerowe.
+
+//Może obrazek zeropolowy?// 
+ 
+Aby móc zmierzyć wartość pola magnetycznego, opracowana została następująca technika: (CYTOWANIE?)
+Światło, również liniowo spolaryzowane, jest modulowane w czasie. Modulacja może dotyczyć mocy światła (technika AMOR), ale i częstotliwości (długości fali światła) (FMNMOR).
+
+Modulacja sprawia, że cyklicznie, przez jedną część czasu atomy nie oddziałują ze światłem (z powodu jego wygaszenia lub odstrojenia od przejścia) i precesują swobodnie, a przez drugą są pompowane. Jeśli częstotliwość modulacji nie pokrywa się z częstością Larmora, pompowanie następuje przypadkowo i nie powoduje zorientowania momentów magnetycznych atomów. Jeśli jednak częstość modulacji jest równa podwojonej częstotliwości Larmora (lub, w ogólności jej stosunek do częstości Larmora jest liczbą wymierną), światło zawsze natrafia na atomy w tej samej fazie precesji i buduje orientację momentów magnetycznych.
+
+Metoda pozwala więc precyzyjnie wykrywać, czy pole magnetyczne, a dokładnie wyznaczana przez nie częstość Larmora ma wartość większą niż zadana przez częstotliwość modulacji (zachodzi wtedy skręcenie polaryzacji w kierunku precesji Larmora), czy też mniejszą (polaryzacja skręca się wtedy w kierunku przeciwnym).
+
+
+\subsection{Stabilizacja długości fali - pomiar fazoczuły}
+
+Skręcenie polaryzacji z powyższego punktu zachodzi synchronicznie do częstotliwości modulacji. Można to zwizualizować w następujący sposób: orientacja atomów po okresowym włączeniu światła (dostrojeniu do przejścia) jest ,,przed" kierunkiem polaryzacji światła, i obracając się, finalnie ,,wyprzedza" płaszczyznę polaryzacji światła, po czym światło jest wyłączane. 
+
+Warto więc zastosować do skręcenia detekcję synchroniczną.
+ 
+
+Korzystając z tego, że długość fali lasera jest modulowana, ze światła przechodzącego przez komórkę można uzyskać jeszcze jedną użyteczną informację -- aktualne odstrojenie długości fali światła od linii absorpcyjnej. Jest to parametr konieczny, by móc uruchomić automatyczne dostrajanie lasera do przejścia atomowego.
+
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{lock_g5.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zasada działania //CZEGO?//}
+ \label{fig:spekpara}
+\end{figure}
 
 
 
@@ -415,7 +463,7 @@ Zmierzono zależność sygnału błędu stabilizacji długości fali, to jest za
 
 Na rysunku \ref{panoda} przedstawiona jest zależność tego sygnału od amplitudy modulacji. Widać, że wraz ze wzrostem amplitudy modulacji amplituda sygnału pochodnej rośnie, ale następuje też jego poszerzenie wzdłuż osi odciętych. Jest to spowodowane tym, że transmisja w komórce, podczas gdy długość fali lasera jest modulowana w coraz szerszym zakresie, waha się w coraz szerszym zakresie. Powyżej pewnej amplitudy modulacji nie następuje już dalszy wzrost amplitudy sygnału błędu, a jedynie jego dalsze poszerzanie. Można to dostrzec na trzech najwyższych przebiegach na rys. \ref{panoda}.
 
-Rysunek \ref{panodp} przedstawia zależność sygnału błędu od mocy światła przechodzącego przez komórkę. Poszerzenie sygnału ze wzrostem mocy światła praktycznie nie występuje. Oznacza to, że moc światła nie jest zbyt wysokoa, tj. nie wysyca populacji atomów w komórce.
+Rysunek \ref{panodp} przedstawia zależność sygnału błędu od mocy światła przechodzącego przez komórkę. Poszerzenie sygnału ze wzrostem mocy światła praktycznie nie występuje. Oznacza to, że moc światła nie jest zbyt wysoka, tj. nie wysyca populacji atomów w komórce.
 
 DODAĆ PORZĄDNE OSIE X.
 
@@ -503,7 +551,7 @@ Na rysunku \ref{wykresikiodp} znajduje się zaś zależność powyższych parame
 \label{fig:aoda1H}
 }
 \caption{ a) Amplituda rezonansu na 1 harmonicznej w zależności od $P_{las}$ b) Szerokość rezonansu na 1 harmonicznej w zależności od $P_{las}$ 
-c) Amplituda rezonansu na 2 harmonicznej w zależności od $P_{las}$ d) Szerokość rezonansu na 2 harmonicznej w zależności od $P_{las}$}
+c) Amplituda rezonansu na 2  w zależności od $P_{las}$ d) Szerokość rezonansu na 2 harmonicznej w zależności od $P_{las}$}
 \label{wykresikiodP}
 \end{figure}
 
