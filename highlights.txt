@@ -1,0 +1,508 @@
+page:   3, D:20160520000249+02'00', type: strike-out, content: None
+page:   3, D:20160520000308+02'00', type: caret     , content: W ramach realizacji niniejszej pracy magisterskiej z
+page:   3, D:20160520000321+02'00', type: strike-out, content: None
+page:   3, D:20160520000325+02'00', type: caret     , content: przebadano
+page:   3, D:20160520000430+02'00', type: strike-out, content: None
+page:   3, D:20160520001112+02'00', type: caret     , content: Układy te, wraz z diodą, zostały następnie wykorzystane
+page:   3, D:20160520000431+02'00', type: strike-out, content: None
+page:   3, D:20160520000512+02'00', type: text      , content: razem z nastepnym zdaniem
+page:   3, D:20160520000559+02'00', type: strike-out, content: None
+page:   3, D:20160520000839+02'00', type: caret     , content: w oparciu o nieliniowy efekt Faradaya.
+page:   3, D:20160520000653+02'00', type: strike-out, content: None
+page:   3, D:20160520000913+02'00', type: caret     , content: liniowo spolaryzowanego
+page:   3, D:20160520001119+02'00', type: strike-out, content: None
+page:   3, D:20160525140909+02'00', type: caret     , content: , którego centralna długość fali dostrojona była do zbocza poszerzonego dopplerowski przejścia atomowego w rubidzie, zaś zakres modulacji obejmował znaczącą część tej linii. W przypadku, gdy częstość modulacji światła zgodna była z podwojoną częstością precesji spinów w polu magnetycznym (częstością Larmora), w ośrodku wytwarzana była dynamiczna anizotropia prowadząca do skręcenia płaszczyzny polaryzacji światła.
+page:   3, D:20160520001415+02'00', type: strike-out, content: None
+page:   3, D:20160520001412+02'00', type: caret     , content: None
+page:   3, D:20160520001715+02'00', type: caret     , content: polaryzacji
+page:   3, D:20160520001737+02'00', type: strike-out, content: None
+page:   3, D:20160520001741+02'00', type: caret     , content: Różnica 
+page:   3, D:20160520001759+02'00', type: caret     , content: z fotodiod
+page:   3, D:20160520002228+02'00', type: caret     , content: a 
+page:   3, D:20160520001817+02'00', type: strike-out, content: None
+page:   3, D:20160520002252+02'00', type: caret     , content: przy pomocy wzmacniacza fazoczułego. Ponieważ amplituda otrzymywanego sygnału rotacji polaryzacji charakteryzuje się zależnością rezonansowa, zapewnienie warunku rezonansowego przez odpowiednie dobranie częstości modulacji światła pozwoliło na określenie wartości indukcji pola magnetycznego.
+page:   3, D:20160520002006+02'00', type: strike-out, content: None
+page:   3, D:20160520002008+02'00', type: strike-out, content: None
+page:   3, D:20160520002206+02'00', type: strike-out, content: None
+page:   3, D:20160525141028+02'00', type: text      , content: Każdy rozdział na osobnej stronie
+page:   3, D:20160525142712+02'00', type: strike-out, content: None
+page:   3, D:20160525143812+02'00', type: caret     , content: Umieszczony w zewnętrznym polu magnetycznym moment magnetyczny precesuje z częstością determinowaną przez pole magnetyczne (częstość Larmora). Dzieje się tak zarówno z makroskopowymi obiektami, jak również z układami mikroskopowymi. Przykładowo, moment magnetyczny atomu, który jest związany ze spinem, umieszczonym w zewnętrznym polu magnetycznym również podlega precesji Larmorowskiej. Jednakże, w układach makroskopowych, na które składa się olbrzymia liczba atomów, precesja ta jest trudna do wykrycia z uwagi na fakt, że atomy precesują z różnymi fazami, tak więc fakt precesji uśrednia się po wszystkich atomach (należy jednak zwrócić uwagę, że fakt ten jest wykrywalny i jest on obiektem badań w spektroskopii szumu). W ogólności zatem bez zewnętrznego czynnika powodującego porządkowanie momentów magnetycznych w układach makroskopowych nie możemy wykryć faktu precesji magnetycznej spinów atomowych. 
+
+Czynnikiem porządkującym spin/momenty magnetyczne może być oddziaływanie atomów ze światłem. Na skutek absorpcji odpowiednio spolaryzowanego światła, w atomach wytwarzany jest porządek, który może następnie umożliwić detekcję precesji larmorowskiej spinów. W ten sposób precesja magnetyczna spinów może być wykryta w układach makroskopowych.
+page:   3, D:20160525143920+02'00', type: caret     , content: W niniejszej pracy, ośrodkiem, w którym wykrywana była precesja larmorowska manifestująca się poprzez efektu magnetooptyczne, były pary rubidu. 
+page:   3, D:20160525143928+02'00', type: caret     , content: zewnętrznym
+page:   3, D:20160525143935+02'00', type: strike-out, content: None
+page:   3, D:20160525143938+02'00', type: caret     , content: ały
+page:   3, D:20160525144009+02'00', type: text      , content: Pomiędzy wartością fali i jednostką spacja. Zawsze.
+page:   3, D:20160525144029+02'00', type: strike-out, content: None
+page:   3, D:20160525144033+02'00', type: caret     , content: było
+page:   3, D:20160525144039+02'00', type: strike-out, content: None
+page:   3, D:20160525144415+02'00', type: strike-out, content: None
+page:   3, D:20160525144102+02'00', type: strike-out, content: None
+page:   3, D:20160525144110+02'00', type: caret     , content: liniowo spolaryzowanym
+page:   3, D:20160525144848+02'00', type: caret     , content: w ośrodku dochodziło do synchronizacji precesji wielu atomów, a w konsekwencji do powstania makroskopowej, zmiennej w czasie polaryzacji ośrodka. Prowadziło to do modulacji skręcenia płaszczyzny polaryzacji światła z częstością równą podwójnej częstości Larmora (częstość modulacji kąta skręcenia polaryzacji jest następstwem użycia polaryzacji liniowej światła i wywołanej tym światłem polaryzacji atomowej - uporządkowania - ang. alignment).
+page:   3, D:20160525144642+02'00', type: caret     , content: zadawanej 
+page:   3, D:20160525144647+02'00', type: strike-out, content: None
+page:   3, D:20160525144658+02'00', type: caret     , content: natężenia lub długości fali
+page:   3, D:20160525144910+02'00', type: strike-out, content: None
+page:   3, D:20160525144913+02'00', type: caret     , content: ą
+page:   3, D:20160525144926+02'00', type: caret     , content: indukcji
+page:   3, D:20160525145046+02'00', type: text      , content: To całe zdanie, które tutaj wykreśliłem powinno iść za następny paragraf, tuż przed paragraf zaczynający się od "Budowany układ"
+page:   3, D:20160525145531+02'00', type: highlight , content: None
+page:   3, D:20160525145610+02'00', type: text      , content: Jedno słowo
+page:   3, D:20160528015046+02'00', type: text      , content: Mysle, ze w streszczeniu trzebaby wyeksponowac, ze umiemy robic stabilizacje i magnetorotacje w oparciu o jedna komorke.
+page:   4, D:20160525145724+02'00', type: text      , content: Jak Ty to skądś wziąłeś, to tutaj się powinien znaleźć odpowiednik literaturowy. Co więcej, na tym rysunku widać pikselizację a fonty są za małe. Warto coś z tym zrobić.
+page:   4, D:20160525150313+02'00', type: text      , content: Brakuje tutaj jeszcze dość konkretnego fragmentu, który mówiłby, że poza celem polegającym na stworzeniu układu kontroli lasera diodowego, również celem jest wykorzystanie tego układu do pomiarów pola magnetycznego, a jeśli już nie pomiarów samego pola magnetycznego to przynajmniej obserwacji nieliniowej magnetometorotacji. My mówimy o tym powyżej, ale w celach tego jasno nie ma.
+page:   4, D:20160525151038+02'00', type: text      , content: Spacka
+page:   4, D:20160525151050+02'00', type: caret     , content: ,
+page:   4, D:20160525151121+02'00', type: text      , content: Tu by sie przydała referencja
+page:   4, D:20160525151250+02'00', type: text      , content: Po co nam rysunek dla przerwy skośnej? Przecież to nie jest temat tej pracy. Lepiej się go pozbądźmy.
+page:   4, D:20160525151247+02'00', type: highlight , content: None
+page:   4, D:20160525151340+02'00', type: highlight , content: None
+page:   4, D:20160525151412+02'00', type: text      , content: Żeby używać skrótów półprzewodników musisz najpierw napisać, który obszar jest który (powyżej).
+page:   4, D:20160525151524+02'00', type: text      , content: Bardziej niż rekombnacja w przerwie skośnej, która jest na rysunku 1, przydałaby się tutaj rekombinacja na przerwie prostej, któa obrazowałaby działanie półprzewodnikowych źródeł światła.
+page:   4, D:20160526233044+02'00', type: text      , content: Mam spory problem jak to przeorganizować. Myślę, że teraz to jest trochę chaotyczne i pewnie to trzeba przerobic. Dlatego proponuję, żeby tą część nazwać
+
+Układ sterowania lasera diodowego
+
+Wtedy pierwszą część, która nazywa się Laser VCSEL nazwiemy Wprowadzenie, a dalsze części stanowić będą w tym rozdziale obecne części 4.1-4.4
+page:   4, D:20160526224417+02'00', type: highlight , content: None
+page:   4, D:20160526224456+02'00', type: text      , content: Jeśli dobrze rozumiem to wszystko jest już uwzględnione. Chyba, że masz na myśli jeszcze jakieś inne "duperszwance"
+page:   4, D:20160527234328+02'00', type: highlight , content: None
+page:   4, D:20160527234352+02'00', type: text      , content: Może to powinno się nazywać - Układ lasera wraz z modulacją i systemem stabilizacji
+page:   5, D:20160525151542+02'00', type: strike-out, content: None
+page:   5, D:20160525151700+02'00', type: highlight , content: None
+page:   5, D:20160525151702+02'00', type: highlight , content: None
+page:   5, D:20160525151752+02'00', type: text      , content: Oprócz rozdzielenia jednostki od wartości. Zwróć proszę uwagę by jednostki nie były pisane kursywą.
+page:   5, D:20160525151841+02'00', type: caret     , content: fresnelowskie
+page:   5, D:20160526224823+02'00', type: highlight , content: None
+page:   5, D:20160526224852+02'00', type: text      , content: Myśle,że tutaj raczej przecinki, a na końcu, po wszystkim kropka. Proponuję też w tym przypadku z małej litery.
+page:   6, D:20160526224718+02'00', type: highlight , content: None
+page:   6, D:20160526224905+02'00', type: strike-out, content: None
+page:   6, D:20160526225103+02'00', type: text      , content: Przy odnośnikach rysunków nie podaje się numeru w nawiasach. Stosuje się to tylko do odnoszenia się do równań i to nie zawsze.
+page:   6, D:20160526225158+02'00', type: text      , content: Znów widziałbym tutaj odwołanie do referencji.
+page:   7, D:20160526225344+02'00', type: text      , content: Nie zdefiniowałeś czym jest M. Zrób z tego M kursywę i zdecyduj się co ze spacjami.
+page:   7, D:20160526225438+02'00', type: text      , content: Myślę, że dla pełności powinna się pojawić krótka może 1-2 zdaniowa dyskusja ograniczeń VCSELa.
+page:   7, D:20160526225704+02'00', type: text      , content: W to miejsce proponuje wprowadzić fragmentu o budowie lasera. O tym jak one będą pasować tutaj przekonamy się dopiero po przeniesieniu ich. Pewnie od Ciebie będzie zależeć jak bardzo płynne będzie tutaj przeniesienie tresci.
+page:   7, D:20160526225710+02'00', type: highlight , content: None
+page:   7, D:20160526225752+02'00', type: text      , content: Myślę, że ten rozdział, rozpoczęty na nowej stronie, powinien się nazywać Układ stabilizacji długości fali lasera
+page:   7, D:20160526225810+02'00', type: highlight , content: None
+page:   7, D:20160526225858+02'00', type: text      , content: To powinno być coś na kształy Zasada stabilizacji długości fali albo coś w tym stylu
+page:   7, D:20160526225912+02'00', type: text      , content: Spacja
+page:   7, D:20160526225924+02'00', type: strike-out, content: None
+page:   7, D:20160526225934+02'00', type: caret     , content: d
+page:   7, D:20160526225944+02'00', type: text      , content: Spacja
+page:   7, D:20160526230005+02'00', type: caret     , content: w fazie
+page:   7, D:20160526230114+02'00', type: highlight , content: None
+page:   7, D:20160526230153+02'00', type: text      , content: Musisz się zdecydować albo na przecinki, albo na kropki w oddzielaniu części całkowitej i ułamkowej. Po polsku są przecinki, choć ja osobiście wolę kropki.
+page:   7, D:20160526230220+02'00', type: strike-out, content: None
+page:   7, D:20160526230220+02'00', type: caret     , content: K
+page:   7, D:20160526230232+02'00', type: text      , content: Nie trzeba mieszać jednostek
+page:   7, D:20160526230242+02'00', type: highlight , content: None
+page:   7, D:20160526230437+02'00', type: text      , content: To Cię poniosło!!! Przecież dioda nie jest strojona w całym zakresie spektralnym. Stąd nie możesz podzielic 10^8/10^14, a następnie pomnożyć to przez 300 K!!! Musisz tutaj być ostrożniejszy.
+page:   7, D:20160526230454+02'00', type: caret     , content: k
+page:   7, D:20160526230524+02'00', type: highlight , content: None
+page:   7, D:20160526230622+02'00', type: text      , content: Znowu. Wystabilizowanie VCSELa w zakresie szerokości dopplerowskiej jest w zasadzie banalne. My jednak stawiamy dużo poważniejsze żądania, żeby stabilność była znacznie lepsza.
+page:   7, D:20160526230645+02'00', type: strike-out, content: None
+page:   7, D:20160526230808+02'00', type: caret     , content: będzie możliwa
+page:   7, D:20160526230711+02'00', type: caret     , content: None
+page:   7, D:20160526230715+02'00', type: caret     , content: ciągłego
+page:   7, D:20160526230722+02'00', type: strike-out, content: None
+page:   7, D:20160526230743+02'00', type: caret     , content: co najmniej równym szerokości spektralnej linii aborpcyjnej
+page:   7, D:20160526230811+02'00', type: caret     , content: None
+page:   7, D:20160526230816+02'00', type: caret     , content: długości fali lasera
+page:   7, D:20160526230829+02'00', type: highlight , content: None
+page:   7, D:20160526230948+02'00', type: text      , content: Ty tutaj już implikujesz jakąś wiedzę. Mówisz o komórce. Trzeba powiedzieć raczej o ośrodku. A komórkę możesz wspomnieć w przypisie albo wcale o niej nie wspominać.
+page:   7, D:20160526231021+02'00', type: strike-out, content: None
+page:   7, D:20160526231033+02'00', type: text      , content: Z poprzednim akapitem.
+page:   7, D:20160526231038+02'00', type: highlight , content: None
+page:   7, D:20160526231512+02'00', type: highlight , content: None
+page:   8, D:20160526231522+02'00', type: highlight , content: None
+page:   8, D:20160526232117+02'00', type: text      , content: Ta dyskusja ma tylko sens wtedy, gdy powiesz gdzie się stabilizujesz. Możesz też wprost napisać co się dzieje, gdy jesteś po jednej stronie, a co się dzieje gdy po drugiej. Pewnie jednak to powinno pojawić się we wcześniejszym akapicie.
+page:   8, D:20160526231824+02'00', type: text      , content: Żeby to miało sens musisz zaznaczyć miejsce, w którym Ty pracujesz/stabilizujesz się.
+page:   8, D:20160526231901+02'00', type: text      , content: Nie podoba mi się ta asymetria w rozmiarach rysunków. Popraw to. Dodatkowo podpisz osie, bo nie wiadomo co na nich jest.
+page:   8, D:20160526232001+02'00', type: text      , content: Brak podpisanych osi.
+page:   8, D:20160526232137+02'00', type: highlight , content: None
+page:   8, D:20160526232145+02'00', type: text      , content: w ośrodku
+page:   8, D:20160526232230+02'00', type: text      , content: Myślę, że w tym miejscu trzeba też powiedzieć o samej absorpcji i jej zależności od temperatury. To też jest ważny efekt, który trzeba wspomnieć.
+page:   8, D:20160526232236+02'00', type: highlight , content: None
+page:   8, D:20160526232257+02'00', type: text      , content: Skąd Ty to ściągąłeś?!?!?!?
+page:   8, D:20160526232315+02'00', type: highlight , content: None
+page:   8, D:20160526232537+02'00', type: text      , content: Coś to raczej nie jest technika detekcji fazoczułej tylko metoda modulacji lasera i detekcji fazoczułej.
+Przepisz tak, żeby było dobrze.
+
+Nie wiedzę powodu na : na końcu tego zdania.
+page:   8, D:20160526232508+02'00', type: text      , content: Uwaga stylistyczna. Musisz się zdecydować, czy chcesz odnosić się do rysunków przez skrót rys. czy pełnym rysunek. Jeśli przez skrót, to wszędzie za wyjątkiem początków zdania musisz to poprawić.
+page:   8, D:20160526232602+02'00', type: strike-out, content: None
+page:   8, D:20160526232613+02'00', type: caret     , content: 6
+page:   9, D:20160526232713+02'00', type: highlight , content: None
+page:   9, D:20160526232728+02'00', type: text      , content: Proponuję kursywą
+page:   9, D:20160526232741+02'00', type: strike-out, content: None
+page:   9, D:20160526232753+02'00', type: caret     , content: orpcyjna
+page:   9, D:20160526232819+02'00', type: strike-out, content: None
+page:   9, D:20160526232854+02'00', type: caret     , content: jaka powinna być korekta parametrów pracy lasera by powrócić do zadanej długości fali.
+page:   9, D:20160526232901+02'00', type: highlight , content: None
+page:   9, D:20160526232937+02'00', type: text      , content: Ja bym sobie jednak życzył, żeby to był bardziej rozbudowany opis, żeby już na podstawie podpisu można się było zorientować o co chodzi.
+page:   9, D:20160526233106+02'00', type: text      , content: Tutaj powinniśmy przenieść część 4.5
+page:   9, D:20160526233425+02'00', type: text      , content: To jest kolejny niezależny rozdział dotyczący magnetometrii.
+page:   9, D:20160526233441+02'00', type: text      , content: Tutaj znów zaczynamy od wprowadzenia albo tła teoretycznego.
+page:   9, D:20160526233604+02'00', type: caret     , content: gdzie $F$ jest liczbą kwantową opisującą całkowity spin atomów (w sprzężeniu nadsubtelnym), zaś $m_F$ jest magnetyczną liczbą kwantową,
+page:   9, D:20160526233615+02'00', type: caret     , content: w atomach
+page:   9, D:20160526233645+02'00', type: strike-out, content: None
+page:   9, D:20160526233800+02'00', type: caret     , content: izotopu $^{85}$Rb dla przejścia pomiędzy stanem $5^2S_{1/2}\rightarrow5^2P_{1/2}$ (linia D1) przedstawia
+page:   9, D:20160526233835+02'00', type: text      , content: Być może Ty masz tutaj nawiasy bo zamiast \ref użyłes \eqref, które automatycznie je dodaje.
+page:   9, D:20160526234015+02'00', type: text      , content: Ten fragment, i to co za nim jest, powinno się znaleźć w ramach poprzedniego paragrafu jeszcze przed przywołaniem schematu rubidu, bo dyskusja tutaj jest ogólna
+page:   9, D:20160526234032+02'00', type: caret     , content: kołowa prawoskrętna
+page:   9, D:20160526234125+02'00', type: strike-out, content: None
+page:   9, D:20160526234132+02'00', type: caret     , content: Absorpcja światła o poszczególnych polaryzacjach może prowadzić do następujących zmian stanu kwantowego atomu:
+page:   9, D:20160526234254+02'00', type: highlight , content: None
+page:   9, D:20160526234347+02'00', type: text      , content: Ten fragment wraz z przywołanym przez niego rysunkiem powinien się pojawić później. Z tego co czytam to i tak najpierw chcesz przedyskutować modelowy układ F=1->F'=0.
+page:  10, D:20160526234219+02'00', type: caret     , content: kołowa lewoskrętna
+page:  10, D:20160526234239+02'00', type: caret     , content: liniowa typu
+page:  10, D:20160526234725+02'00', type: caret     , content: Raz wzbudzone atomy nie pozostają w stanie o wyższej energii na długo i szybko (w alkaliach po czasie od kilku do kilkudziesięciu ns) powracają do stanu podstawowego. Emitowane światła jest również spolaryzowane, co w konsekwencji sprawia, że w atomach po cyklu absorpcja emisja może dojść do zmiany stanu energetycznego atomu. Zjawisko to nosi nazwę pompowania optycznego.
+page:  10, D:20160526235049+02'00', type: caret     , content: Rozpatrzmy modelowy układ, w którym spolaryzowane światło oddziałuje z atomami, których stan podstawowy o $F=1$ jest potrójnie zdegenerowany, tzn. ma trzy podpoziomy magnetyczne $|g,+\rangle=|1,1\rangle$, $|g,0\rangle=|1,0\rangle$ oraz $|g,-\rangle=|1,-1\rangle$, zaś stan wzbudzony jest singletem ($|e,0\rangle=|0,0\rangle$).
+page:  10, D:20160526235057+02'00', type: caret     , content: takich
+page:  10, D:20160526235949+02'00', type: strike-out, content: None
+page:  10, D:20160526235124+02'00', type: strike-out, content: None
+page:  10, D:20160526235215+02'00', type: caret     , content: atomów ze stanu $|g,-1\rangle$ do stanów $|g,0\rangle$ oraz $|g,1\rangle$.
+page:  10, D:20160527000215+02'00', type: strike-out, content: None
+page:  10, D:20160526235440+02'00', type: caret     , content: $|g,-1\rangle$ oraz $|g,0\rangle$. Ponieważ stany $|g,0\rangle$ oraz $|g,1\rangle$ nie mogą absorbować światła $\sigma_+$ zaś stany $|g,-1\rangle$ oraz $|g,0\rangle$ światła $\sigma_-$
+page:  10, D:20160526235443+02'00', type: strike-out, content: None
+page:  10, D:20160526235444+02'00', type: caret     , content: s
+page:  10, D:20160526235943+02'00', type: caret     , content: Sytuacja ta staje się ciekawsza, gdy atomy poddajemy oddziaływaniu z liniowo spolaryzowanym światłem, które jest spójnym złożeniem dwóch ortogonalnych polaryzacji kołowych. W takim przypadku kierunek polaryzacji liniowej $\sigma$, prostopadły do osi kwantyzacji, determinowany jest przez fazę drgań obu polaryzacji. Przykładowo, d
+page:  10, D:20160526235956+02'00', type: strike-out, content: None
+page:  10, D:20160527000117+02'00', type: caret     , content: w kierunku $y$ prostopadłym do osi kwantyzacji układu, światło spójnie wzbudzać będzie atomy ze stanów $|g,+\rangle$ oraz $|g,-\rangle$. W takim przypadku,
+page:  10, D:20160527000123+02'00', type: strike-out, content: None
+page:  10, D:20160527000213+02'00', type: caret     , content: występują stany ciemne, trywialny $|g,0\rangle$ oraz mniej intuicyjny stan w postaci
+page:  10, D:20160527000220+02'00', type: highlight , content: None
+page:  10, D:20160527000301+02'00', type: text      , content: Proponuje trzymać się jednak notacji diraca i nie wprowadzać tutaj oznaczenia jak dla funkcji falowej.
+page:  10, D:20160527000407+02'00', type: text      , content: Używaj środowiska
+\begin{equation}
+\end{equation}
+wówczas natychmiast dostaniesz numerację równań, która jest tutaj jak najbardziej pożądana.
+page:  10, D:20160527000459+02'00', type: strike-out, content: None
+page:  10, D:20160527000535+02'00', type: text      , content: Właśnie, że nie orientacją tylko uporządkowaniem.
+page:  10, D:20160527000715+02'00', type: caret     , content: Polaryzacja atomów związana z generacją stanu (równanie), nosi nazwę uporządkowania, ponieważ w układzie nie jest wyróżniony kierunek (wypadkowy spin jest zerowy), ale spiny atomowe orientowane są wzdłuż określonego kierunku przestrzennego.
+page:  10, D:20160527000808+02'00', type: text      , content: W tym miejscu, zamiast tego rysunki, powinien się pojawić modelowy rysunek F=1\rightarrow F'=0.
+
+Za to ten rysunek proponowałbym później.
+page:  10, D:20160527000840+02'00', type: strike-out, content: None
+page:  10, D:20160527000849+02'00', type: caret     , content: polaryzacja dana równanie ()
+page:  10, D:20160527001013+02'00', type: caret     , content: , cechująca się superpozycją przesuniętą w fazie pomiędzy oboma komponentami kołowymi o 90$^\circ$, 
+page:  10, D:20160527001026+02'00', type: caret     , content: silniej niż normalnie
+page:  10, D:20160527001041+02'00', type: highlight , content: None
+page:  10, D:20160527001246+02'00', type: text      , content: Raczej nie jak płytka fazowa tylko jako rotujący polaryzator (patrz np. Budker, D., D. J. Orlando, and V. Yashchuk, 1999b, Am. J.
+Phys. 67(7), 584). To jest zatem źle i musi być poprawione.
+page:  10, D:20160527001310+02'00', type: highlight , content: None
+page:  10, D:20160527001636+02'00', type: text      , content: Patrz uwaga wyżej do płytki. 
+
+Równie ważna uwaga dotyczy tego, że Ty zastosowałes tutaj skrót myślowy, że coś się skręca. Tutaj trzebaby przywołać równanie poprzednie z rozszczepieniem wywołanym polem magnetycznym. No i później jeszcze o relaksacji i średniowaniu, że jest wypadkowy stan generowany (stąd wypadkowe skręcenie statyczne).
+page:  10, D:20160527080520+02'00', type: strike-out, content: None
+page:  10, D:20160527080535+02'00', type: caret     , content: wytworzone uporządkowanie
+page:  11, D:20160527080702+02'00', type: highlight , content: None
+page:  11, D:20160527080716+02'00', type: highlight , content: None
+page:  11, D:20160527080748+02'00', type: text      , content: Ten skrót nie był nigdzie wprowadzony. Chcesz go używać to go zdefinij, gdy pierwszy raz mówisz o uporządkowaniu.
+page:  11, D:20160527080958+02'00', type: text      , content: To o czym Ty piszesz to jest poszerzenie mocą. Jednakże limitującym czynnikiem nie jest to, a to, że ciągle dodajemy nowych atomów, które mają inną fazę, a stare atomy relaksują w związku z czym ich amplituda spada. W konsekwencji mamy średniowanie, które daje wypadkową polaryzację.
+
+Musisz to poprawić.
+page:  11, D:20160527081014+02'00', type: highlight , content: None
+page:  11, D:20160527081124+02'00', type: text      , content: I znów wielki skok w myśleniu. Do tej pory było tylko o absorpcji, teraz nagle jest o skręceniu płaszczyzny polaryzacji. Musisz zadbać o to, że było przejrzyście.
+page:  11, D:20160527081037+02'00', type: highlight , content: None
+page:  11, D:20160527081128+02'00', type: strike-out, content: None
+page:  11, D:20160527081131+02'00', type: caret     , content: to
+page:  11, D:20160527081210+02'00', type: highlight , content: None
+page:  11, D:20160527081302+02'00', type: text      , content: Nie znam takiego zwrotu. Proponuję, żebyś napisał, że to jest stała relaksacji mówiąca o szybkości
+page:  11, D:20160527081307+02'00', type: strike-out, content: None
+page:  11, D:20160527081320+02'00', type: caret     , content: niszczenia polaryzacji (dekoherencji).
+page:  11, D:20160527081406+02'00', type: text      , content: Brakuje kwadratu przy \Omega_R. Przydałaby się również jasna definicja, że ten parametr to jest stałą nasycenia.
+page:  11, D:20160527081430+02'00', type: highlight , content: None
+page:  11, D:20160527082206+02'00', type: text      , content: Dwie uwagi:
+1) Dobrze by było najpierw związać to o czym pisałeś z rzeczywistym skręceniem płaszczyzny polaryzacji. Wtedy to będzie umotywowane. 
+2) Skręcenie zależy od nateżenia światła (np. liniowo). To właśnie zależność od natężenia światła sprawia, że jest to efekt nieliniowy. W efektach nieliniowych P=\chi_0E+\chi_1E^2+.... to właśnie ten drugi człon mówi o nieliniowości (ale, żeby mieć skręcenie dzielisz to przez E stąd brak zależności od E w rotacji dla efektów liniowych.
+
+Popraw obie rzeczy!!!
+page:  11, D:20160527082311+02'00', type: text      , content: Ja bym tutaj wysymulował rotację w polach bliskich zera i ją pokazał. Wtedy możesz też omówić parametry limitujące.
+page:  11, D:20160527230434+02'00', type: caret     , content: Jak widać z rysunku ???, dla silniejszych pól magnetycznych procesy pompowania, precesji i relaksacji powodują utratę sygnału skręcenia płaszczyzny polaryzacji. 
+page:  11, D:20160527082444+02'00', type: caret     , content: jednak pozwala na zwiększenie zakresu
+page:  11, D:20160527082446+02'00', type: strike-out, content: None
+page:  11, D:20160527230502+02'00', type: strike-out, content: None
+page:  11, D:20160527230535+02'00', type: caret     , content: Aby zaobserwować dynamiczny sygnał skręcenia płaszczyzny polaryzacji, c
+page:  11, D:20160527230548+02'00', type: highlight , content: None
+page:  11, D:20160527230716+02'00', type: caret     , content: (ponieważ uporządkowanie ma wyróżniony kierunek, ale nie zwrot, to po obrocie o kąt 180 stopni, odtwarzany jest stan początkowy polaryzacji spinowej)
+page:  11, D:20160527230945+02'00', type: text      , content: Chciałem Ci tylko zwrócić uwagę, że zbyt wolne pompowanie może spowodować efekt zbliżony do tego, z którym mamy do czynienia w zerowym polu. Ty co prawda nie musisz o tym pisać, ale chciałem o tym przy tej okazji wspomnieć.
+page:  11, D:20160527231006+02'00', type: highlight , content: None
+page:  11, D:20160527231018+02'00', type: text      , content: Nie rozumiem co autor miał tutaj na myśli.
+page:  11, D:20160527231057+02'00', type: highlight , content: None
+page:  11, D:20160527231255+02'00', type: text      , content: Jaki rezonans. Póki co nie było nic o żadnym rezonansie. Więcej nawet. Jeśli będziesz używał detekcji fazoczułej na częstości modulacji przy niższych częstościach (n=2,3...), to wtedy guzik zobaczysz. Na razie możesz tutaj tylko powiedzieć, że masz dynamiczną makroskopową polaryzację, która generowana jest w układzie.
+page:  11, D:20160527231303+02'00', type: highlight , content: None
+page:  11, D:20160527231354+02'00', type: text      , content: A co z wyższymi liczbami całkowitymi? Tak jak to jest teraz napisane to sugeruje, że tylko te trzy przypadki są z jakiegoś powodu wyróżnione!!!
+page:  11, D:20160527231413+02'00', type: highlight , content: None
+page:  11, D:20160527231534+02'00', type: text      , content: Przecież wszystko się kręci więc absorpcja dodatkowej wiązki (bo jak są impulsy to nie ma światła między nimi) jest modulowana, bo przechodzimy od stanu ciemnego do jasnego i z powrotem.
+page:  11, D:20160527232903+02'00', type: strike-out, content: dynamiczna polaryzacja
+page:  11, D:20160527232918+02'00', type: strike-out, content: największa
+page:  11, D:20160527233020+02'00', type: caret     , content: przechodzącego przez ten spolaryzowany ośrodek, a samą zależność
+page:  11, D:20160527233024+02'00', type: strike-out, content: None
+page:  11, D:20160527233109+02'00', type: text      , content: Wstaw równanie tutaj, zamiast robić dziwny odnośnik do czegoś co jest później.
+page:  12, D:20160527233336+02'00', type: caret     , content: które zarejestrować można przy pomocy układu detekcji fazoczułej mierzącej sygnał na odpowiedniej składowej częstości modulacji (np. na 1. składowej dla modulacji $\Omega_m=2\omega_l$)
+page:  12, D:20160527233346+02'00', type: strike-out, content: None
+page:  12, D:20160527233349+02'00', type: caret     , content: sygnału.
+page:  12, D:20160527233353+02'00', type: highlight , content: None
+page:  12, D:20160527233422+02'00', type: text      , content: Dlaczego "elastyczną"? Nie spotkałem się z takim określeniem.
+page:  12, D:20160527233437+02'00', type: strike-out, content: None
+page:  12, D:20160527233519+02'00', type: highlight , content: None
+page:  12, D:20160527233823+02'00', type: text      , content: To równanie jest chyba strasznie przkombinowane. NIe zawieraz np. żadnego czynnika skalującego amplitudę. Dodatkowo używasz innych oznaczeń. Proponowałbym to zapisać w postaci
+c(\Omega_m,omega_L)=\frac{A}{\frac{\Omega_m-omega_l/m}{\Gamma}+i}
+page:  12, D:20160527233855+02'00', type: text      , content: Prawdopodobnie trzeba poprawić oznaczenia oraz poprawić formatowanie.
+page:  12, D:20160527233905+02'00', type: strike-out, content: None
+page:  12, D:20160527233909+02'00', type: highlight , content: None
+page:  12, D:20160527233928+02'00', type: highlight , content: None
+page:  12, D:20160527234006+02'00', type: text      , content: O stabilizacji ciągle było bardzo ogólnie więc nie wiem czy to się dalej pojawia. Jeśli nie to rzeczywiście bym to wprowadził.
+page:  12, D:20160527234010+02'00', type: highlight , content: None
+page:  12, D:20160527234631+02'00', type: text      , content: Ten problem powinien być szerzej ujęty, bo do tej pory nie było słowa o procesach relaksacynych. Pewnie się to powinno pojawić w dyskusji równania (3).
+
+Potem bym zrobił jednak odnośnik do rubidu podają trochę informacji o tym, że to są pary, jakie są ciśnienia w temperaturze zbliżonej do pokojowej, jak wygląda struktura poziomów energetycznych, że się możemy dostroić do konkretnych przejść, itd. Innymi takie 1-1.5 strony na temat rubidu powinno się w tym miejscu znaleźć.
+page:  13, D:20160527234152+02'00', type: text      , content: Zmniejsz znacznie to zdjęcia (o ile w ogóle warto je pokazywać - nie jestem pewien), bo widać na nim straszna pixelizacje.
+page:  13, D:20160527234257+02'00', type: text      , content: Ten fragment idzie do części, która roboczo nazwaliśmy Układ lasera wraz z modulacją i stabilizacją
+page:  13, D:20160527234946+02'00', type: strike-out, content: None
+page:  13, D:20160527235021+02'00', type: caret     , content: W skonstuowanym na potrzeby niniejszej pracy układzie laserowym użyta została dioda laserowa
+page:  13, D:20160527235029+02'00', type: highlight , content: None
+page:  13, D:20160527235044+02'00', type: text      , content: Jakim oznaczeniu??? Brakuje końca tego zdania.
+page:  13, D:20160527235055+02'00', type: strike-out, content: None
+page:  13, D:20160527235108+02'00', type: highlight , content: None
+page:  13, D:20160527235239+02'00', type: caret     , content: prac prowadzonych w ramach niniejszej pracy, złącze to uległo jednak uszkodzeniu.
+page:  13, D:20160527235208+02'00', type: strike-out, content: None
+page:  13, D:20160527235238+02'00', type: caret     , content: None
+page:  13, D:20160527235245+02'00', type: strike-out, content: None
+page:  13, D:20160527235300+02'00', type: text      , content: Z poprzednim akapitem
+page:  13, D:20160527235312+02'00', type: highlight , content: None
+page:  13, D:20160527235327+02'00', type: text      , content: Przepisz to, żeby wyglądało to jednak trochę poważniej.
+page:  13, D:20160527235355+02'00', type: caret     , content: W oparciu o nie udało się uzyskać następujące parametry pracy lasera:
+page:  13, D:20160527235357+02'00', type: strike-out, content: None
+page:  14, D:20160527235419+02'00', type: highlight , content: None
+page:  14, D:20160527235426+02'00', type: highlight , content: None
+page:  14, D:20160527235435+02'00', type: text      , content: Popraw to cośtam cośtam
+page:  14, D:20160527235618+02'00', type: text      , content: Dioda ta została umieszczona w obudowie przedstawionej na Rys. ??? ....
+
+Pociągnij tą myśl trochę dalej, podając jeszcze jakieś informacje o obudowie pudełka laserowego.
+page:  14, D:20160527235624+02'00', type: strike-out, content: None
+page:  14, D:20160527235644+02'00', type: text      , content: Bez nawiasów.
+page:  14, D:20160528000505+02'00', type: highlight , content: None
+page:  14, D:20160528000537+02'00', type: text      , content: To już trzymajmy się tej kursywy w oznaczeniach elementów.
+page:  14, D:20160528000559+02'00', type: highlight , content: None
+page:  14, D:20160528000606+02'00', type: highlight , content: None
+page:  14, D:20160528000612+02'00', type: highlight , content: None
+page:  14, D:20160528000616+02'00', type: highlight , content: None
+page:  14, D:20160528000707+02'00', type: highlight , content: None
+page:  14, D:20160528000712+02'00', type: highlight , content: None
+page:  14, D:20160528000719+02'00', type: highlight , content: None
+page:  14, D:20160528000726+02'00', type: highlight , content: None
+page:  14, D:20160528000729+02'00', type: highlight , content: None
+page:  14, D:20160528000903+02'00', type: text      , content: Proponowałbym to zdanie podzielić na dwa, ponieważ jest ono tyle razy złożony, że naprawdę można się w nim pogubić.
+page:  15, D:20160528000734+02'00', type: highlight , content: None
+page:  15, D:20160528000820+02'00', type: highlight , content: None
+page:  15, D:20160528000823+02'00', type: highlight , content: None
+page:  15, D:20160528000826+02'00', type: highlight , content: None
+page:  15, D:20160528000911+02'00', type: highlight , content: None
+page:  15, D:20160528000913+02'00', type: highlight , content: None
+page:  15, D:20160528000923+02'00', type: highlight , content: None
+page:  15, D:20160528000938+02'00', type: text      , content: Spacja przed jednostką.
+page:  15, D:20160528000942+02'00', type: highlight , content: None
+page:  15, D:20160528000956+02'00', type: highlight , content: None
+page:  15, D:20160528001006+02'00', type: highlight , content: None
+page:  15, D:20160528001012+02'00', type: highlight , content: None
+page:  15, D:20160528001026+02'00', type: highlight , content: None
+page:  15, D:20160528001052+02'00', type: text      , content: Niech to wygląda tak jak to wcześniej
+page:  15, D:20160528001055+02'00', type: highlight , content: None
+page:  15, D:20160528001108+02'00', type: highlight , content: None
+page:  15, D:20160528001121+02'00', type: highlight , content: None
+page:  15, D:20160528001200+02'00', type: text      , content: Co jest długoczasowe. Stabilność temperaturowa, stabilność emisji, czy może jeszcze coś innego. Czy możesz to dopracyzować?
+page:  15, D:20160528001204+02'00', type: highlight , content: None
+page:  15, D:20160528001336+02'00', type: text      , content: Czy Ty masz jakieś informacje ilościowe o tym układzie, np. jaki jest szum, jaka stabilność. Jeśli masz to dobrze by to było tutaj wpisać, żeby jakoś zobrazować działanie Twojego sterownika. Może nawet trzebaby było to domierzyć?
+page:  15, D:20160528001415+02'00', type: strike-out, content: None
+page:  15, D:20160528001424+02'00', type: caret     , content: VCSEL
+page:  15, D:20160528001552+02'00', type: strike-out, content: None
+page:  15, D:20160528001603+02'00', type: caret     , content: częstotliwość
+page:  15, D:20160528001609+02'00', type: caret     , content: ,
+page:  15, D:20160528001623+02'00', type: strike-out, content: None
+page:  15, D:20160528001706+02'00', type: strike-out, content: None
+page:  15, D:20160528001712+02'00', type: caret     , content: rzędu GHz
+page:  15, D:20160528001755+02'00', type: highlight , content: None
+page:  15, D:20160528001811+02'00', type: text      , content: Wydaje mi sie, że ten fragment powinien znaleźć się dalej.
+page:  15, D:20160528001857+02'00', type: text      , content: Prawdę mówiąc się zgubiłem. A dla niższych częstości nie przedstawia?
+page:  15, D:20160528001933+02'00', type: highlight , content: None
+page:  15, D:20160528002031+02'00', type: text      , content: Czy informacja o tym, że było to kabel ze złączem SMA jest kluczowa? A czy nie wystarczy informacja o oporności kabla?
+page:  15, D:20160528002041+02'00', type: text      , content: Spacja
+page:  15, D:20160528002238+02'00', type: strike-out, content: None
+page:  15, D:20160528002238+02'00', type: caret     , content: ,
+page:  15, D:20160528002241+02'00', type: strike-out, content: None
+page:  15, D:20160528002241+02'00', type: caret     , content: d
+page:  16, D:20160528001511+02'00', type: caret     , content: . Poszczególne elementu oraz zasada działania układu zostały opisane w tekście.
+page:  16, D:20160528001515+02'00', type: caret     , content: .
+page:  17, D:20160528002115+02'00', type: text      , content: Jeśli to jest rysunek tymczasowy, to przy tej korekcie nadszedł czas, żęby go porawić.
+page:  17, D:20160528002124+02'00', type: caret     , content: .
+page:  17, D:20160528002207+02'00', type: highlight , content: None
+page:  17, D:20160528002214+02'00', type: caret     , content: .
+page:  17, D:20160528002216+02'00', type: strike-out, content: None
+page:  17, D:20160528002217+02'00', type: caret     , content: u
+page:  17, D:20160528002219+02'00', type: strike-out, content: None
+page:  17, D:20160528002219+02'00', type: caret     , content: o
+page:  17, D:20160528002228+02'00', type: caret     , content: ,
+page:  17, D:20160528002258+02'00', type: caret     , content: .
+page:  17, D:20160528002349+02'00', type: text      , content: Weź tu napisz w podpisie, które rozwiązanie (jaka pojemność jest optymalna).
+page:  17, D:20160528002514+02'00', type: text      , content: Jakbyś tak poprawiał ten rysunek to:
+- zmienne kursywą
+- pomiędzy wartością i jednostką spacja
+- po jednostkach w opisach osi spacja (przez [] nawiasem).
+- większe fonty wartości na osiach.
+page:  17, D:20160528002537+02'00', type: text      , content: Spacja
+page:  17, D:20160528002602+02'00', type: highlight , content: None
+page:  17, D:20160528002618+02'00', type: text      , content: A nie przypadkiem 11, to co masz poprawić?
+page:  17, D:20160528002653+02'00', type: text      , content: Napisz co wyszło - przedyskutuj krótko ten wykres.
+page:  18, D:20160528002708+02'00', type: caret     , content: w ramach pracy
+page:  18, D:20160528002836+02'00', type: caret     , content: rysunku
+page:  18, D:20160528002908+02'00', type: strike-out, content: None
+page:  18, D:20160528002913+02'00', type: caret     , content: Odcięcie
+page:  18, D:20160528002925+02'00', type: strike-out, content: None
+page:  18, D:20160528002933+02'00', type: caret     , content: Wygładzenie przebiegu poprzez 
+page:  18, D:20160528002936+02'00', type: caret     , content: .
+page:  18, D:20160528002949+02'00', type: strike-out, content: None
+page:  18, D:20160528002951+02'00', type: caret     , content: ie
+page:  18, D:20160528002953+02'00', type: strike-out, content: None
+page:  18, D:20160528002955+02'00', type: caret     , content: ie
+page:  18, D:20160528002959+02'00', type: strike-out, content: None
+page:  18, D:20160528003008+02'00', type: caret     , content: linii absorpcyjnych
+page:  18, D:20160528003010+02'00', type: caret     , content: .
+page:  19, D:20160528003025+02'00', type: strike-out, content: None
+page:  19, D:20160528003056+02'00', type: caret     , content: identyfikacji linii absorpcyjnych w zarejestrowanym widmie.
+page:  19, D:20160528003503+02'00', type: text      , content: Teraz powinien się tutaj znaleźć fragment, w którym omawiasz, że po zidentyfikowaniu linii układ automatycznie dobiera takie warunki pracy lasera, które sprawiają, że dostraja się on do wstępnie predefiniowanej linii.
+
+Prawdę mówiąc chciałbym tutaj jeszcze jedną rzecz. Chciałbym, żebyś pokazał na wykresie jak się stabilizuje długość fali dla 10 różnych stabilizacji (uwzględniając w nim np. małą zmianę temperatury złącza). To by było super jakby coś takiego było w pracy. Taka demonstracja byłaby bardzo wartościowa.
+page:  20, D:20160528003548+02'00', type: strike-out, content: None
+page:  20, D:20160528003628+02'00', type: caret     , content: rejestrującego sygnał modulowanej absorpcji w komórce.
+page:  20, D:20160528003703+02'00', type: text      , content: Wyobrażałem sobie, że ten fragment będzie stanowił część rozdziału o stabilizacji.
+page:  20, D:20160528003811+02'00', type: highlight , content: None
+page:  20, D:20160528003843+02'00', type: text      , content: Napisz dlaczego jest przełącznik do potencjometru. To nie jest jeszcze wyjaśnione.
+page:  20, D:20160528004120+02'00', type: highlight , content: None
+page:  20, D:20160528004133+02'00', type: highlight , content: None
+page:  20, D:20160528004137+02'00', type: highlight , content: None
+page:  20, D:20160528004150+02'00', type: caret     , content: przełącznik
+page:  20, D:20160528004156+02'00', type: strike-out, content: None
+page:  20, D:20160528004156+02'00', type: caret     , content: A
+page:  20, D:20160528004205+02'00', type: highlight , content: None
+page:  20, D:20160528004208+02'00', type: highlight , content: None
+page:  20, D:20160528004212+02'00', type: strike-out, content: None
+page:  20, D:20160528004217+02'00', type: highlight , content: None
+page:  20, D:20160528004220+02'00', type: highlight , content: None
+page:  20, D:20160528004231+02'00', type: highlight , content: None
+page:  20, D:20160528004234+02'00', type: highlight , content: None
+page:  20, D:20160528004244+02'00', type: highlight , content: None
+page:  20, D:20160528004247+02'00', type: highlight , content: None
+page:  20, D:20160528004256+02'00', type: text      , content: Czemu to jest osobno?
+page:  20, D:20160528004431+02'00', type: text      , content: Myślę, że w tym miejscu powinien przyjść fragment o sygnale błędu.
+
+Znów bardzo fajnie by było jakby tutaj się pojawił fragment o tym jak to się długoczasowo stabilizuje. Rozmawialiśmy o tym parokrotnie, a ja bym bardzo chciał to tutaj zobaczyć.
+page:  20, D:20160528005029+02'00', type: caret     , content: W ramach niniejszej pracy do tego celu wykorzystany został układ zrównoważonego polarymetru.
+page:  20, D:20160528005056+02'00', type: caret     , content: skonstruowany w ramach niniejszej pracy
+page:  20, D:20160528005219+02'00', type: caret     , content: monitorujące natężenie światła kierowane w każdy z dwóch kanałów polaryzatora. Zastosowany w polarymetrze układ elektroniczny 
+page:  20, D:20160528005220+02'00', type: strike-out, content: None
+page:  20, D:20160528005227+02'00', type: strike-out, content: None
+page:  20, D:20160528005228+02'00', type: caret     , content: :
+page:  20, D:20160528005344+02'00', type: text      , content: Mam trochę problem z tym fragmentem, bo nie do końca wiem gdzie go wsadzić. Myśle jednak, że powinien się on znaleźć w części dotyczącej magnetometrii.
+page:  20, D:20160528005357+02'00', type: highlight , content: None
+page:  20, D:20160528005405+02'00', type: highlight , content: None
+page:  20, D:20160528005408+02'00', type: highlight , content: None
+page:  20, D:20160528005410+02'00', type: highlight , content: None
+page:  20, D:20160528005413+02'00', type: highlight , content: None
+page:  21, D:20160528003750+02'00', type: caret     , content: wykorzystywanego do stabilizacji długości fali światła emitowanego z lasera.
+page:  22, D:20160528005453+02'00', type: caret     , content: układu elektronicznego zrównoważonego
+page:  22, D:20160528005529+02'00', type: caret     , content: wykorzystywanego do pomiarów pola magnetycznego oraz stabilizacji długości fali światła wykorzystywanego w eksperymencie.
+page:  22, D:20160528005609+02'00', type: highlight , content: None
+page:  22, D:20160528005612+02'00', type: highlight , content: None
+page:  22, D:20160528005617+02'00', type: highlight , content: None
+page:  22, D:20160528005625+02'00', type: highlight , content: None
+page:  22, D:20160528005642+02'00', type: text      , content: Spacja
+page:  22, D:20160528005707+02'00', type: caret     , content: jednak
+page:  22, D:20160528005717+02'00', type: strike-out, content: None
+page:  22, D:20160528005722+02'00', type: caret     , content: , gdyż
+page:  23, D:20160528005810+02'00', type: text      , content: Nie wiem co Ty chciałeś tutaj wpisać. Myśle, że większośćrzeczy znajduje się już we wcześniejszych rozdziałach.
+page:  23, D:20160528005911+02'00', type: text      , content: Moim zdaniem, po przesunięciu tych rozdziałów, poszczególneg części tego co się tutaj znajduje powinny zmieścić się w odpowiednich rodziałach. Np. następny rozdział powinien wylądować w części o sterowniku lasera.
+page:  23, D:20160528005939+02'00', type: strike-out, content: None
+page:  23, D:20160528005951+02'00', type: caret     , content: miernikiem długości fali (lambdametrem)
+page:  23, D:20160528010010+02'00', type: strike-out, content: None
+page:  23, D:20160528010030+02'00', type: caret     , content: Na ich podstawie widać,
+page:  23, D:20160528010126+02'00', type: text      , content: Trzeba napisać, że to jest zgodne z przewidywaniami teoretycznymi, innymi słowy przedyskutuj którko ten wynik).
+page:  23, D:20160528010138+02'00', type: highlight , content: None
+page:  23, D:20160528010242+02'00', type: text      , content: Teraz już wiemy, że to jest przez gównianą komórkę z pokryciem, która wcale nie ma pokrycia antyrelaksacyjnego. Może tego fragmentu nie warto tutaj wpisywać.
+page:  23, D:20160528010311+02'00', type: caret     , content: rubidu umieszczonego w 
+page:  23, D:20160528010313+02'00', type: strike-out, content: None
+page:  23, D:20160528010316+02'00', type: caret     , content: ce
+page:  23, D:20160528010321+02'00', type: caret     , content: wykonano
+page:  23, D:20160528010326+02'00', type: caret     , content: temperaturze
+page:  23, D:20160528010330+02'00', type: highlight , content: None
+page:  23, D:20160528010336+02'00', type: caret     , content: .
+page:  23, D:20160528010416+02'00', type: text      , content: Zastąp to proszę zwrotem:
+Znormalizowana transmisja
+page:  24, D:20160528010441+02'00', type: text      , content: Jak wyżej
+page:  24, D:20160528010459+02'00', type: text      , content: Zrób, żeby na obu wykresach była ta sama skala.
+page:  24, D:20160528010556+02'00', type: text      , content: W komórce z gazem buforowym ta linia powinna się przesunąć. jeśli masz gdzieś dane z lambdametru, proponowałbym sprawdzić ile się przesunętła i to tutaj wpisać.
+page:  24, D:20160528010635+02'00', type: caret     , content: par atomowych izotopu rubidu 87 umieszczonych w komórce
+page:  24, D:20160528010641+02'00', type: strike-out, content: None
+page:  24, D:20160528010655+02'00', type: caret     , content: buforowym
+page:  24, D:20160528010728+02'00', type: text      , content: Wiemy ile było tego argonu? Chyba 100 Torrów. Dobrze by to było tutaj wpisać.
+page:  24, D:20160528010732+02'00', type: highlight , content: None
+page:  24, D:20160528010737+02'00', type: caret     , content: ,
+page:  24, D:20160528010801+02'00', type: text      , content: Ten fragment wskakuje do rozdziału o stabilizacji.
+page:  24, D:20160528010825+02'00', type: caret     , content: Podczas badań prowadzonych do niniejszej pracy
+page:  24, D:20160528012533+02'00', type: text      , content: Z poprzednim akapitem
+page:  24, D:20160528012607+02'00', type: caret     , content: W oparciu o te zależności można zauważyć
+page:  24, D:20160528012611+02'00', type: strike-out, content: None
+page:  24, D:20160528012647+02'00', type: strike-out, content: None
+page:  24, D:20160528012657+02'00', type: caret     , content: być już traktowana jako stała
+page:  25, D:20160528013236+02'00', type: text      , content: Popraw te podpisy. Zwieksz czcionke. Podpisz osie.
+page:  25, D:20160528013245+02'00', type: highlight , content: None
+page:  25, D:20160528013248+02'00', type: highlight , content: None
+page:  25, D:20160528013342+02'00', type: text      , content: Ty masz chyba gdzies przeliczone czemu to odpowiada. Jak mozesz to zastap te wartości amplitudy modulacji przez zakresy modulacji, ktorym odpowiada ta amplituda.
+page:  25, D:20160528013427+02'00', type: text      , content: Jak juz pare razy pisalem, ja jestem zwolennikiem troche bardziej rozbudowanych podpisow. Moglbys to zrobic?
+page:  25, D:20160528013435+02'00', type: highlight , content: None
+page:  25, D:20160528013440+02'00', type: highlight , content: None
+page:  25, D:20160528013506+02'00', type: text      , content: Uwagi jak wyżej. Dodatkoo trzeba powiedzic czym sie roznia krzywe dla konkretnych zakresow.
+page:  25, D:20160528013530+02'00', type: text      , content: Ten rozdzial wchodzi do tej nowej czesci o magnetorotacji
+page:  26, D:20160528013612+02'00', type: highlight , content: None
+page:  26, D:20160528013620+02'00', type: text      , content: Nie pochylone
+page:  26, D:20160528013633+02'00', type: text      , content: Tutaj dla odmiany fonty sa duzo za duze.
+page:  26, D:20160528013638+02'00', type: highlight , content: None
+page:  26, D:20160528013644+02'00', type: highlight , content: None
+page:  26, D:20160528013934+02'00', type: text      , content: A czemu nie uwazasz, ze to jest efekt tego, ze atomy z najbardziej zapopulowanej klasy predkosci (v=0) sa pompowana nie w rownych odstepach czasu, ale raz jak sie wiazka przestraja w jedna strone i raz gdy wraca. W takim przypadku tylko atomy z krancowych punktow kontrybuuja synchronicznie, a tych, gdy robimy duza modulacje (i przejdziemy czubek krzywej absorpcyjnej) jest coraz mniej wraz ze zwiekszaniem modulacji.
+page:  26, D:20160528013938+02'00', type: highlight , content: None
+page:  26, D:20160528014009+02'00', type: caret     , content: równeiż
+page:  26, D:20160528014151+02'00', type: text      , content: I co z tego. Chyba to, ze spada Ci czulosc na pole. To trzebaby to napisac.
+
+W sumie, byloby rowniez fajnie jakbys oszacowal czulosc tego pomiaru na pole. To wymaga jednak krotkiej dyskusji, co determinuje czulość magnetometru optycznego.
+page:  27, D:20160528014301+02'00', type: text      , content: Cos tutaj sie stalo z tymi dobtami. Popracuj tez nad tym, zeby bylo wiadomo co jest czym (np. fonty).
+page:  27, D:20160528014428+02'00', type: text      , content: Do tej pory w ogole nie bylo mowy o drugiej harmonicznej i pomiarach na niej. Dlatego:
+1) Pokaz sygnaly magnetometryczne z drugiej harmonicznej.
+2) Przedyskutuj je. 
+Dopiero wtedy to co jest na tym rysunku ma jakis sens.
+page:  27, D:20160528014552+02'00', type: text      , content: Tutaj brakuje Ci omowienia kolejnych rzeczy. Musisz sie nimi zatem zajac.
+
+Jak juz wczesniej wspomnialem na koniec fajnie by bylo napisac o potencjalnej magnetometrii. Myslisz, ze uda Ci sie to zrobic?
+page:  28, D:20160528014604+02'00', type: text      , content: Jak wyzej!!!
+page:  28, D:20160528014623+02'00', type: caret     , content: mocy światła laserowego
+page:  28, D:20160528014704+02'00', type: text      , content: To są liczebniki porządkowe więc powinny być z kropką Popraw prosze tutaj i w tym miejscach, w których się to pojawia.
+page:  28, D:20160528014715+02'00', type: text      , content: Skomentuj to jednym albo dwoma zdaniami.
+page:  28, D:20160528014728+02'00', type: text      , content: Problem z rozmiarem fontow.
+page:  28, D:20160528014737+02'00', type: highlight , content: None
+page:  28, D:20160528014740+02'00', type: highlight , content: None
+page:  28, D:20160528014743+02'00', type: highlight , content: None
+page:  29, D:20160528014754+02'00', type: text      , content: Jak wyzej
+page:  29, D:20160528014759+02'00', type: highlight , content: None
+page:  29, D:20160528014803+02'00', type: highlight , content: None
+page:  29, D:20160528014809+02'00', type: highlight , content: None
+page:  29, D:20160528014811+02'00', type: highlight , content: None
+page:  29, D:20160528014814+02'00', type: highlight , content: None
+page:  29, D:20160528014820+02'00', type: text      , content: j.w.
+page:  30, D:20160528014838+02'00', type: highlight , content: None
+page:  30, D:20160528014847+02'00', type: highlight , content: None
+page:  30, D:20160528014858+02'00', type: highlight , content: None
+page:  30, D:20160528014932+02'00', type: text      , content: Oczywiscie po wszystkim brakuje podsumowania, ktore by zbieralo w zwarty sposob wszystko co zostalo zrobione.
+463 annotation(s) found
