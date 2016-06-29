@@ -1,9 +1,14 @@
-page:   3, D:20160520000512+02'00', type: text      , content: razem z nastepnym zdaniem
-page:   3, D:20160525141028+02'00', type: text      , content: Każdy rozdział na osobnej stronie
-page:   3, D:20160525144009+02'00', type: text      , content: Pomiędzy wartością fali i jednostką spacja. Zawsze.
-page:   3, D:20160525145046+02'00', type: text      , content: To całe zdanie, które tutaj wykreśliłem powinno iść za następny paragraf, tuż przed paragraf zaczynający się od "Budowany układ"
-page:   3, D:20160525145610+02'00', type: text      , content: Jedno słowo
-page:   3, D:20160528015046+02'00', type: text      , content: Mysle, ze w streszczeniu trzebaby wyeksponowac, ze umiemy robic stabilizacje i magnetorotacje w oparciu o jedna komorke.
+LEGENDA
+(zniknęło) - ewidentnie poprawione
+T - poprawione, ale mam komentarz
+M - nie jestem przekonany czy poprawiono dobrze
+N - zostawione bez zmian
+
+Npage:   3, D:20160520000512+02'00', type: text      , content: razem z nastepnym zdaniem
+Tpage:   3, D:20160525145610+02'00', type: text      , content: Jedno słowo
+UWAGA: Podane zasady dotyczące pisowni zaprzeczonych imiesłowów przymiotnikowych są oparte na uchwale Rady Języka Polskiego przy Prezydium PAN z dnia 9 grudnia 1997 r. Wcześniejsza reguła kazała pisać rozdzielnie imiesłowy użyte czasownikowo, a łącznie imiesłowy użyte przymiotnikowo.
+Mpage:   3, D:20160528015046+02'00', type: text      , content: Mysle, ze w streszczeniu trzebaby wyeksponowac, ze umiemy robic stabilizacje i magnetorotacje w oparciu o jedna komorke.
+
 page:   4, D:20160525145724+02'00', type: text      , content: Jak Ty to skądś wziąłeś, to tutaj się powinien znaleźć odpowiednik literaturowy. Co więcej, na tym rysunku widać pikselizację a fonty są za małe. Warto coś z tym zrobić.
 page:   4, D:20160525150313+02'00', type: text      , content: Brakuje tutaj jeszcze dość konkretnego fragmentu, który mówiłby, że poza celem polegającym na stworzeniu układu kontroli lasera diodowego, również celem jest wykorzystanie tego układu do pomiarów pola magnetycznego, a jeśli już nie pomiarów samego pola magnetycznego to przynajmniej obserwacji nieliniowej magnetometorotacji. My mówimy o tym powyżej, ale w celach tego jasno nie ma.
 page:   4, D:20160525151038+02'00', type: text      , content: Spacka
