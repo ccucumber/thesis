@@ -77,16 +77,19 @@ Uniwersytet Jagielloński w Krakowie\\
 \newpage
 
 \begin{abstract}
-Zaprojektowano, zbudowano i sprawdzono układy elektroniczne pozwalające zasilać, modulować, i stabilizować długość fali diody laserowej o emisji powierzchniowej z pionową wnęką rezonansową (VCSEL), emitującego światło o długości fali dostrojonej do linii $D1$ rubidu ($794{,}98 \mathrm{nm}$).
+Zaprojektowano, zbudowano i sprawdzono układy elektroniczne pozwalające zasilać, modulować, i stabilizować długość fali diody laserowej o emisji powierzchniowej z pionową wnęką rezonansową (VCSEL), emitującego światło o długości fali dostrojonej do linii $D1$ rubidu ($794{,}98~ \mathrm{nm}$).
 
-Zbadano zastosowanie tego lasera do precyzyjnego pomiaru pola magnetycznego wykorzysującego nieliniowy efekt Faradaya w parach rubidu. Pomiar pola magnetycznego następował poprzez obserwację skręcenia płaszczyzny polaryzacji światła wywołanego modulacją długości fali lasera. Elementem aktywnym optycznie była komórka szklana zawierająca atomy rubidu.  Układ detekcji skręcenia światła zawierał polaryzator Wollastona i dwie fotodiody, a uzyskany fotoprąd podlegał wzmocnieniu i detekcji we wzmacniaczu fazoczułym.  
+Zbadano zastosowanie tego lasera do precyzyjnego pomiaru pola magnetycznego wykorzysującego nieliniowy efekt Faradaya w parach rubidu. Pomiar pola magnetycznego następował poprzez obserwację skręcenia płaszczyzny polaryzacji światła wywołanego modulacją długości fali lasera. Elementem aktywnym optycznie była komórka szklana zawierająca atomy rubidu.  Układ detekcji skręcenia światła zawierał polaryzator Wollastona i dwie fotodiody, a uzyskany fotoprąd podlegał wzmocnieniu i detekcji we wzmacniaczu fazoczułym. 
+
+Stabilizacja długości fali i pomiar magnetorotacji zachodziły jednocześnie i wykorzystywały jedną komórkę z atomami.
+ 
 \end{abstract}
 
 \section{Cel pracy}
 
 
 
-Atomy rubidu, precesując w polu magnetycznym, oddziaływują ze światłem o długości fali dostrojonej do przejścia atomowego ($794{,}9832$nm).
+Atomy rubidu, precesując w polu magnetycznym, oddziaływują ze światłem o długości fali dostrojonej do przejścia atomowego ($794{,}9832$~nm).
 Jeśli natężenie światła lub jego długość fali jest modulowane synchronicznie z częstością precesji (Larmora), polaryzacja światła ulega skręceniu, wahając się z podwójną częstością Larmora (w ogólnym przypadku z inną wielokrotnością częstości modulacji).
 Amplituda tego skręcenia jest miarą zgodności częstości modulacji, zadawanej przez nas, z częstością Larmora, proporcjonalnej wprost do wartości pola magnetycznego. 
 
@@ -130,7 +133,7 @@ Zetknięcie półprzewodników - domieszkowanego ujemnie (zawierającego dodatko
 
 Zwiększając gęstość prądu, oprócz oczywistego wzrostu natężenia światła, można doprowadzić także do tak licznego obsadzenia pasma przewodnictwa kosztem pasma walecyjnego, że zajdzie inwersja obsadzeń, co z kolei może umożliwić akcję laserową. Drugim koniecznym warunkiem zajścia akcji laserowej jest umieszczenie ośrodka ze wzmocnieniem optycznym w rezonatorze, którego dobroć musi być wystarczająca by natężenie światła emitowanego w sposób wymuszony mogło dominować nad światłem emitowanym spontanicznie.
 
-Pierwszą realizacją lasera półprzewodnikowego jest laser z emitujący światło poprzecznie do kierunku przepływu prądu. Jego schematyczna budowa przedstawiona jest na rysunku (\ref{rys-eel}). Wysoką gęstość prądu uzyskuje się poprzez przestrzenne modelowanie domieszkowania, w skutek czego obszar aktywny, przez który przepływa cały prąd złącza, ma szerokość ok. 10$\mu m$ i grubość rzędu 2$\mu m$. Rezonator optyczny jest utworzony pomiędzy bocznymi krawędziami kryształu, oszlifowanymi równolegle. Jedna z krawędzi jest posrebrzona. Dodatkowe pokrycie odbijające drugiej ścianki nie jest konieczne, ze względu na odbicie powodowane dużą różnicą współczynników załamania kryształu i powietrza.
+Pierwszą realizacją lasera półprzewodnikowego jest laser z emitujący światło poprzecznie do kierunku przepływu prądu. Jego schematyczna budowa przedstawiona jest na rysunku (\ref{rys-eel}). Wysoką gęstość prądu uzyskuje się poprzez przestrzenne modelowanie domieszkowania, w skutek czego obszar aktywny, przez który przepływa cały prąd złącza, ma szerokość ok. 10~$\mu m$ i grubość rzędu 2~$\mu m$. Rezonator optyczny jest utworzony pomiędzy bocznymi krawędziami kryształu, oszlifowanymi równolegle. Jedna z krawędzi jest posrebrzona. Dodatkowe pokrycie odbijające drugiej ścianki nie jest konieczne, ze względu na odbicie powodowane dużą różnicą współczynników załamania kryształu i powietrza.
 
 \begin{figure}
 \begin{center}
@@ -161,7 +164,7 @@ Taka konstrukcja diody laserowej ma jednak liczne wady. Są to:
 \end{itemize}
 
 Wolna od powyższych wad jest konstrukcja lasera o emisji powierzchniowej z pionową wnęką rezonansową (VCSEL -\textit{Vertical Cavity Surface Emitting Laser}). Jego budowa jest przedstawiona na rysunku (\ref{rys-vcsel}). W takim laserze prąd przepływa przez obszar mający postać punktu, nie paska, a emisja światła zachodzi w kierunku powierzchni kryształu. W takiej sytuacji nie jest możliwe stworzenie rezonatora na samych jedynie powierzchniach kryształu. Jako że tworzenie warstw równolegle do powierzchni półprzewodnika, o precyzyjnie regulowanej grubości, nie nastręcza żadnych technologicznych trudności, zwierciadła są wykonane jako tzw. rozproszone zwierciadła Bragga, czyli wiele naprzemiennych warstw substancji o różnych współczynnikach załamania. Dla określonej długości fali pomiędzy falami odbitymi od kolejnych granic ośrodków zachodzi konstruktywna interferencja, co pozwala takiej strukturze bardzo efektywnie odbijać światło, pełniąc przy okazji rolę filtra pasmowego, umożliwiając wzmocnienie tylko jednej długości fali. Typowe wartości współczynnika odbicia to $99\%$ dla zwierciadła przedniego i $99{,}9\%$ dla tylnego. Tak utworzony rezonator, optyczny ma szereg wyróżniających cech. Jest bardzo krótki, przez co mody są bardzo dobrze rozseparowane, co bardzo ułątwia pracę w jednym modzie poprzecznym. Ze względu na bardzo wysoką dobroć rezonatora, pomimo niewielkiej jego długości, udaje się uzyskać niewielką szerokość linii. Wysoka dobroć sprawia również, że lasery VCSEL są praktycznie niewrażliwe na pasożytnicze sprzężenia optyczne.
-Ze względu na warstwową budowę, obszar aktywny ma emisję poprzeczną, co pozwala laserom VCSEL emitować światło o praktycznie idealnym rozkładzie przestrzennym (M$\cong 0$). Wysoka gęstość prądu przepływająca przez punktowy obszar aktywny pozwala uzyskać niski prąd progu laserowania, co sprawia, że lasery VCSEL są jednymi z najbardziej wydajnych źródeł światła jakie dotychczas wynaleziono. Brak konieczności obróbki krawędzi bocznych pozwala testować gotowe struktury jeszcze na waflu (krysztale bazowym), jak również oddzielać je od siebie standardowymi metodami, tj. przez cięcie piłą. 
+Ze względu na warstwową budowę, obszar aktywny ma emisję poprzeczną, co pozwala laserom VCSEL emitować światło o praktycznie idealnym rozkładzie przestrzennym ($\mathrm{M} \cong 0$). Wysoka gęstość prądu przepływająca przez punktowy obszar aktywny pozwala uzyskać niski prąd progu laserowania, co sprawia, że lasery VCSEL są jednymi z najbardziej wydajnych źródeł światła jakie dotychczas wynaleziono. Brak konieczności obróbki krawędzi bocznych pozwala testować gotowe struktury jeszcze na waflu (krysztale bazowym), jak również oddzielać je od siebie standardowymi metodami, tj. przez cięcie piłą. 
 
 \section{To tutaj ma być tytuł?}
 
@@ -169,9 +172,9 @@ Ze względu na warstwową budowę, obszar aktywny ma emisję poprzeczną, co poz
 
 Częstotliwość $\nu$ przejścia $D1$ w rubidzie wynosi $3.77 \cdot 10^{14} 
 \mathrm{Hz}$, podczas gdy szerokość pojedynczej linii absorpcyjnej,
-nawet poszerzonej Dopplerowsko, jest rzędu $10^8 \mathrm{Hz}$. Oznacza to, że 
+nawet poszerzonej Dopplerowsko, jest rzędu $10^8~\mathrm{Hz}$. Oznacza to, że 
 chcąc utrzymać długość fali dostrojoną do przejścia atomowego,
-trzeba zapewnić dokładność względną rzędu $10^{-7}$. Oznacza to na przykład, że przy założeniu zależności temperaturowej $0.05 ~\mathrm{nm/{}^{\circ}C}$ (jak później zmierzono), temperatura struktury lasera musi być ustalona z dokładnością do $2\mu K$. Zapewnienie,
+trzeba zapewnić dokładność względną rzędu $10^{-7}$. Oznacza to na przykład, że przy założeniu zależności temperaturowej $0.05 ~\mathrm{nm/{}^{\circ}C}$ (jak później zmierzono), temperatura struktury lasera musi być ustalona z dokładnością do $2~\mu K$. Zapewnienie,
 że nie tylko temperatura, ale inne czynniki, jak prąd diody i efety jej 
 starzenia się, będą niezminne przez długi okres czasu, jest zadaniem 
 praktycznie niemożliwym.
@@ -365,7 +368,7 @@ Właściwe źródło prądowe jest bardzo proste -- formuje je rezystor R3 zasil
 Dodatkowe rezystory R9 i R10 pozwalają w niewielkim zakresie podmodulować prąd diody, napięciem podanym przez złącze P2.
 Napięciu 1V na wyjściu U2 odpowiada 1 mA prądu płynącego przez diodę.
 
-Układ U2 stanowi filtr dolnoprzepustowy, o niskiej częstości odcięcia (rzędu 10 Hz), eliminujący szum i trzaski z napięcia pochodzącego z potencjometru PR1, którym ustawia się prąd. Zwora JP1 pozwala wybrać pomiędzy zakresem $0-3{,}5$ mA a 0-7 mA.
+Układ U2 stanowi filtr dolnoprzepustowy, o niskiej częstości odcięcia (rzędu 10 Hz), eliminujący szum i trzaski z napięcia pochodzącego z potencjometru PR1, którym ustawia się prąd. Zwora JP1 pozwala wybrać pomiędzy zakresem $0-3{,}5$~mA a 0-7~mA.
 
 Napięcie wzorcowe, dostarczane na nóżkę 3 potencjometru pochodzi z diody Zenera D1. Dioda ta to wysoce stabilna dioda o tzw. strukturze zagrzebanej, zintegrowana wraz z termostatem. Decyduje to o doskonałej stabilności cieplnej ($0.5~\mathrm{ppm}/{}^{\circ}C$) i długoczasowej.  Wzmacniacz U3 zasila diodę stałym prądem, zadawanym jej własnym napięciem Zenera. Jest on zasilany inaczej niż pozostałe, pojedynczym napięciem. Uniemożliwia to ,,zatrzaśnięcie'' się układu na napięciu przewodzenia diody (ujemnym) zamiast na napięciu Zenera (dodatnim). 
 
@@ -398,12 +401,12 @@ Zbudowano układ umożliwiający szybką modulację prądu sygnałem dostarczany
 
 Zadania układu są następujące:
 \begin{itemize}
- \item Dopasowanie impedancji wejściowej do kabla ($50 \Omega$).
+ \item Dopasowanie impedancji wejściowej do kabla ($50~\Omega$).
  \item Osłabienie sygnału (docelowe zmiany prądu mają być rzędu $\mu A$)
  \item Uzyskanie płaskiej charakterystyki modulacji światła od częstotliwości przy stałym poziomie sygnału wejściowego
 \end{itemize}
 
-Ostatni cel został osiągniety głównie metodą prób i błędów. Opór wewnętrzny diody (przy prądzie pracy) został zmierzony jako $61 \Omega$.
+Ostatni cel został osiągniety głównie metodą prób i błędów. Opór wewnętrzny diody (przy prądzie pracy) został zmierzony jako $61~ \Omega$.
 Docelowy układ przedstawia rysunek \ref{sch-mod1}. Na płytce znajdują się diody zabezpieczające (specjalne diody zabezpieczające przed elektrostatycznymi wyładowaniami, bardzo szybkie i o niskim prądzie upływu) oraz złącza doprowadzające prąd z zasilacza i sygnał modulujący z generatora. Pojemność kondensatora kompensacyjnego został dobrana tak, by uzyskać możliwie płaską charakterystykę modulacji. Zależność odpowiedzi częstotliwościowej od jego pojemności znajduje się na rysunku \ref{wyk-mod}.
 
 \begin{figure}
