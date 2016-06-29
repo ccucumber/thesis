@@ -101,33 +101,20 @@ Budowany układ miałby spełniać następujące zadania:
  \item Pozwalać na modulację amplitudy lub długości fali źródła światła.
  \item Zawierać komórkę z atomami rubidu, wyposażoną w grzałkę nie zaburzającą pola magnetycznego
  \item Umożliwiać ciągłe, automatyczne dostrajanie długości fali lasera do przejścia atomowego. 
- \item Mierzyć amplitudę skręcenia polaryzacji światła po przejściu przez komórkę.
+ \item Mierzyć amplitudę skręcenia polaryzacji światła po przejściu przez komórkę, umożliwiając obserwację magnetorotacji
 \end{itemize}
 
 W niniejszej pracy opisano budowę takiego ukłądu, jak również wyniki pomiarów wykonanych przy jego pomocy.
 
 
-\section{Zamysł pomiaru}
-\begin{itemize}
- \item Źródło światła -laser VCSEL - łatwość modulacji
- \item Układ pomiarowy: METODA STABILIZACJI NA 1 harmonicznej i DETEKCJI na 2 harmonicznej, może obrazek jakiś?
- \item Zbudować wszystkie brakujące duperszwance
-\end{itemize}
+\section{Układ sterowania lasera diodowego}
 
 
 
-\subsection{Laser VCSEL}  %{Zasada działania lasera półprzewodnikowego}
+\subsection{Wprowadzenie}  %{Zasada działania lasera półprzewodnikowego}
 
-Lasery półprzewodnikowe wykorzystują fakt, że rekombinacja nośników ładunku w półprzewodniku może wiązać się z emisją fotonów o energii równej różnicy energii między pasmem przewodzenia a pasmem walencyjnym. Rekombinacja z emisją promieniowania jest możliwa tylko w materiałach z prostą przerwą energetyczną, tj.takich dla których najniższe stany pasma przewodnictwa i najwyższe stany pasma walencyjnego mają taki sam pęd, czyli leżą w tym samym kierunku w pierwszej strefie Brillouina. Jeżeli tak nie jest, mówi się, że półprzewodnik posiada tzw. przerwę skośną, co ilustruje rysunek (\ref{indirectbandgap}). W takim przypadku bardziej prawdopodobna jest rekombinacja bezpromienista.
+Lasery półprzewodnikowe wykorzystują fakt, że rekombinacja nośników ładunku w półprzewodniku może wiązać się z emisją fotonów o energii równej różnicy energii między pasmem przewodzenia a pasmem walencyjnym. Rekombinacja z emisją promieniowania jest możliwa tylko w materiałach z prostą przerwą energetyczną.
 
-\begin{figure}[h]
-\begin{center}
- \includegraphics[width=0.5\textwidth]{./obrazki/indirect_band_gap.jpeg}
- % indirect_band_gap.jpeg: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
-\end{center}
-\caption{Skośna przerwa energetyczna w półprzewodniku}
-\label{indirectbandgap}
-\end{figure}
 
 Zetknięcie półprzewodników - domieszkowanego ujemnie (zawierającego dodatkowe elektrony walencyjne) i domieszkowanego dodatnio (zawierającego mniej elektronów walencyjnych niż kryształ macierzysty) powoduje przemieszczenie ładunków znajdujących się na ich granicy i powstanie warstwy zaporowej (zubożonej). Taką dwuelektrodową strukturę nazywa się diodą. Przepuszczając prąd z obszaru o domieszkowaniu \textit{p} do obszaru \textit{n}, wymusza się rekombinację nośników w warstwie zaporowej.  
 

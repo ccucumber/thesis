@@ -5,20 +5,30 @@ M - nie jestem przekonany czy poprawiono dobrze
 N - zostawione bez zmian
 
 Npage:   3, D:20160520000512+02'00', type: text      , content: razem z nastepnym zdaniem
-Tpage:   3, D:20160525145610+02'00', type: text      , content: Jedno słowo
-UWAGA: Podane zasady dotyczące pisowni zaprzeczonych imiesłowów przymiotnikowych są oparte na uchwale Rady Języka Polskiego przy Prezydium PAN z dnia 9 grudnia 1997 r. Wcześniejsza reguła kazała pisać rozdzielnie imiesłowy użyte czasownikowo, a łącznie imiesłowy użyte przymiotnikowo.
-Mpage:   3, D:20160528015046+02'00', type: text      , content: Mysle, ze w streszczeniu trzebaby wyeksponowac, ze umiemy robic stabilizacje i magnetorotacje w oparciu o jedna komorke.
-
-page:   4, D:20160525145724+02'00', type: text      , content: Jak Ty to skądś wziąłeś, to tutaj się powinien znaleźć odpowiednik literaturowy. Co więcej, na tym rysunku widać pikselizację a fonty są za małe. Warto coś z tym zrobić.
+page:   3, D:20160525145610+02'00', type: text      , content: Jedno słowo
+T: "UWAGA: Podane zasady dotyczące pisowni zaprzeczonych imiesłowów przymiotnikowych są oparte na uchwale Rady Języka Polskiego przy Prezydium PAN z dnia 9 grudnia 1997 r. Wcześniejsza reguła kazała pisać rozdzielnie imiesłowy użyte czasownikowo, a łącznie imiesłowy użyte przymiotnikowo."
+page:   3, D:20160528015046+02'00', type: text      , content: Mysle, ze w streszczeniu trzebaby wyeksponowac, ze umiemy robic stabilizacje i magnetorotacje w oparciu o jedna komorke.
+M: Próbowałem
+Npage:   4, D:20160525145724+02'00', type: text      , content: Jak Ty to skądś wziąłeś, to tutaj się powinien znaleźć odpowiednik literaturowy. Co więcej, na tym rysunku widać pikselizację a fonty są za małe. Warto coś z tym zrobić.
+W ostatecznej ostateczności.
 page:   4, D:20160525150313+02'00', type: text      , content: Brakuje tutaj jeszcze dość konkretnego fragmentu, który mówiłby, że poza celem polegającym na stworzeniu układu kontroli lasera diodowego, również celem jest wykorzystanie tego układu do pomiarów pola magnetycznego, a jeśli już nie pomiarów samego pola magnetycznego to przynajmniej obserwacji nieliniowej magnetometorotacji. My mówimy o tym powyżej, ale w celach tego jasno nie ma.
-page:   4, D:20160525151038+02'00', type: text      , content: Spacka
+T: No ja myślę że nie można wiele jaśniej. Dodałem kilka słów.
+
 page:   4, D:20160525151121+02'00', type: text      , content: Tu by sie przydała referencja
 page:   4, D:20160525151250+02'00', type: text      , content: Po co nam rysunek dla przerwy skośnej? Przecież to nie jest temat tej pracy. Lepiej się go pozbądźmy.
+T: Rysunek abortowano wraz z całym opisem na temat przerwy skośnej.
 page:   4, D:20160525151412+02'00', type: text      , content: Żeby używać skrótów półprzewodników musisz najpierw napisać, który obszar jest który (powyżej).
+N: Nie muszę.
 page:   4, D:20160525151524+02'00', type: text      , content: Bardziej niż rekombnacja w przerwie skośnej, która jest na rysunku 1, przydałaby się tutaj rekombinacja na przerwie prostej, któa obrazowałaby działanie półprzewodnikowych źródeł światła.
+N: Nie obrazowałaby ona niczego nieoczywistego.
 page:   4, D:20160526233044+02'00', type: text      , content: Mam spory problem jak to przeorganizować. Myślę, że teraz to jest trochę chaotyczne i pewnie to trzeba przerobic. Dlatego proponuję, żeby tą część nazwać
+	Mam spory problem jak to przeorganizować. Myślę, że teraz to jest trochę chaotyczne i pewnie to trzeba przerobic. Dlatego proponuję, żeby tą część nazwać
+	Układ sterowania lasera diodowego
+	Wtedy pierwszą część, która nazywa się Laser VCSEL nazwiemy Wprowadzenie, a dalsze części stanowić będą w tym rozdziale obecne części 4.1-4.4
+T: Propozycja przyjęta. Chaos pozostaje :)
 page:   4, D:20160526224456+02'00', type: text      , content: Jeśli dobrze rozumiem to wszystko jest już uwzględnione. Chyba, że masz na myśli jeszcze jakieś inne "duperszwance"
 page:   4, D:20160527234352+02'00', type: text      , content: Może to powinno się nazywać - Układ lasera wraz z modulacją i systemem stabilizacji
+N: Co powinno się tak nazywać?
 page:   5, D:20160525151752+02'00', type: text      , content: Oprócz rozdzielenia jednostki od wartości. Zwróć proszę uwagę by jednostki nie były pisane kursywą.
 page:   5, D:20160526224852+02'00', type: text      , content: Myśle,że tutaj raczej przecinki, a na końcu, po wszystkim kropka. Proponuję też w tym przypadku z małej litery.
 page:   6, D:20160526225103+02'00', type: text      , content: Przy odnośnikach rysunków nie podaje się numeru w nawiasach. Stosuje się to tylko do odnoszenia się do równań i to nie zawsze.
