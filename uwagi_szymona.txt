@@ -3,6 +3,7 @@ LEGENDA
 T - poprawione, ale mam komentarz
 M - nie jestem przekonany czy poprawiono dobrze
 N - zostawione bez zmian
+[II] - ważne
 
 Npage:   3, D:20160520000512+02'00', type: text      , content: razem z nastepnym zdaniem
 page:   3, D:20160525145610+02'00', type: text      , content: Jedno słowo
@@ -29,21 +30,22 @@ T: Propozycja przyjęta. Chaos pozostaje :)
 page:   4, D:20160526224456+02'00', type: text      , content: Jeśli dobrze rozumiem to wszystko jest już uwzględnione. Chyba, że masz na myśli jeszcze jakieś inne "duperszwance"
 page:   4, D:20160527234352+02'00', type: text      , content: Może to powinno się nazywać - Układ lasera wraz z modulacją i systemem stabilizacji
 N: Co powinno się tak nazywać?
-page:   5, D:20160525151752+02'00', type: text      , content: Oprócz rozdzielenia jednostki od wartości. Zwróć proszę uwagę by jednostki nie były pisane kursywą.
 page:   5, D:20160526224852+02'00', type: text      , content: Myśle,że tutaj raczej przecinki, a na końcu, po wszystkim kropka. Proponuję też w tym przypadku z małej litery.
-page:   6, D:20160526225103+02'00', type: text      , content: Przy odnośnikach rysunków nie podaje się numeru w nawiasach. Stosuje się to tylko do odnoszenia się do równań i to nie zawsze.
+T: Wywaliłem tylko kropkę
 page:   6, D:20160526225158+02'00', type: text      , content: Znów widziałbym tutaj odwołanie do referencji.
+N: Jakiej, o co chodzi?
 page:   7, D:20160526225344+02'00', type: text      , content: Nie zdefiniowałeś czym jest M. Zrób z tego M kursywę i zdecyduj się co ze spacjami.
+T: Chyba nie muszę definiować. Ale czekam na podpowiedź, jak to nazwac po polsku.  M poprawiłem na M^2.
 page:   7, D:20160526225438+02'00', type: text      , content: Myślę, że dla pełności powinna się pojawić krótka może 1-2 zdaniowa dyskusja ograniczeń VCSELa.
+T: Jak na maturze z polskiego.
 page:   7, D:20160526225704+02'00', type: text      , content: W to miejsce proponuje wprowadzić fragmentu o budowie lasera. O tym jak one będą pasować tutaj przekonamy się dopiero po przeniesieniu ich. Pewnie od Ciebie będzie zależeć jak bardzo płynne będzie tutaj przeniesienie tresci.
+[II] N: Nie widze tego jeszcze. Pogadajmy.
 page:   7, D:20160526225752+02'00', type: text      , content: Myślę, że ten rozdział, rozpoczęty na nowej stronie, powinien się nazywać Układ stabilizacji długości fali lasera
 page:   7, D:20160526225858+02'00', type: text      , content: To powinno być coś na kształy Zasada stabilizacji długości fali albo coś w tym stylu
-page:   7, D:20160526225912+02'00', type: text      , content: Spacja
-page:   7, D:20160526225944+02'00', type: text      , content: Spacja
-page:   7, D:20160526230153+02'00', type: text      , content: Musisz się zdecydować albo na przecinki, albo na kropki w oddzielaniu części całkowitej i ułamkowej. Po polsku są przecinki, choć ja osobiście wolę kropki.
-page:   7, D:20160526230232+02'00', type: text      , content: Nie trzeba mieszać jednostek
 page:   7, D:20160526230437+02'00', type: text      , content: To Cię poniosło!!! Przecież dioda nie jest strojona w całym zakresie spektralnym. Stąd nie możesz podzielic 10^8/10^14, a następnie pomnożyć to przez 300 K!!! Musisz tutaj być ostrożniejszy.
+[II] N: Pozwole sobie wątpić w logikę twojego wywodu. Sam policz i zobacz co ci wyjdzie.
 page:   7, D:20160526230622+02'00', type: text      , content: Znowu. Wystabilizowanie VCSELa w zakresie szerokości dopplerowskiej jest w zasadzie banalne. My jednak stawiamy dużo poważniejsze żądania, żeby stabilność była znacznie lepsza.
+N: No chyba nie jest banalne.
 page:   7, D:20160526230948+02'00', type: text      , content: Ty tutaj już implikujesz jakąś wiedzę. Mówisz o komórce. Trzeba powiedzieć raczej o ośrodku. A komórkę możesz wspomnieć w przypisie albo wcale o niej nie wspominać.
 page:   7, D:20160526231033+02'00', type: text      , content: Z poprzednim akapitem.
 page:   8, D:20160526232117+02'00', type: text      , content: Ta dyskusja ma tylko sens wtedy, gdy powiesz gdzie się stabilizujesz. Możesz też wprost napisać co się dzieje, gdy jesteś po jednej stronie, a co się dzieje gdy po drugiej. Pewnie jednak to powinno pojawić się we wcześniejszym akapicie.
