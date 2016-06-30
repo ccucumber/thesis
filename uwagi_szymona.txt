@@ -59,10 +59,8 @@ page:   8, D:20160526232230+02'00', type: text      , content: Myślę, że w ty
 N: Nie trzeba, jest to efekt dalszego rzędu niż ten, na który właśnie zwracam uwagę. Przy małej absorpcji nie ma znaczenia.
 page:   8, D:20160526232257+02'00', type: text      , content: Skąd Ty to ściągąłeś?!?!?!?
 T: Tajemnica!
-page:   8, D:20160526232537+02'00', type: text      , content: Coś to raczej nie jest technika detekcji fazoczułej tylko metoda modulacji lasera i detekcji fazoczułej.
-page:   8, D:20160526232508+02'00', type: text      , content: Uwaga stylistyczna. Musisz się zdecydować, czy chcesz odnosić się do rysunków przez skrót rys. czy pełnym rysunek. Jeśli przez skrót, to wszędzie za wyjątkiem początków zdania musisz to poprawić.
-page:   9, D:20160526232728+02'00', type: text      , content: Proponuję kursywą
 page:   9, D:20160526232937+02'00', type: text      , content: Ja bym sobie jednak życzył, żeby to był bardziej rozbudowany opis, żeby już na podstawie podpisu można się było zorientować o co chodzi.
+M: Wystarczy?
 page:   9, D:20160526233106+02'00', type: text      , content: Tutaj powinniśmy przenieść część 4.5
 page:   9, D:20160526233425+02'00', type: text      , content: To jest kolejny niezależny rozdział dotyczący magnetometrii.
 page:   9, D:20160526233441+02'00', type: text      , content: Tutaj znów zaczynamy od wprowadzenia albo tła teoretycznego.
