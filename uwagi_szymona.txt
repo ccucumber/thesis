@@ -70,11 +70,17 @@ page:   9, D:20160526234347+02'00', type: text      , content: Ten fragment wraz
 page:  10, D:20160527000301+02'00', type: text      , content: Proponuje trzymać się jednak notacji diraca i nie wprowadzać tutaj oznaczenia jak dla funkcji falowej.
 page:  10, D:20160527000407+02'00', type: text      , content: Używaj środowiska
 page:  10, D:20160527000535+02'00', type: text      , content: Właśnie, że nie orientacją tylko uporządkowaniem.
+T
 page:  10, D:20160527000808+02'00', type: text      , content: W tym miejscu, zamiast tego rysunki, powinien się pojawić modelowy rysunek F=1\rightarrow F'=0.
+E;graf
 page:  10, D:20160527001246+02'00', type: text      , content: Raczej nie jak płytka fazowa tylko jako rotujący polaryzator (patrz np. Budker, D., D. J. Orlando, and V. Yashchuk, 1999b, Am. J.
-page:  10, D:20160527001636+02'00', type: text      , content: Patrz uwaga wyżej do płytki. 
-page:  11, D:20160527080748+02'00', type: text      , content: Ten skrót nie był nigdzie wprowadzony. Chcesz go używać to go zdefinij, gdy pierwszy raz mówisz o uporządkowaniu.
+E;met
+page:  10, D:20160527001636+02'00', type: text      , content: Patrz uwaga wyżej do płytki.
+E;met
+
 page:  11, D:20160527080958+02'00', type: text      , content: To o czym Ty piszesz to jest poszerzenie mocą. Jednakże limitującym czynnikiem nie jest to, a to, że ciągle dodajemy nowych atomów, które mają inną fazę, a stare atomy relaksują w związku z czym ich amplituda spada. W konsekwencji mamy średniowanie, które daje wypadkową polaryzację.
+E;met
+
 page:  11, D:20160527081124+02'00', type: text      , content: I znów wielki skok w myśleniu. Do tej pory było tylko o absorpcji, teraz nagle jest o skręceniu płaszczyzny polaryzacji. Musisz zadbać o to, że było przejrzyście.
 page:  11, D:20160527081302+02'00', type: text      , content: Nie znam takiego zwrotu. Proponuję, żebyś napisał, że to jest stała relaksacji mówiąca o szybkości
 page:  11, D:20160527081406+02'00', type: text      , content: Brakuje kwadratu przy \Omega_R. Przydałaby się również jasna definicja, że ten parametr to jest stałą nasycenia.

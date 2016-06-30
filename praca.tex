@@ -242,23 +242,24 @@ Polega ona na ciągłej zmianie długości fali w kontrolowany sposób i obserwa
  
  Taka metoda stabilizacji pozwala całkowicie wyeliminować zależność długości fali od fluktuacji mocy (jak na rys. \ref{fig:lock2})  i maksymalnie zminimalizować wpływ zmiennej głębokości linii absorpcyjnych (zależność ta znika całkowicie w punkcie, gdzie sygnał błędu jest zerowy, czyli na środku linii).
 
-Zmiana absorpcji jest proporcjonalna (przez czynnik równy pochodnej absorpcji dla bieżącej długości fali) do wielkości zmiany długości fali. Oznacza to, że gdy dłogość fali jest zmieniana harmonicznie, jak $\cos \omega t$, absorpcja zmienia się także harmonicznie, co można zapisać jako $A \cos \omega t$. Dokładne wyznaczenie amplitudy (parametru $A$)
-umożliwie technika nazywana detekcją fazoczułą.
+Zmiana absorpcji jest proporcjonalna (przez czynnik równy pochodnej absorpcji przy bieżącej długości fali) do wielkości zmiany długości fali. Oznacza to, że gdy długość fali jest zmieniana harmonicznie, jak $\cos \omega t$, absorpcja zmienia się także harmonicznie, co można zapisać jako $A \cos \omega t$. Dokładne wyznaczenie amplitudy (parametru $A$)
+umożliwia technika nazywana detekcją fazoczułą.
 
 \subsection{Magnetorotacja i nieliniowy efekt Faradaya}
 
 Fotony, będąc absorbowane przez atomy w próbce, przeprowadzją atomy ze stanu podstawowego do wzbudzonego.
 Zapis stanów w bazie $|F,m_F\rangle$ pozwala na przejrzystą analizę możliwych przejść.
-W szczególności, niektóre przejścia między stanami są wykluczone ze względu na zasady zachowania: momentu pędu i parzystości funkcji falowej. Schemat poziomów dla rubidu przedstawia rys. (\ref{poziomyRb})
+Przykładowe przejście, Przykładowe przejście, $F=1 \rightarrow F'=0$, przedstawia rysunek \ref{poziomyL}
 
+W szczególności, niektóre przejścia między stanami są wykluczone ze względu na zasady zachowania: momentu pędu i parzystości funkcji falowej. 
 
 \begin{figure}
 \begin{center}
  \includegraphics[width=0.8\textwidth]{./obrazki/figure3.JPG}
  % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
 \end{center}
-\caption{Schemat poziomów energetycznych dla przejścia D1 w rubidzie}
-\label{poziomyRb}
+\caption{\emph{Tu będzie schemat $F=1 \rightarrow F'=0$} Schemat poziomów energetycznych dla przejścia D1 w rubidzie}
+\label{poziomyL}
 \end{figure}
 
 Poszczególne polaryzacje światła mogą dokonać następującej zmiany stanu atomów:
@@ -272,17 +273,21 @@ Poszczególne polaryzacje światła mogą dokonać następującej zmiany stanu a
 
 Oświetlenie atomów światłem o polaryzacji $\sigma_+$ (polaryzacja $\sigma$--wiązka równoległa do linii pola magnetycznego) powoduje przepompowanie populacji do stanu o $m_F$ maksymalnym ($m_F$=+1). Podobnie, oddziaływanie ze światłem $\sigma_-$ będzie prowadzić do przepompowania atomów do stanu o $m_F=-1$. Stany te nazywamy stanami ciemnymi (dla zadanej polaryzacji światła).
 
-Dla światła o polaryzacji liniowej $\sigma$ również występuje stan ciemny, postaci $$\psi_d=\frac{1}{\sqrt{2}} (|g,+\rangle-|g,-\rangle).$$ Takie uporządkowanie ośrodka, w którym powyższy stan jest silnie obsadzony, nazywamy orientacją, ze względu na zerowy wypadkowy moment magnetyczny. Ośrodek, w którym jest wytworzona taka orientacja wykazuje anizotropię współczynnika załamania, ponieważ dla jednej z polaryzacji liniowych występuje stan ciemny, a polaryzacja do niej prostopadła jest absorbowana. Ośrodek może być więc rozpatrywany jako płytka falowa. Nie skręca jednak płaszczyzny polaryzacji wiązki pompującej, ponieważ ta jest współliniowa z jednym z jej azymutów.
+Dla światła o polaryzacji liniowej $\sigma$ również występuje stan ciemny, postaci
+\begin{equation}
+\frac{1}{\sqrt{2}} (|g,+\rangle-|g,-\rangle)
+\end{equation}
+Takią orientację ośrodka, w którym powyższy stan jest silnie obsadzony, nazywamy uporządkowaniem, ze względu na zerowy wypadkowy moment magnetyczny. Ośrodek, w którym jest wytworzona taka orientacja wykazuje anizotropię współczynnika załamania, ponieważ dla jednej z polaryzacji liniowych występuje stan ciemny, a polaryzacja do niej prostopadła jest absorbowana. Ośrodek może być więc rozpatrywany jako płytka falowa. Nie skręca jednak płaszczyzny polaryzacji wiązki pompującej, ponieważ ta jest współliniowa z jednym z jej azymutów.
 
 W polu magnetycznym momenty magnetyczne, jak również wytworzona orientacja, obracają się z częstością Larmora $\omega_L$. Obrót ,,płytki falowej" powoduje skręcenie polaryzacji padającego światła.
 
-Obrót powoduje jednak, że stan dotychczas ciemny, zaczyna absorbować światło. Światło przeciwdziała obrotowi, próbując odtworzyć alignment przez ciągłe pompowanie optyczne.
+Obrót powoduje jednak, że stan dotychczas ciemny, zaczyna absorbować światło. Światło przeciwdziała obrotowi, próbując odtworzyć orientację atomów przez ciągłe pompowanie optyczne.
 
 Przy stałej szybkości obrotu (polu magnetycznym $\vec B$), orientacja ulega więc odchyleniu od początkowej osi w stopniu tym większym, im słabsza wiązka pompująca (w zakresie małych kątów). Osłabienie wiązki pompującej powoduje jednak osłabienie orientacji, ponieważ bez pompowania uporządkowanie zanika. Innymi słowami, sytuacje skrajne to silne uporządkowanie, ale niewielkie odchylenie osi anizotropii od płaszczyzny polaryzacji światła oraz duże odchylenie ale niski stopień uporządkowania atomów. W obydwu tych sytuacjach płaszczyzna polaryzacji ulega słabemu skręceniu.
 
 Można wykazać \cite{srivansan}, że istnieje optymalne natężenie wiązki padającej, związane z optimum parametru:
 \begin{equation}
-\kappa=\frac{\Omega_R}{\Gamma\gamma} \; ,
+\kappa=\frac{\Omega_R^2}{\Gamma\gamma} \; ,
 \end{equation}
 gdzie $\Omega_R=\frac{|d \cdot E|}{\hbar}$ to częstość Rabiego, odpowiadająca sile pompowania ($d$ to moment dipolowy przejścia a $E$ natężenie pola padającego światła), a $\Gamma$ i $\gamma$ -- natężenia opisywanych procesów dekoherencji.
 
@@ -290,14 +295,18 @@ Zjawisko jest nazywane nieliniowym efektem Faradaya, ponieważ skręcenie polary
 
 Opisywany efekt skręcenia płaszczyzny polaryzacji światła zachodzi w otoczeniu $|\vec B|=0$. Przy obserwacji zależności skręcenia płaszczyzny polaryzacji światła przez ośrodek od pola $\vec B$, powinna być widoczna antysymetryczna zależność ($B=0\rightarrow$ zerowe skręcenie).
 
- Zastosowanie modulacji światła zwiększa zakres mierzalnych pól magnetycznych. Częstość modulacji musi być taka, żeby w ciągu okresu przebiegu modulującego alignment atomowy obrócił się o wielokrotność kąta $\pi$. 
-Podczas obrotu w polu magnetycznym występuje także odchylanie płaszczyzny polaryzacji, pod warunkiem ciągłego odtwarzania alignmentu. Przy oświetlaniu ośrodka impulsami światła o częstości $\Omega_m$ rezonans będzie więc występować przy częstości
+ Zastosowanie modulacji światła zwiększa zakres mierzalnych pól magnetycznych. Częstość modulacji musi być taka, żeby w ciągu okresu przebiegu modulującego uporządkowanie atomowe obróciło się o wielokrotność kąta $\pi$. 
+Podczas obrotu w polu magnetycznym występuje także odchylanie płaszczyzny polaryzacji, pod warunkiem ciągłego odtwarzania uporządkowania atomów. Przy oświetlaniu ośrodka impulsami światła o częstości $\Omega_m$, przy
 \begin{equation}
 \Omega_m=\frac{2 \omega_l}{n} \; ,
 \end{equation}
-gdzie $n=1,2,3$ to ilość półobrotów jakie wykona alignment w cyklu modulacji. Absorpcja będzie wtedy najniższa, ponieważ światło będzie napotykać zawsze takie samo, napompowane, ustawienie atomów.
+gdzie $n$-liczba naturalna. Absorpcja będzie wtedy najniższa, ponieważ światło będzie napotykać zawsze takie samo, napompowane, ustawienie atomów, które obróciły się o wielokrotność $180^{\circ}$.  $n=1,2,3$ to więc ilość półobrotów jakie wykona uporządkowanie w pomiędzy impulsami światła.
 
-W rezonansie, przy częstości modulacji $\Omega_m$, orientacja atomów jest najsilniesza. Oznacza to największą amplitudę wahań płaszczyzny polaryzacji światła. Zależność amplitudy wahania płaszczyzny polaryzacji światła
+Gdyby, oprócz pompującego światła o częstotliwości $\Omega_m$, oświetlać układ także słabym (niezaburzającym orientacji) światłem ciągłym, można by zaobserwować wahania skręcenia płaszczyzny polaryzacji tego światła, zachodzącą w takt impulsów pompujących.
+
+Ważne jest, by zdać sobie sprawę, że powyższe wahania zachodzą w takt pompowania ($\Omega_m$), a nie z częstością Larmora ($\omega_l$). Dzieje się tak, ponieważ przy każdym impulsie pompującym atomy są na powrót porządkowane.
+
+W rezonansie, przy częstości modulacji $2 \omega_l$, uporządkowanie atomów jest najsilniesze. Oznacza to największą amplitudę wahań płaszczyzny polaryzacji światła. Zależność amplitudy wahania płaszczyzny polaryzacji światła
 od częstotliwości modulacji daje się opisać krzywą rezonansową \ref{krzywa}. Obserwując oprócz amplitudy wahania płaszczyzny polaryzacji także jej zależność fazową względem przebiegu modulującego, tj. składową w fazie i w kwadraturze, można wyodrębnić część absorbcyjną (symetryczną względem częstości rezonansowej) i elastyczną (asymetryczną).
 
 Krzywa rezonansowa (Lorentza) jest rozwiązaniem oscylatora harmonicznego z wymuszeniem i ma postać:
