@@ -1,0 +1,28 @@
+>Oznacza to, że 
+>chcąc utrzymać długość fali dostrojoną do przejścia atomowego,
+>trzeba zapewnić dokładność względną rzędu $10^{-7}$. Oznacza to na przykład, że przy założeniu zależności temperaturowej $0{,}05 ~\mathrm{nm/K}$ (tak zmierzono), temperatura struktury >lasera musi być ustalona z dokładnością do $2~\mu K$.
+page:   7, D:20160526230437+02'00', type: text      , content: To Cię poniosło!!! Przecież dioda nie jest strojona w całym zakresie spektralnym. Stąd nie możesz podzielic 10^8/10^14, a następnie pomnożyć to przez 300 K!!! Musisz tutaj być ostrożniejszy.
+[II] N: Pozwole sobie wątpić w logikę twojego wywodu. Sam policz i zobacz co ci wyjdzie.
+page:   7, D:20160526230622+02'00', type: text      , content: Znowu. Wystabilizowanie VCSELa w zakresie szerokości dopplerowskiej jest w zasadzie banalne. My jednak stawiamy dużo poważniejsze żądania, żeby stabilność była znacznie lepsza.
+N: No chyba nie jest banalne.
+
+page:   8, D:20160526232230+02'00', type: text      , content: Myślę, że w tym miejscu trzeba też powiedzieć o samej absorpcji i jej zależności od temperatury. To też jest ważny efekt, który trzeba wspomnieć.
+N: Nie trzeba, jest to efekt dalszego rzędu niż ten, na który właśnie zwracam uwagę. Przy małej absorpcji nie ma znaczenia.
+page:   8, D:20160526232257+02'00', type: text      , content: Skąd Ty to ściągąłeś?!?!?!?
+T: Tajemnica!
+
+
+Raczej nie jak płytka fazowa tylko jako rotujący polaryzator (patrz np. Budker, D., D. J. Orlando, and V. Yashchuk, 1999b, Am. J.
+Phys. 67(7), 584). To jest zatem źle i musi być poprawione.
+N: Będze, jak przeczytam cyt.
+
+Patrz uwaga wyżej do płytki. 
+Równie ważna uwaga dotyczy tego, że Ty zastosowałes tutaj skrót myślowy, że coś się skręca. Tutaj trzebaby przywołać równanie poprzednie z rozszczepieniem wywołanym polem magnetycznym. No i później jeszcze o relaksacji i średniowaniu, że jest wypadkowy stan generowany (stąd wypadkowe skręcenie statyczne).
+N: Jezus, Maria, o co chodzi?!
+
+To o czym Ty piszesz to jest poszerzenie mocą. Jednakże limitującym czynnikiem nie jest to, a to, że ciągle dodajemy nowych atomów, które mają inną fazę, a stare atomy relaksują w związku z czym ich amplituda spada. W konsekwencji mamy średniowanie, które daje wypadkową polaryzację.
+Musisz to poprawić.
+N: Nie zrozumiałeś, o co mi chodzi, a nie chodzi mi o poszerzenie mocą.
+
+I znów wielki skok w myśleniu. Do tej pory było tylko o absorpcji, teraz nagle jest o skręceniu płaszczyzny polaryzacji. Musisz zadbać o to, że było przejrzyście.
+N: Nie rozumiem, dlaczego wielki skok.
