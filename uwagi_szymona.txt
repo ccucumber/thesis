@@ -46,15 +46,19 @@ page:   7, D:20160526230437+02'00', type: text      , content: To Cię poniosło
 [II] N: Pozwole sobie wątpić w logikę twojego wywodu. Sam policz i zobacz co ci wyjdzie.
 page:   7, D:20160526230622+02'00', type: text      , content: Znowu. Wystabilizowanie VCSELa w zakresie szerokości dopplerowskiej jest w zasadzie banalne. My jednak stawiamy dużo poważniejsze żądania, żeby stabilność była znacznie lepsza.
 N: No chyba nie jest banalne.
-page:   7, D:20160526230948+02'00', type: text      , content: Ty tutaj już implikujesz jakąś wiedzę. Mówisz o komórce. Trzeba powiedzieć raczej o ośrodku. A komórkę możesz wspomnieć w przypisie albo wcale o niej nie wspominać.
-page:   7, D:20160526231033+02'00', type: text      , content: Z poprzednim akapitem.
 page:   8, D:20160526232117+02'00', type: text      , content: Ta dyskusja ma tylko sens wtedy, gdy powiesz gdzie się stabilizujesz. Możesz też wprost napisać co się dzieje, gdy jesteś po jednej stronie, a co się dzieje gdy po drugiej. Pewnie jednak to powinno pojawić się we wcześniejszym akapicie.
+N: Ja myślę, że z odnośnikiem do rysunku wiadomo o co chodzi.
 page:   8, D:20160526231824+02'00', type: text      , content: Żeby to miało sens musisz zaznaczyć miejsce, w którym Ty pracujesz/stabilizujesz się.
+E;graf
 page:   8, D:20160526231901+02'00', type: text      , content: Nie podoba mi się ta asymetria w rozmiarach rysunków. Popraw to. Dodatkowo podpisz osie, bo nie wiadomo co na nich jest.
+E;graf
 page:   8, D:20160526232001+02'00', type: text      , content: Brak podpisanych osi.
+E;graf
 page:   8, D:20160526232145+02'00', type: text      , content: w ośrodku
 page:   8, D:20160526232230+02'00', type: text      , content: Myślę, że w tym miejscu trzeba też powiedzieć o samej absorpcji i jej zależności od temperatury. To też jest ważny efekt, który trzeba wspomnieć.
+N: Nie trzeba, jest to efekt dalszego rzędu niż ten, na który właśnie zwracam uwagę. Przy małej absorpcji nie ma znaczenia.
 page:   8, D:20160526232257+02'00', type: text      , content: Skąd Ty to ściągąłeś?!?!?!?
+T: Tajemnica!
 page:   8, D:20160526232537+02'00', type: text      , content: Coś to raczej nie jest technika detekcji fazoczułej tylko metoda modulacji lasera i detekcji fazoczułej.
 page:   8, D:20160526232508+02'00', type: text      , content: Uwaga stylistyczna. Musisz się zdecydować, czy chcesz odnosić się do rysunków przez skrót rys. czy pełnym rysunek. Jeśli przez skrót, to wszędzie za wyjątkiem początków zdania musisz to poprawić.
 page:   9, D:20160526232728+02'00', type: text      , content: Proponuję kursywą
