@@ -7,3 +7,22 @@ page:   8, D:20160526232117+02'00', type: text      , content: Ta dyskusja ma ty
 
 page:  10, D:20160527000808+02'00', type: text      , content: W tym miejscu, zamiast tego rysunki, powinien się pojawić modelowy rysunek F=1\rightarrow F'=0.
 E;graf
+
+rys 11 -> Jeśli to jest rysunek tymczasowy, to przy tej korekcie nadszedł czas, żęby go porawić.
+ 
+rys 12 ->  Jakbyś tak poprawiał ten rysunek to:
+- zmienne kursywą
+- pomiędzy wartością i jednostką spacja
+- po jednostkach w opisach osi spacja (przez [] nawiasem).
+- większe fonty wartości na osiach.
+
+rys 17 - > Zastąp to proszę zwrotem:
+Znormalizowana transmisja
+
+rys 17,18 -> Zrób, żeby na obu wykresach była ta sama skala.
+NIECHĘTNIE
+
+rys 19, 20 -> dać nowy, ze spektroskopio
+
+
+

@@ -338,10 +338,11 @@ gdzie $\Omega$ -- częstość rezonansowa (zazwyczaj na osi $x$) i $\Gamma$ -- s
 \label{struktura}
 \end{figure}
 
-Do wykonania pomiarów została użyta dioda wyprodukowana przez firmę $Vixar$, o oznaczeniu
-W strukturze, przedstawionej na rys. (\ref{struktura}), producent umieścił cztery identyczne złącza. Niestety, po i ch sprawdzeniu i wybraniu najlepszej z nich, z sobie tylko znanych powodów zdecydował się odłączyć pozostałe trzy.
+Do wykonania pomiarów została użyta dioda wyprodukowana przez firmę $Vixar$, o oznaczeniu $V795S-002-0001$.
+W strukturze, przedstawionej na rys. (\ref{struktura}), producent umieścił cztery identyczne złącza. Tym niemniej, po ich sprawdzeniu i wybraniu najlepszej z nich, z sobie tylko znanych powodów zdecydował się odłączyć pozostałe trzy.
 
-W trakcie pomiarów dioda uległa uszkodzeniu. Wycieczka na AGH zaowocowała przyłączeniem pozostałych struktur, który okazały się działać bardzo dobrze. PODZIĘKOWAĆ PANU IDZIKOWI Z KOLEGAMI.
+W trakcie pomiarów dioda uległa uszkodzeniu. Dzięki uprzejmości prof. dr hab. Marka Idzika z Wydziału FIS AGH, udało się przyłączyć pozostałe trzy struktury do wyprowadzeń w obudowie.
+Wszystkie trzy okazały się sprawne.
 
 Parametry jej pracy to:
 \begin{center}
@@ -352,7 +353,7 @@ Maksymalny prąd pracy jednomodowej & $1{,}6~\mathrm{mA}$\\
 Moc nominalna & $150~\mathrm{\mu }W$\\
 Moc przy pracy jednomodowej & $60~\mathrm{\mu W}$\\
 Szerokość linii & $100~\mathrm{MHz}$\\
-Stała strojenia prądem & COŚCOŚTAM\\
+%Stała strojenia prądem & COŚCOŚTAM\\
 Stała strojenia temperaturą & $0.05 ~\mathrm{nm/{}^{\circ}C}$\\
 Optymalny prąd & $1{,}5 ~\mathrm{mA}$\\
 Optymalna temperatura & $26~\mathrm{ {}^{\circ}C}$ \\
@@ -363,16 +364,16 @@ Obudowa & TO-46 z pięcioma nogami
 
 \subsection{Układ zasilania}
 
-Na rysunku (\ref{sch-psu}) przedstawiony jest schemat pierwszego z układów elektronicznych użytych w pracy -- zasilacza diody. Jego zadaniem jest zasilanie diody laserowej prądem o regulowanej, stabilnej w czasie wartości i jak najniższej fluktuacji (szumie). Zbyt duży poziom szumu obecny w niededykowanym zasilaczu znanej firmy był jednym z powodów zaprzestania prac z laserem o emisji powierzchniowej, co jest opisane w pracy mgr. Justyny Mech \cite{mgrJustynaMech}.
+Na rysunku \ref{sch-psu} przedstawiony jest schemat pierwszego z układów elektronicznych użytych w pracy -- zasilacza diody. Jego zadaniem jest zasilanie diody laserowej prądem o regulowanej, stabilnej w czasie wartości i jak najniższej fluktuacji (szumie). Zbyt duży poziom szumu obecny w niededykowanym zasilaczu znanej firmy był jednym z powodów zaprzestania prac z laserem o emisji powierzchniowej, co jest opisane w pracy mgr. Justyny Mech \cite{mgrJustynaMech}.
 
-Działanie układu najwygodniej opisać od strony lasera. Z dodatniego napięcia zasilającego, przez tranzystor \textit{Q2} i rezystor pomiarowy \textit{R5}, prąd płynie do anody diody laserowej, dołączoną do złącza P1. Katoda diody jest dołączona do masy, co czyni diodę bardziej odporną na przepięcia i przypadkowe zwarcie niż w sytuacji, gdyby obydwa końce były ,,pływające``.  
-Właściwe źródło prądowe jest bardzo proste -- formuje je rezystor R3 zasilając z kondensatora C1 bazę tranzystora \textit{Q2}. Tranzystor Q1 i rezystor R1 stanowią obwód zabezpieczający i można je pominąć przy analizie normalnej pracy układu. Prąd kolektora Q2 jest już właściwym prądem diody laserowej. Warto zaznaczyć, że w tym układzie nie występuje praktycznie żaden szum nadmiarowy -- pod wpływem stałego napięcia na kondensatorze przez rezystor o sporej wartości przepływa stały prąd, który jest praktycznie idealnie bezszumnie wzmacniany przez pojedynczy tranzystor. Wysoki opór różniczkowy kolektora tranzystora \textit{Q2}, sprawia, że układ stanowi dobre źródło prądowe, tj. prąd nie zależy od napięcia na obciążeniu. Oczywiście, ponieważ zakładamy niezmienność napięcia na C1 oraz napięcia baza-emiter i wzmocnienia tranzystora Q2, taki obraz jest poprawny tylko dla wysokich częstotliwości. Długoczasową stabilizację prądu zapewnia wzmacniacz U1, który działa w układzie wzmacniacza pomiarowego, zapewniając na swoim wyjściu takie napięcie, by napięcie na rezystorze pomiarowym R5 poprzez rezystory R4 i R7 równoważyło napięcie zadawane między wyjściem U2 a masą, przez rezystory  R8 i R11.
-Dodatkowe rezystory R9 i R10 pozwalają w niewielkim zakresie podmodulować prąd diody, napięciem podanym przez złącze P2.
-Napięciu 1V na wyjściu U2 odpowiada 1 mA prądu płynącego przez diodę.
+Działanie układu najwygodniej opisać od strony lasera. Z dodatniego napięcia zasilającego, przez tranzystor \textit{Q2} i rezystor pomiarowy \textit{R5}, prąd płynie do anody diody laserowej, dołączoną do złącza \textit{P1}. Katoda diody jest dołączona do masy, co czyni diodę bardziej odporną na przepięcia i przypadkowe zwarcie niż w sytuacji, gdyby obydwa końce były ,,pływające``.  
+Właściwe źródło prądowe jest bardzo proste -- formuje je rezystor R3 zasilając z kondensatora \textit{C1} bazę tranzystora \textit{Q2}. Tranzystor \textit{Q1} i rezystor \textit{R1} stanowią obwód zabezpieczający i można je pominąć przy analizie normalnej pracy układu. Prąd kolektora \textit{Q2} jest już właściwym prądem diody laserowej. Warto zaznaczyć, że w tym układzie nie występuje praktycznie żaden szum nadmiarowy -- pod wpływem stałego napięcia na kondensatorze przez rezystor o sporej wartości przepływa stały prąd, który jest praktycznie idealnie bezszumnie wzmacniany przez pojedynczy tranzystor. Wysoki opór różniczkowy kolektora tranzystora \textit{Q2}, sprawia, że układ stanowi dobre źródło prądowe, tj. prąd nie zależy od napięcia na obciążeniu. Oczywiście, ponieważ zakładamy niezmienność napięcia na \textit{C1} oraz napięcia baza-emiter i wzmocnienia tranzystora \textit{Q2}, taki obraz jest poprawny tylko dla wysokich częstotliwości. Długoczasową stabilizację prądu zapewnia wzmacniacz \textit{U1}, który działa w układzie wzmacniacza pomiarowego, zapewniając na swoim wyjściu takie napięcie, by napięcie na rezystorze pomiarowym R5 poprzez rezystory \textit{R4} i \textit{R7} równoważyło napięcie zadawane między wyjściem U2 a masą, przez rezystory  \textit{R8} i \textit{R11}.
+Dodatkowe rezystory \textit{R9} i \textit{R10} pozwalają w niewielkim zakresie podmodulować prąd diody, napięciem podanym przez złącze \textit{P2}.
+Napięciu 1 V na wyjściu \textit{U2} odpowiada 1 mA prądu płynącego przez diodę.
 
-Układ U2 stanowi filtr dolnoprzepustowy, o niskiej częstości odcięcia (rzędu 10 Hz), eliminujący szum i trzaski z napięcia pochodzącego z potencjometru PR1, którym ustawia się prąd. Zwora JP1 pozwala wybrać pomiędzy zakresem $0-3{,}5$~mA a 0-7~mA.
+Układ \textit{U2} stanowi filtr dolnoprzepustowy, o niskiej częstości odcięcia (rzędu 10 Hz), eliminujący szum i trzaski z napięcia pochodzącego z potencjometru \textit{PR1}, którym ustawia się prąd. Zwora \textit{JP1} pozwala wybrać pomiędzy zakresem $0-3{,}5$~mA a $0-7$~mA.
 
-Napięcie wzorcowe, dostarczane na nóżkę 3 potencjometru pochodzi z diody Zenera D1. Dioda ta to wysoce stabilna dioda o tzw. strukturze zagrzebanej, zintegrowana wraz z termostatem. Decyduje to o doskonałej stabilności cieplnej ($0.5~\mathrm{ppm}/{}^{\circ}C$) i długoczasowej.  Wzmacniacz U3 zasila diodę stałym prądem, zadawanym jej własnym napięciem Zenera. Jest on zasilany inaczej niż pozostałe, pojedynczym napięciem. Uniemożliwia to ,,zatrzaśnięcie'' się układu na napięciu przewodzenia diody (ujemnym) zamiast na napięciu Zenera (dodatnim). 
+Napięcie wzorcowe, dostarczane na nóżkę 3 potencjometru pochodzi z diody Zenera \textit{D1}. Dioda ta to wysoce stabilna dioda o tzw. strukturze zagrzebanej, zintegrowana wraz z termostatem. Decyduje to o doskonałej stabilności cieplnej ($0.5~\mathrm{ppm}/{}^{\circ}C$) i długoczasowej.  Wzmacniacz \textit{U3} zasila diodę stałym prądem, zadawanym jej własnym napięciem Zenera. Jest on zasilany inaczej niż pozostałe, pojedynczym napięciem. Uniemożliwia to ,,zatrzaśnięcie'' się układu na napięciu przewodzenia diody (ujemnym) zamiast na napięciu Zenera (dodatnim). 
 
 \begin{figure}
 \begin{center}
@@ -388,7 +389,7 @@ Napięcie wzorcowe, dostarczane na nóżkę 3 potencjometru pochodzi z diody Zen
 Po zbadaniu modułu zasilania, kolejnym krokiem było zbadanie, jak szybko można modulować prąd diody, co ma na celu szybką zmianę długości fali. Jako że te diody służą do transmisji danych z prędkością kilku Gb/s, modulacja częstościami na poziomie kilkuset MHz powinna być realna. 
 
 Elektryczny schemat zastępczy diody laserowej przedstawiony jest na rysunku \ref{sch-mod1}. 
-\begin{figure}
+\begin{figure}[h]
 \begin{center}
  \includegraphics{./obrazki/sch_mod1.pdf}
  % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
@@ -396,10 +397,10 @@ Elektryczny schemat zastępczy diody laserowej przedstawiony jest na rysunku \re
 \caption{Uproszczony schemat zastępczy diody laserowej}
 \label{sch-mod1}
 \end{figure}
-Na jego podstawie można założyć, że na dynamikę modulacji prądu, tj. jej maksymalną szybkość oraz przesunięcie fazowe mają wpływ jedynie wartości pasożytniczych pojemności i indukcyjności, oraz opór wewnętrzny diody. Konsekwencją tego założenia jest możliwość kompensacji wpływu pasożytniczych elementów poprzez manipulacje jedynie impedancją źródła sygnału, w efekcie uzyskując płaską zależność amplitudy modulacji światła od częstotliwości.
+Na jego podstawie można założyć, że na dynamikę modulacji prądu, tj. jej maksymalną szybkość oraz przesunięcie fazowe mają wpływ jedynie wartości pasożytniczych pojemności i indukcyjności oraz opór wewnętrzny diody. Konsekwencją tego założenia jest możliwość kompensacji wpływu pasożytniczych elementów poprzez manipulacje jedynie impedancją źródła sygnału, w efekcie umożliwiając uzyskanie płaskiej zależności amplitudy modulacji światła od częstotliwości.
 Dla najwyższych częstotliwości (gigaherce) model ten może przestawać odzwierciedlać rzeczywidość, ze względu na wpływ skończonego czasu potrzebnego do osiągnięcia równowagi między pompowaniem a emisją promieniowania z rezonatora. Poczyniono nieme założenie, że modulacja jasności jest równoznaczna modulacji długości fali. Jest ono spełnione, jeśli procesy optyczne (pompowanie i relaksacja) zachodzą znacznie szybciej niż zmiany prądu w strukturze.
 
-Zbudowano układ umożliwiający szybką modulację prądu sygnałem dostarczanym standardowym kablem koncentrycznym ze złączem SMA.
+Zbudowano układ umożliwiający szybką modulację prądu sygnałem dostarczanym standardowym kablem koncentrycznym $50~\Omega$ (ze złączem SMA).
 
 Zadania układu są następujące:
 \begin{itemize}
@@ -409,7 +410,7 @@ Zadania układu są następujące:
 \end{itemize}
 
 Ostatni cel został osiągniety głównie metodą prób i błędów. Opór wewnętrzny diody (przy prądzie pracy) został zmierzony jako $61~ \Omega$.
-Docelowy układ przedstawia rysunek \ref{sch-mod1}. Na płytce znajdują się diody zabezpieczające (specjalne diody zabezpieczające przed elektrostatycznymi wyładowaniami, bardzo szybkie i o niskim prądzie upływu) oraz złącza doprowadzające prąd z zasilacza i sygnał modulujący z generatora. Pojemność kondensatora kompensacyjnego został dobrana tak, by uzyskać możliwie płaską charakterystykę modulacji. Zależność odpowiedzi częstotliwościowej od jego pojemności znajduje się na rysunku \ref{wyk-mod}.
+Docelowy układ przedstawia rysunek \ref{sch-mod}. Na płytce znajdują się diody zabezpieczające (specjalne diody zabezpieczające przed elektrostatycznymi wyładowaniami, bardzo szybkie i o niskim prądzie upływu) oraz złącza doprowadzające prąd z zasilacza i sygnał modulujący z generatora. Pojemność kondensatora kompensacyjnego został dobrana tak, by uzyskać możliwie płaską charakterystykę modulacji. Zależność odpowiedzi częstotliwościowej od jego pojemności znajduje się na rysunku \ref{wyk-mod}.
 
 \begin{figure}
 \begin{center}
@@ -425,7 +426,7 @@ Docelowy układ przedstawia rysunek \ref{sch-mod1}. Na płytce znajdują się di
  \includegraphics[width=0.8\textwidth]{./obrazki/bw.pdf}
  % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
 \end{center}
-\caption{Zależność charakterystyki częstotliwościowej modulacji od pojemności kondensatora kompensacyjnego}
+\caption{Zależność charakterystyki częstotliwościowej modulacji od pojemności kondensatora kompensacyjnego. Pojemność $3{,}3~pF$ zdaje się optymalna.}
 \label{wyk-mod}
 \end{figure}
 
@@ -470,7 +471,7 @@ Po lewej stronie okna programu znajduje się szereg przycisków, oferując nast�
 Po naciśnięciu przycisku ,,Analyze`` program wyświetla okno pokazane na \ref{scr-anal}.
 Aby uzyskać ten efekt, wykonywane są następujące operacje:
 \begin{enumerate}
- \item Następuje odcięcie składowej stałej przez dopasowanie i odjęcie wielomianu niskiego stopnia.
+ \item Następuje odjęcie składowej stałej przez dopasowanie i odjęcie wielomianu niskiego stopnia.
  \item Przebieg jest wygładzany przez uśrednienie kilku sąsiednich próbek
  \item Znajdowane i zaznaczane na wykresie są linie absorpcyjne o dostatecznej głębokości względem aktualnie zarejestrowanego maksimum absorpcji
 \end{enumerate}
@@ -496,12 +497,12 @@ Jest to typowy regulator proporcjonalno-całkująco-różniczkujący. Schemat je
 \label{sch-pid}
 \end{figure}
 
-Układ posiada dwa wejścia, przy czym jedno z nich może być odłączone i zastąpione przez potencjał ustawiany potencjometrem P4. Przełącznik SW3 ustawia wstępne wzmocnienie.
+Układ posiada dwa wejścia, przy czym jedno z nich może być odłączone i zastąpione przez potencjał ustawiany potencjometrem \textit{P4}. Przełącznik \textit{SW3} ustawia wstępne wzmocnienie.
 Dalej sygnał jest rozdzielany do trzech członów -- od góry: proporcjonalnego, różniczkującego i całkującego.
-Wzmocnienie pierwszego ustalane jest skokowo przez SW4 i płynnie przez potencjometr P2, analogicznie ustawiana jest stała czasowa członu różniczkującego (SW2 i P5) i całkującego ( SW5, P1). Zwora JP2 wyłącza człon całkujący na czas wstępnego dostrojenia.
-Sygnały z trzech członów są sumowane przez wzmacniacz U3C. Zwora JP1 pozwala zmienić polaryzację sygnału wyjściowego na przeciwną.
+Wzmocnienie pierwszego ustalane jest skokowo przez \textit{SW4} i płynnie przez potencjometr \textit{P2}, analogicznie ustawiana jest stała czasowa członu różniczkującego (\textit{SW2} i \textit{P5}) i całkującego ( \textit{SW5}, \textit{P1}). Zwora \textit{JP2} wyłącza człon całkujący na czas wstępnego dostrojenia.
+Sygnały z trzech członów są sumowane przez wzmacniacz \textit{U3C}. Zwora \textit{JP1} pozwala zmienić polaryzację sygnału wyjściowego na przeciwną.
 
-Dodatkowe wyjście Z4 pozwala na monitorowanie sygnału wybranego zworą P3.
+Dodatkowe wyjście \textit{Z4} pozwala na monitorowanie sygnału wybranego zworą \textit{P3}.
 
 \subsection{Polarymetr wraz z układem detekcji}
 
@@ -521,15 +522,15 @@ Precyzyjny pomiar powyższych ma kluczowe znaczenie dla dokładności magnetomet
 Polarymetr posiada dwie fotodiody i wytwarza dwa sygnały - o amplitudzie proporcjonalnej do różnicy i sumy natężeń światła padającego na fotodiody.
 Sygnał różnicy służy do pomiaru skręcenia polaryzacji, która bezpośrednio zależy od pola magnetycznego.  Sygnał sumy pozwala zaś śledzić absorpcję w komórce, co umożliwia stabilizację lasera na linii.
 
-Sygnał różnicy jest wytwarzany przez wzmacniacz U3A, pracujący w typowej konfiguracji transimpendancyjnej. Wzmacnia on prąd pochodzący z węzła pomiędzy fotodiodami D1 i D2.
-Elementy R9 i C3 ustalają odpowiednio wzmocnienie i pasmo tego wzmacniacza.
+Sygnał różnicy jest wytwarzany przez wzmacniacz \textit{U3A}, pracujący w typowej konfiguracji transimpendancyjnej. Wzmacnia on prąd pochodzący z węzła pomiędzy fotodiodami \textit{D1} i \textit{D2}.
+Elementy \textit{R9} i \textit{C3} ustalają odpowiednio wzmocnienie i pasmo tego wzmacniacza.
 
 Warto szerzej opisać to rozwiązanie. Taka konfiguracja ma szereg zalet ponad odejmowaniem sygnałów z dwóch niezależnych wzmacniaczy transimpendacyjnych z pojedynczymi fotodiodami.
 Pierwszą zaletą jest mniejszy szum -- w układzie z dwoma wzmacniaczami, mimo, że sygnały są odejmowane, szumy się dodają. Drugi problem jest mniej oczywisty -- odmienna charakterystyka częstotliwościowa różnych wzmacniaczy może osłabiać tłumienie sygnału wspólnego wraz ze wzrostem częstotliwości, jako że sygnały te nie będą już przesunięte w fazie o dokładnie $180^{\circ}$, co sprawi, że zwykła absorpcja zostanie odebrana jako skręcenie. Tłumienie sygnału współbieżnego ma kluczowe znaczenie przy dokładnej detekcji niewielkich skręceń przy szerokim zakresie częstotliwości pracy.
 
 Gdyby zastosować dwa oddzielne wzmacniacze dla fotodiod, generacja sygnału sumy nie nastręczałaby większego problemu. W układzie z różnicą ,,na drucie", konieczne jest zastosowanie dwóch luster prądowych (tranzystory podwójne Q1 i Q2) przed wzmacniaczem sumującym U3B. Górne lustro prądowe jest obciążone pojemnością nieodwracającego wejścia wzmacniacza, podczas gdy dolne lustro jest obciążone jedynie rezystancyjnie. Sytuację tę wyrównuje kondensator C3. 
 
-Wyjścia obydwu torów są doprowadzone do dzielników 20:1, które mają na celu dopasowanie impendancji wyjściowej do kabla $50\Omega$. To z pozoru kontrowersyjne rozwiązanie nie pogarsza precyzji pomiaru -- dalsze przyrządy pomiarowe po prostu pracują na czulszym zakresie.
+Wyjścia obydwu torów są doprowadzone do dzielników 20:1, które mają na celu dopasowanie impendancji wyjściowej do kabla $50~\Omega$. To z pozoru kontrowersyjne rozwiązanie nie pogarsza precyzji pomiaru -- dalsze przyrządy pomiarowe po prostu pracują na czulszym zakresie.
 
 \section{Uruchomienie układu pomiarowego}
 
@@ -542,10 +543,10 @@ Wyjścia obydwu torów są doprowadzone do dzielników 20:1, które mają na cel
 \subsection{Spektroskopia rubidu}
 
 Aby uwiarygodnić wskazania miernika długości fali, oraz by w dalszych pomiarach móc związać kształt sygnału absorpcji w komórce (zwanego dalej spektroskopią), przeprowadzono dosyć nietypowy pomiar.
-Zmierzono absorpcję w komórce dla wielu pojedynczych długości fali, zmierzonych $\lambda-$metrem. Z tych wyników skonstruowano wykres.
+Zmierzono absorpcję w komórce dla wielu pojedynczych długości fali, zmierzonych lambdametrem. Z tych wyników skonstruowano wykres.
 Wynik pomiaru z komórki o pokryciu parafinowym przedstawia rys. \ref{fig:spekpara}, a z komórki z gazem buforowym rys. \ref{fig:spekgaz}.
 
-Widać, że w komórce z gazem buforowym nastąpiło bardzo znaczące obniżenie absorpcji (z ok. 50\% do ok. 5\%), jak również poszerzenie linii. Przesunięcie centrum linii było mniejsze od niepewności pomiaru. Dalsze pomiary wykazały, że pomimo absorpcji niższej o rząd wielkości (co utrudnia dokładny pomiar absorpcji i skręcenia), komórka z gazem buforowym lepiej sprawdziła się w pomiarach pola magnetycznego, pozwalając obserwować dużo węższe rezonanse (patrz rozdział \ref{sec:magnetorotacja}). 
+Widać, że w komórce z gazem buforowym nastąpiło bardzo znaczące obniżenie absorpcji (z ok. 50\% do ok. 5\%), jak również poszerzenie linii. Przesunięcie centrum linii było mniejsze od niepewności pomiaru. Dalsze pomiary wykazały, że pomimo absorpcji niższej o rząd wielkości (co utrudnia dokładny pomiar absorpcji i skręcenia), komórka z gazem buforowym lepiej sprawdziła się w pomiarach pola magnetycznego, pozwalając obserwować dużo węższe rezonanse (patrz rozdział \ref{sec:magnetorotacja}). Przyczyną było prawdopodobnie niesprawne pokrycie antyrelaksacyjne komórki z parafiną.
 
 
 \begin{figure}[h!]
@@ -604,7 +605,7 @@ Zachodzi wtedy skręcenie polaryzacji (liniowo spolaryzowanego) światła padaj�
 \centering
  \includegraphics[width=\textwidth]{magnetorot1.eps}
  % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Przykładowa zależność magnetorotacji, po detekcji fazoczułej, w zależności od pola magnetycznego. Pole magnetyczne wyrażone w jednostkach częstości Larmora dla ${}^{87} Rb$.
+ \caption{Przykładowa zależność magnetorotacji, po detekcji fazoczułej, w zależności od pola magnetycznego. Pole magnetyczne wyrażone w jednostkach częstości Larmora dla ${}^{87} \mathrm{Rb}$.
  $f_{mod}=101kHz, P_{las}=15 \mu W$}
  \label{fig:magnetorot1}
 \end{figure}

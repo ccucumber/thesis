@@ -26,3 +26,47 @@ N: Nie zrozumiałeś, o co mi chodzi, a nie chodzi mi o poszerzenie mocą.
 
 I znów wielki skok w myśleniu. Do tej pory było tylko o absorpcji, teraz nagle jest o skręceniu płaszczyzny polaryzacji. Musisz zadbać o to, że było przejrzyście.
 N: Nie rozumiem, dlaczego wielki skok.
+
+----Nowa seria----
+M: Decyduje to o doskonałej stabilności cieplnej
+(0.5 ppm/ ◦ C) i długoczasowej.
+S: Co jest długoczasowe. Stabilność temperaturowa, stabilność emisji, czy może jeszcze coś innego. Czy możesz to dopracyzować?
+O: Przyjęte w j.polskim tłumaczenie "long-term stability". Zamiast dopracyzować, można też samemu się dowiedzieć...
+
+M:Dla
+najwyższych częstotliwości (gigaherce) model ten może przestawać odzwiercie-
+dlać rzeczywidość, ze względu na wpływ skończonego czasu potrzebnego do osią-
+gnięcia równowagi między pompowaniem a emisją promieniowania z rezonatora.
+S:Prawdę mówiąc się zgubiłem. A dla niższych częstości nie przedstawia?
+O:Dla niższych te czasy są do pominięcia.
+
+M:Układ posiada dwa wejścia, przy czym jedno z nich może być odłączone i za-
+stąpione przez potencjał ustawiany potencjometrem P4. Przełącznik SW3 usta-
+wia wstępne wzmocnienie.
+S: Napisz dlaczego jest przełącznik do potencjometru. To nie jest jeszcze wyjaśnione.
+O: Chyba nadgorliwość.
+
+M:Widać, że zbyt duża amplituda modulacji
+powoduje zmniejszenie skręcenia. Jest to związane z tym, że przy zbyt szerokiej
+modulacji światło jest przez coraz dłuższy ułamek okresu modulacji odstrojone
+od profilu absorpcji atomów.
+S:A czemu nie uwazasz, ze to jest efekt tego, ze atomy z najbardziej zapopulowanej klasy predkosci (v=0) sa pompowana nie w rownych odstepach czasu, ale raz jak sie wiazka przestraja w jedna strone i raz gdy wraca. W takim przypadku tylko atomy z krancowych punktow kontrybuuja synchronicznie, a tych, gdy robimy duza modulacje (i przejdziemy czubek krzywej absorpcyjnej) jest coraz mniej wraz ze zwiekszaniem modulacji.
+O: Na dwoje babka wróżyła. Do przegadania.
+
+M:Zwiększanie mocy światła powoduje jednak
+poszerzenie rezonansu.
+S:I co z tego. Chyba to, ze spada Ci czulosc na pole. To trzebaby to napisac.
+
+W sumie, byloby rowniez fajnie jakbys oszacowal czulosc tego pomiaru na pole. To wymaga jednak krotkiej dyskusji, co determinuje czulość magnetometru optycznego.
+O: Napisać trzeba i co z tego, i może coś o czułości na pole.
+
+M:Rysunek 22: a) Amplituda rezonansu na 1 harmonicznej w zależności od A m
+b) Szerokość rezonansu na 1 harmonicznej w zależności od A m c) Amplituda
+rezonansu na 2 harmonicznej w zależności od A m d) Szerokość rezonansu na 2
+harmonicznej w zależności od A m
+S:Do tej pory w ogole nie bylo mowy o drugiej harmonicznej i pomiarach na niej. Dlatego:
+1) Pokaz sygnaly magnetometryczne z drugiej harmonicznej.
+2) Przedyskutuj je. 
+Dopiero wtedy to co jest na tym rysunku ma jakis sens.
+O:Ad 1: wystarczy że napiszę, że to są zupełnie identyczne rezonanse.
+  Ad 2: Miejmy nadzieję, że napiszę wcześniej coś, co sprawi, że będzie to mniej niespodziewane.
