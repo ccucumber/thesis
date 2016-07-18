@@ -165,10 +165,12 @@ Częstotliwość $\nu$ przejścia $D1$ w rubidzie wynosi $3{,}77 \cdot 10^{14}~
 \mathrm{Hz}$, podczas gdy szerokość pojedynczej linii absorpcyjnej,
 nawet poszerzonej Dopplerowsko, jest rzędu $10^8~\mathrm{Hz}$. Oznacza to, że 
 chcąc utrzymać długość fali dostrojoną do przejścia atomowego,
-trzeba zapewnić dokładność względną rzędu $10^{-7}$. Oznacza to na przykład, że przy założeniu zależności temperaturowej $0{,}05 ~\mathrm{nm/K}$ (tak zmierzono), temperatura struktury lasera musi być ustalona z dokładnością do $2~\mu K$. Zapewnienie,
+trzeba zapewnić dokładność względną rzędu $10^{-7}$. Oznacza to na przykład, że przy założeniu zależności temperaturowej $0{,}05 ~\mathrm{nm/K}$ (tak zmierzono), temperatura struktury lasera musi być ustalona z dokładnością do $4~mK$. Zapewnienie,
 że nie tylko temperatura, ale inne czynniki, jak prąd diody i efety jej 
 starzenia się, będą niezminne przez długi okres czasu, jest zadaniem 
 praktycznie niemożliwym.
+
+Dokładniejszą analizę stabilności długości fali lasera, która jest konieczna do przeprowadzenia magnetometri można znaleźć w \cite{sensitivity}
 
 Jeśli więc tak dokładna stabilność długości fali jest wymagana, trzeba uciec się do aktywnej 
 stabilizacji, w której koryguje się długość fali na bieżąco, zamiast utrzymywać 
@@ -218,7 +220,7 @@ bliżej środka linii chcemy się ustawić.
 \end{figure} 
 
 
-Dużo bardziej poważną wadą jest jednak ogromna wrażliwość na fluktuacje mocy lasera, jeżeli absorpcja w komórce jest niewielka.
+Dużo bardziej poważną wadą jest jednak ogromna wrażliwość na fluktuacje mocy lasera, jeżeli absorpcja w ośrodku jest niewielka.\footnote{Fluktuacje temperatury powodują także zmiany absorpcji w ośrodku ale, w zakresie temperatur bliskich pokojowej, efekt ten jest bez znaczenia.} 
 Rysunek \ref{fig:lock2} ilustruje ten problem. Jeśli, jak na rysunku, absorpcja w ośrodku jest na poziomie 2\%, poziom odniesienia
 należy ustawić na 99\% transmisji. Oznacza, to, że jeśli moc lasera zmini się, albo do detektora dotrze światło zewnętrzne o wartości
 zaledwie 1\% przechodzącej wiązki, stabilizacja stanie się niemożliwa.
@@ -277,11 +279,11 @@ Dla światła o polaryzacji liniowej $\sigma$ również występuje stan ciemny, 
 \begin{equation}
 \frac{1}{\sqrt{2}} (|g,+\rangle-|g,-\rangle)
 \end{equation}
-Takią orientację ośrodka, w którym powyższy stan jest silnie obsadzony, nazywamy uporządkowaniem, ze względu na zerowy wypadkowy moment magnetyczny. Ośrodek, w którym jest wytworzona taka orientacja wykazuje anizotropię współczynnika załamania, ponieważ dla jednej z polaryzacji liniowych występuje stan ciemny, a polaryzacja do niej prostopadła jest absorbowana. Ośrodek może być więc rozpatrywany jako płytka falowa. Nie skręca jednak płaszczyzny polaryzacji wiązki pompującej, ponieważ ta jest współliniowa z jednym z jej azymutów.
+Takią orientację ośrodka, w którym powyższy stan jest silnie obsadzony, nazywamy uporządkowaniem, ze względu na zerowy wypadkowy moment magnetyczny. Ośrodek, w którym jest wytworzona taka orientacja wykazuje anizotropię współczynnika załamania, ponieważ dla jednej z polaryzacji liniowych występuje stan ciemny, a polaryzacja do niej prostopadła jest absorbowana. Ośrodek może być więc rozpatrywany jako płytka falowa \footnote{W pracy \cite{rotpol} użyto porównania do polaryzatora ale, jako że nie następuje wytłumienie światła o polaryzacji prostopadłej do osi, wydaje się ono mniej trafne}.  Nie skręca jednak płaszczyzny polaryzacji wiązki pompującej, ponieważ ta jest współliniowa z jednym z jej azymutów.
 
 W polu magnetycznym momenty magnetyczne, jak również wytworzona orientacja, obracają się z częstością Larmora $\omega_L$. Obrót ,,płytki falowej" powoduje skręcenie polaryzacji padającego światła.
 
-Obrót powoduje jednak, że stan dotychczas ciemny, zaczyna absorbować światło. Światło przeciwdziała obrotowi, próbując odtworzyć orientację atomów przez ciągłe pompowanie optyczne.
+Obrót powoduje jednak, że stan dotychczas ciemny, zaczyna absorbować światło. Światło próbuje na bieżąco odtworzyć orientację atomów przez ciągłe pompowanie optyczne.
 
 Przy stałej szybkości obrotu (polu magnetycznym $\vec B$), orientacja ulega więc odchyleniu od początkowej osi w stopniu tym większym, im słabsza wiązka pompująca (w zakresie małych kątów). Osłabienie wiązki pompującej powoduje jednak osłabienie orientacji, ponieważ bez pompowania uporządkowanie zanika. Innymi słowami, sytuacje skrajne to silne uporządkowanie, ale niewielkie odchylenie osi anizotropii od płaszczyzny polaryzacji światła oraz duże odchylenie ale niski stopień uporządkowania atomów. W obydwu tych sytuacjach płaszczyzna polaryzacji ulega słabemu skręceniu.
 
@@ -291,20 +293,21 @@ Można wykazać \cite{srivansan}, że istnieje optymalne natężenie wiązki pad
 \end{equation}
 gdzie $\Omega_R=\frac{|d \cdot E|}{\hbar}$ to częstość Rabiego, odpowiadająca sile pompowania ($d$ to moment dipolowy przejścia a $E$ natężenie pola padającego światła), a $\Gamma$ i $\gamma$ -- natężenia opisywanych procesów dekoherencji.
 
-Zjawisko jest nazywane nieliniowym efektem Faradaya, ponieważ skręcenie polaryzacji światła zależy (nieliniowo) od mocy padającego światła.
+Zjawisko jest nazywane nieliniowym efektem Faradaya, ponieważ skręcenie polaryzacji światła zależy od mocy padającego światła.
 
 Opisywany efekt skręcenia płaszczyzny polaryzacji światła zachodzi w otoczeniu $|\vec B|=0$. Przy obserwacji zależności skręcenia płaszczyzny polaryzacji światła przez ośrodek od pola $\vec B$, powinna być widoczna antysymetryczna zależność ($B=0\rightarrow$ zerowe skręcenie).
 
- Zastosowanie modulacji światła zwiększa zakres mierzalnych pól magnetycznych. Częstość modulacji musi być taka, żeby w ciągu okresu przebiegu modulującego uporządkowanie atomowe obróciło się o wielokrotność kąta $\pi$. 
-Podczas obrotu w polu magnetycznym występuje także odchylanie płaszczyzny polaryzacji, pod warunkiem ciągłego odtwarzania uporządkowania atomów. Przy oświetlaniu ośrodka impulsami światła o częstości $\Omega_m$, przy
+ Zastosowanie modulacji światła zwiększa zakres mierzalnych pól magnetycznych. Skręcenie płaszczyzny polaryzacji następuje pod warunkiem ciągłego odtwarzania uporządkowania atomów. Przy oświetlaniu ośrodka impulsami światła o częstości równej
 \begin{equation}
 \Omega_m=\frac{2 \omega_l}{n} \; ,
 \end{equation}
-gdzie $n$-liczba naturalna. Absorpcja będzie wtedy najniższa, ponieważ światło będzie napotykać zawsze takie samo, napompowane, ustawienie atomów, które obróciły się o wielokrotność $180^{\circ}$.  $n=1,2,3$ to więc ilość półobrotów jakie wykona uporządkowanie w pomiędzy impulsami światła.
+gdzie $n$-liczba naturalna, absorpcja będzie najniższa, ponieważ światło będzie napotykać zawsze takie samo, napompowane, ustawienie atomów, które (pomiędzy impulsami) obróciły się o wielokrotność $180^{\circ}$.  $n=1,2,3$ to więc ilość półobrotów jakie wykona uporządkowanie w pomiędzy impulsami światła.
 
-Gdyby, oprócz pompującego światła o częstotliwości $\Omega_m$, oświetlać układ także słabym (niezaburzającym orientacji) światłem ciągłym, można by zaobserwować wahania skręcenia płaszczyzny polaryzacji tego światła, zachodzącą w takt impulsów pompujących.
+Gdyby, oprócz pompującego światła o częstotliwości $\Omega_m$, oświetlać układ także słabym (niezaburzającym orientacji) światłem, można by zaobserwować wahania skręcenia płaszczyzny polaryzacji tego światła, zachodzącą w takt impulsów pompujących.
+By zaobserwować skręcenie, światło próbkujące nie jest jednak konieczne. Wystarczy analizować polaryzację światła pompującego po przejściu przez ośrodek.
 
-Ważne jest, by zdać sobie sprawę, że powyższe wahania zachodzą w takt pompowania ($\Omega_m$), a nie z częstością Larmora ($\omega_l$). Dzieje się tak, ponieważ przy każdym impulsie pompującym atomy są na powrót porządkowane.
+
+Ważne jest, by zdać sobie sprawę, że powyższe wahania zachodzą w takt pompowania ($\Omega_m$), a nie z częstością Larmora ($\omega_l$). Dzieje się tak, ponieważ przy każdym impulsie pompującym atomy są na powrót porządkowane i ich obrót zaczyna się od punktu wyjściowego.
 
 W rezonansie, przy częstości modulacji $2 \omega_l$, uporządkowanie atomów jest najsilniesze. Oznacza to największą amplitudę wahań płaszczyzny polaryzacji światła. Zależność amplitudy wahania płaszczyzny polaryzacji światła
 od częstotliwości modulacji daje się opisać krzywą rezonansową \ref{krzywa}. Obserwując oprócz amplitudy wahania płaszczyzny polaryzacji także jej zależność fazową względem przebiegu modulującego, tj. składową w fazie i w kwadraturze, można wyodrębnić część absorbcyjną (symetryczną względem częstości rezonansowej) i elastyczną (asymetryczną).
@@ -710,6 +713,8 @@ Powyższe pomiary zostały zrobione przy działającym układzie stabilizacji d�
 \bibitem{mgrJustynaMech}  Mech, Justyna \emph{Lasery VCSEL do zastosowań w spektroskopii}, praca magisterska pod kierunkiem Jerzego Zachorowskiego, 2009
 \bibitem{steck} Daniel A. Steck, \emph{Rubidium 87 D Line Data, Rubidium 85 D Line Data}~,\url{http://steck.us/alkalidata}
 \bibitem{srivansan} R. Srinivasan,\textit{ Nonlinear Magneto-Optical Rotation – A possible tool for sensitive magnetometry}, Current Science \textbf{92}, 298 (2007)
+\bibitem{sensitivity} Budker, D., et al. \emph{Sensitive magnetometry based on nonlinear magneto-optical rotation.} Physical Review A 62.4 (2000): 043403.
+\bibitem{rotpol} Budker, D., D. J. Orlando, and V. Yashchuk, 1999b, Am. J. Phys. 67(7), 584).
 
 \end{thebibliography}
 
