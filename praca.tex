@@ -15,6 +15,7 @@
 \usepackage{float}
 \usepackage[final]{pdfpages}
 \usepackage{epsf} 
+\usepackage{verbatim}
 
 \usepackage{subfigure}
 %\usepackage{caption}
@@ -240,12 +241,27 @@ Polega ona na ciągłej zmianie długości fali w kontrolowany sposób i obserwa
 
 Zmiana absorpcji jest proporcjonalna (przez czynnik równy pochodnej absorpcji przy bieżącej długości fali) do wielkości zmiany długości fali. Oznacza to, że gdy długość fali jest zmieniana harmonicznie, jak $\cos \omega t$, absorpcja zmienia się także harmonicznie, co można zapisać jako $A \cos \omega t$. Dokładne wyznaczenie amplitudy (parametru $A$)
 umożliwia technika nazywana detekcją fazoczułą.
+\label{olockinie}
 
 \pagebreak
 
 \subsection{Magnetorotacja i nieliniowy efekt Faradaya}
 
-Fotony, będąc absorbowane przez atomy w próbce, przeprowadzają atomy ze stanu podstawowego do wzbudzonego.
+Magnetometria optyczna określa techniki, w których światło jest używane  do wykrywania oddziaływań momentów magnetycznych atomów z polem magnetycznym.
+
+Atomy posiadają momenty magnetyczne ze względu na spiny elektronów i jąder atomowych oraz orbitalny ruch elektronów.
+
+W obecności pola magnetycznego $\vec B$ moment magnetyczny $\vec \mu$ ulega pod wpływem momentu siły
+\begin{equation}
+\tau =\vec \mu \times \vec B
+\end{equation}
+precesji o częstości
+\begin{equation}
+\Omega_L =\gamma \vec B
+\end{equation}
+nazywanej częstością Larmora. Wyraz $\gamma$ to współczynnik żyromagnetyczny, równy ilorazowi momentu magnetycznego i momentu bezwładności atomu.
+
+Fotony padającego światła, będąc absorbowane przez atomy w próbce, przeprowadzają atomy ze stanu podstawowego do wzbudzonego.
 %Zapis stanów w bazie $|F,m_F\rangle$ pozwala na przejrzystą analizę możliwych przejść.
 %Przykładowe przejście, Przykładowe przejście, $F=1 \rightarrow F'=0$, przedstawia rysunek \ref{poziomyL}
 
@@ -273,11 +289,11 @@ Jeśli stan takiego atomu rozpisać w bazie stanów $\lvert m_z \rangle$, okaże
 \label{poziomyL}
 \end{figure}
 
-Oświetlenie atomów światłem o polaryzacji $\sigma_+$ (jak na rysunku) powoduje przepompowanie populacji atomów do stanu o $m_z$ maksymalnym ($m_z$=+1/2, oznaczmy go $\lvert + \rangle_z$). Dalsza absorpcja światła o polaryzacji $\sigma_+$ jest niemożliwa, ponieważ populacja stanu o $m_z$=-1/2 ($\lvert - \rangle_z$) jest pusta. Taki stan nazywamy stanem ciemnym, ponieważ nie absorbuje padającego światła. Dla zadanej polaryzacji  światła $\sigma_+$ stan ciemny to $\lvert + \rangle_z$, a stan jasny który absorbowałby światło to $\lvert - \rangle_z$. 
+Oświetlenie atomów światłem o polaryzacji $\sigma_+$ (jak na rysunku) powoduje przepompowanie populacji atomów do stanu o $m_z$ maksymalnym ($m_z$=+1/2, oznaczmy go $\lvert + \rangle_z$). Dalsza absorpcja światła o polaryzacji $\sigma_+$ nie jest możliwa, ponieważ populacja stanu o $m_z$=-1/2 ($\lvert - \rangle_z$) jest pusta. Taki stan nazywamy stanem ciemnym, ponieważ nie absorbuje padającego światła. Dla zadanej polaryzacji  światła $\sigma_+$ stan ciemny to $\lvert + \rangle_z$, a stan jasny który absorbowałby światło to $\lvert - \rangle_z$. Oddziaływanie ze światłem wytworzyło uporządkowanie atomów, przenosząc atomy do jednego, określonego stanu kwantowego.
  
-Jeśli w takiej sytuacji nagle, nieadiabatycznie pole $\vec B$ zostanie ,,włączone", stany podstawowe przestaną być zdegenerowane. W bazie związanej z osią $\hat y$, równoległą do $\vec B$, energia stanu o $m_y$=1/2 jest przesunięta o $+\frac{\hbar \Omega_L}{2}$, a stanu o $m_y$=-1/2 przesunięta o $-\frac{\hbar \Omega_L}{2}$. Oznaczmy te stany $\lvert + \rangle_y$ i $\lvert - \rangle_y$.
+Jeśli w takiej sytuacji nagle, nieadiabatycznie, pole $\vec B$ zostanie ,,włączone", stany podstawowe przestaną być zdegenerowane. W bazie związanej z osią $\hat y$, równoległą do $\vec B$, energia stanu o $m_y$=1/2 jest przesunięta o $+\frac{\hbar \Omega_L}{2}$, a stanu o $m_y$=-1/2 przesunięta o $-\frac{\hbar \Omega_L}{2}$. Oznaczmy te stany $\lvert + \rangle_y$ i $\lvert - \rangle_y$.
 
-przejście z bazy $\hat z$ do $\hat y$ dla układu o spinie 1/2 jest dane jako:
+Przejście z bazy $\hat z$ do $\hat y$ dla układu o spinie 1/2 jest dane jako:
 
 \begin{align}
 \lvert + \rangle_z &=\frac{\lvert - \rangle_y + \lvert + \rangle_y}{\sqrt{2}}\\
@@ -292,16 +308,49 @@ Znając przesunięcie poziomów energetycznych, zakładając, że układ był, g
 Prawdopodobieństwo znalezienia atomu w stanie jasnym, oddziałującym ze światłem, jest więc równe
 
  \begin{equation}
-\lvert \langle \psi(t) \lvert - \rangle_x \rvert^2 = \sin^2 (\Omega_L t/2)= \frac{1}{2}\left(1-\cos(\Omega_L t/2) \right), 
+P \left( x,- \right)= \lvert \langle \psi(t) \lvert - \rangle_z \rvert^2 = \sin^2 (\Omega_L t/2)= \frac{1}{2}\left(1-\cos(\Omega_L t/2) \right),
+\label{Px-} 
 \end{equation} 
 
 Periodycznie oscylujące z częstością $\Omega_L$ powyższe prawdopodobieństwo niesie za sobą oscylacje absorpcji i współczynnika załamania w ośrodku. Mierząc częstotliwość oscylacji, można wyznaczyć częstość Larmora, a z niej indukcję $\vec B$.
 
+W praktyce oscylacje obsadzenia stanu ciemnego zanikną z dwóch powodów. Pierwszym z nich jest interakcja ze światłem, która w układzie z polem magnetycznym nie prowadzi do pompowania optycznego, ale do mieszania stanów $\lvert - \rangle_z$ i $\lvert + \rangle_z$. Drugim jest spontaniczny rozpad ( dekoherencja) uporządkowania w czasie.
+
+Ewolucja w czasie prawdopodobieństwa \ref{Px-} jest pokazana na rysunku \ref{fig:Px-}
+
+\begin{figure}[h!]
+\begin{center}
+ %\includegraphics[width=0.8\textwidth]{./obrazki/figure3.JPG}
+ \includegraphics[width=0.8\textwidth]{./obrazki/pumping2.pdf}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{ Ewolucja obsadzenia stanu $\lvert - \rangle_z$ w czasie. Po lewej stronie wykresu uporządkowanie atomów wzrasta na skutek pompowania optycznego. W t=0 włączone jest pole magnetyczne i populacja atomów zaczyna oscylować pomiędzy stanami $\lvert - \rangle_z$ i $\lvert + \rangle_z$ }
+\label{fig:Px-}
+\end{figure}
 
 
-Dla światła o polaryzacji liniowej $\sigma$ również występuje stan ciemny. 
-AAAAAA!!!!!!
- ośrodka, w którym powyższy stan jest silnie obsadzony, nazywamy uporządkowaniem, ze względu na zerowy wypadkowy moment magnetyczny. Ośrodek, w którym jest wytworzona taka orientacja wykazuje anizotropię współczynnika załamania, ponieważ dla jednej z polaryzacji liniowych występuje stan ciemny, a polaryzacja do niej prostopadła jest absorbowana. Ośrodek może być więc rozpatrywany jako płytka falowa \footnote{W pracy \cite{rotpol} użyto porównania do polaryzatora ale, jako że nie następuje wytłumienie światła o polaryzacji prostopadłej do osi, wydaje się ono mniej trafne}.  Nie skręca jednak płaszczyzny polaryzacji wiązki pompującej, ponieważ ta jest współliniowa z jednym z jej azymutów.
+
+Dla światła o polaryzacji liniowej $\sigma$ również występuje stan ciemny, ale nazywany nie uporządkowaniem, ale orientacją, ze względu na jego zerowy wypadkowy moment magnetyczny.
+
+%\begin{comment}
+Różnicę pomiędzy uporządkowaniem a orientacją widać na rysunku \ref{alor}.
+
+\begin{figure}[h!]
+
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{vis_orientation.eps}
+\label{fig:goda1H}
+}
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{vis_alignment.eps} 
+\label{fig:aoda1H}
+}
+\caption{Wizualizacja prawdopodobieństwa znalezienia atomów w stanie o danym kierunku w przestrzeni (żółty wykres 3D) i obsadzenia podpoziomów stanu podstawowego (różowe słupki) dla: a) Uporządkowania(\textit{alignment}) atomów wywołanego światłem spolaryzowanym kołowo b) Orientacji (\textit{orientation}) atomów wywołąnej światłem spolaryzowanym liniowo. Ilustracja dla poziomu podstawowego o $F=1$, więc o trzech podpoziomach $m_F$}
+\label{alor}
+\end{figure}
+
+%\end{comment}
+Ośrodek, w którym jest wytworzona taka orientacja wykazuje anizotropię współczynnika załamania, ponieważ dla jednej z polaryzacji liniowych występuje stan ciemny, a polaryzacja do niej prostopadła jest absorbowana. Ośrodek może być więc rozpatrywany jako płytka falowa \footnote{W pracy \cite{rotpol} użyto porównania do polaryzatora ale, jako że nie następuje wytłumienie światła o polaryzacji prostopadłej do osi, wydaje się ono mniej trafne}.  Nie skręca jednak płaszczyzny polaryzacji wiązki pompującej, ponieważ ta jest współliniowa z jednym z jej azymutów.
 
 W polu magnetycznym momenty magnetyczne, jak również wytworzona orientacja, obracają się z częstością Larmora $\omega_L$. Obrót ,,płytki falowej" powoduje skręcenie polaryzacji padającego światła.
 
@@ -323,7 +372,7 @@ Opisywany efekt skręcenia płaszczyzny polaryzacji światła zachodzi w otoczen
 \begin{equation}
 \Omega_m=\frac{2 \omega_l}{n} \; ,
 \end{equation}
-gdzie $n$-liczba naturalna, absorpcja będzie najniższa, ponieważ światło będzie napotykać zawsze takie samo, napompowane, ustawienie atomów, które (pomiędzy impulsami) obróciły się o wielokrotność $180^{\circ}$.  $n=1,2,3$ to więc ilość półobrotów jakie wykona uporządkowanie w pomiędzy impulsami światła.
+gdzie $n$-liczba naturalna, absorpcja będzie najniższa, ponieważ światło będzie napotykać zawsze takie samo, napompowane, ustawienie atomów, które (pomiędzy impulsami) obróciły się o wielokrotność $180^{\circ}$.  $n=1,2,3$ to więc ilość półobrotów jakie wykona uporządkowanie w pomiędzy impulsami światła \footnote{Symetria uporządkowania wywołanego liniową polaryzacją światła decyduje o tym, że stan jasny powtarza się co pół obrotu. Orientacja wywołana światłem spolaryzowanym kołowo będzie nakładać się na siebie co pełny obrót. Możliwe są także wyższe symetrie obrotowe uporządkowania, które nakłada się wtedy częściej niż co pół okresu precesji.}.
 
 Gdyby, oprócz pompującego światła o częstotliwości $\Omega_m$, oświetlać układ także słabym (niezaburzającym orientacji) światłem, można by zaobserwować wahania skręcenia płaszczyzny polaryzacji tego światła, zachodzącą w takt impulsów pompujących.
 By zaobserwować skręcenie, światło próbkujące nie jest jednak konieczne. Wystarczy analizować polaryzację światła pompującego po przejściu przez ośrodek.
@@ -332,7 +381,10 @@ By zaobserwować skręcenie, światło próbkujące nie jest jednak konieczne. W
 Ważne jest, by zdać sobie sprawę, że powyższe wahania zachodzą w takt pompowania ($\Omega_m$), a nie z częstością Larmora ($\omega_l$). Dzieje się tak, ponieważ przy każdym impulsie pompującym atomy są na powrót porządkowane i ich obrót zaczyna się od punktu wyjściowego.
 
 W rezonansie, przy częstości modulacji $2 \omega_l$, uporządkowanie atomów jest najsilniejsze. Oznacza to największą amplitudę wahań płaszczyzny polaryzacji światła. Zależność amplitudy wahania płaszczyzny polaryzacji światła
-od częstotliwości modulacji daje się opisać krzywą rezonansową \ref{krzywa}. Obserwując oprócz amplitudy wahania płaszczyzny polaryzacji także jej zależność fazową względem przebiegu modulującego, tj. składową w fazie i w kwadraturze, można wyodrębnić część absorpcyjną (symetryczną względem częstości rezonansowej) i elastyczną (asymetryczną).
+od częstotliwości modulacji daje się matematycznie opisać jak tłumiony oscylator harmoniczny. Jego częstość rezonansowa jest  równa częstości Larmora, a stała tłumienia odpowiada czasowi relaksacji momentów magnetycznych atomów. 
+
+Ruch tłumionego oscylatora harmonicznego z wymuszeniem opisuje
+ krzywa rezonansowa \ref{krzywa}. Obserwując oprócz amplitudy wahania płaszczyzny polaryzacji także zależność fazową względem przebiegu modulującego, tj. składową w fazie i w kwadraturze, można wyodrębnić część absorpcyjną (symetryczną względem częstości rezonansowej) i elastyczną (asymetryczną).
 
 Krzywa rezonansowa (Lorentza) jest rozwiązaniem oscylatora harmonicznego z wymuszeniem i ma postać:
 \begin{equation}
@@ -340,12 +392,49 @@ c(\omega)=\frac{\Gamma  \Omega  \left(\Gamma  \omega -i \left(\Omega ^2-\omega ^
 \label{krzywa}
 \end{equation}
 
-gdzie $\Omega$ -- częstość rezonansowa (zazwyczaj na osi $x$) i $\Gamma$ -- szerokość rezonansu.\\
+gdzie $\Omega$ -- częstość rezonansowa i $\Gamma$ -- szerokość rezonansu.\\
 
-\begin{itemize}
- \item O co chodzi ze stab. na 1H i pomiarem na 2H
- \item Po co komórki mają pokrycie parafinowe / gaz. Co to robi za różnicę.
-\end{itemize}
+Na rysunku \ref{fig:bud_res}, wziętym z \cite{budker-resonance} przedstawiony jest rezonans z magnetometru z modulacją światła, na którym składowe w fazie i w kwadraturze są bardzo dobrze pokazane.
+
+\begin{figure}[h!]
+\begin{center}
+ %\includegraphics[width=0.8\textwidth]{./obrazki/figure3.JPG}
+ \includegraphics[width=0.8\textwidth]{./obrazki/resonance_budker.pdf}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{ Charakterystyczny rezonans w magnetometrii optycznej. Zależność amplitudy (kąta) wahań płaszczyzny polaryzacji od częstotliwości modulacji $\Omega_m$. $X$-- sygnał w fazie, $Y$-- w kwadraturze. Za \cite{budker-resonance}}
+\label{fig:bud_res}
+\end{figure}
+
+\subsubsection{Szerokość rezonansu a dokładność pomiaru pola magnetycznego}
+
+Niepewność pomiaru kąta skręcenia płaszczyzny polaryzacji światła (pochodząca m.in. od szumu śrutowego \footnote{niepewności ilości padających fotonów w jednostce czasu} padającego światła oraz niedoskonałości aparatury) przekłada się na niepewność pomiaru pola magnetycznego.
+
+Niepewność wyznaczenia centrum rezonansu, jak na rysunku \ref{fig:bud_res}, zależy od niepewności pomiaru kąta skręcenia, oraz szerokości rezonansu $\Gamma$.
+
+Poprawa dokładności magnetometru może następować więc na dwa sposoby: zwiększenie kąta skręcenia polaryzacji (relatywnie do błędu pomiaru) i zawężaniu rezonansu.
+
+ Jak już wspomniano, szerokość $\Gamma$ jest odwrotnie proporcjonalna do czasu, przez jaki atomy zachowują swój moment magnetyczny. Informacja zawarta w momencie magnetycznym może być tracona w wyniku oddziaływania atomów ze sobą oraz zderzeń ze ściankami naczynia. Ze względu na bardzo niskie gęstości par atomowych używane w magnetometrii optycznej, drugi z procesów dominuje.
+ 
+Dekoherencji w wyniku interakcji ze ściankami naczynia można jednak zapobiec. Przyjęły się dwie metody walki z tym problemem: pokrycie anty-relaksacyjne ścianek naczynia oraz zastosowanie gazu buforowego.
+
+Atomy pierwiastków alkalicznych, używanych w magnetometrii, zachowują spin przy odbiciu od niektórych substancji, których w konsekwencji używa się do pokrywania ścianek komórek od wewnątrz. Taką substancją jest na przykład parafina. W tak przygotowanej komórce atom może zachować polaryzację nawet przez kilkaset odbić od ścianek.
+
+Drugą metodą jest napełnienie komórki z atomami dodatkowym gazem szlachetnym, który również zachowuje spin atomu przy odbiciu. Obecność dodatkowego gazu sprawia, że na skutek skrócenia drogi swobodnej, atomy odbijają się głównie od cząsteczek gazu buforowego, a nie od ścianek naczynia.
+
+Powyższe metody pozwalają wydłużyć czas życia uporządkowania atomów z ułamków ms nawet do pojedynczych sekund.
+
+\subsubsection{Jednoczesna stabilizacja długości fali i pomiar magnetorotacji}
+
+By uzyskać modulację światła konieczną do magnetometrii optycznej w niezerowym polu magnetycznym można użyć dwóch metod: pierwsza to periodyczna modulacja natężenia światła i nie wymaga ona dodatkowego omówienia. Druga metoda polega na periodycznej zmianie długości fali, tak by odstrajając się od przejścia atomowego uzyskiwać zmienne w czasie natężenie oddziaływania atomów ze światłem. Gdy jako źródło światła użyty jest laser półprzewodnikowy, druga metoda modulacji jest dużo łatwiejsza do implementacji.
+
+Modulację długości fali lasera można także wykorzystać, niejako  ,,przy okazji" do innego celu -- stabilizacji długości fali metodą opisaną w \ref{olockinie}. W sytuacji, gdy długość fali jest modulowana, wykorzystując detekcję fazoczułą (na częstości modulacji) można wyznaczyć pochodną absorpcji po długości fali.
+Gdy laser jest dostrojony do centrum linii absorpcyjnej, powyższa pochodna się zeruje. By stabilizacja była możliwa, konieczny jest układ korygujący długość fali na podstawie amplitudy i znaku tej pochodnej.
+
+Sygnał skręcenia polaryzacji występuje z kolei na podwojonej częstości modulacji, ze względu na to, że polaryzacja światła jest współliniowa z uporządkowaniem atomów dwa razy w ciągu okresu modulacji.
+
+Detekcję fazoczułą dwóch sygnałów -- zmian absorpcji na częstotliwości modulacji i skręcenia polaryzacji światła na podwójnej częstotliwości modulacji. Wykonanie układu spełniającego taką funkcję i jego charakteryzacja jest głównym celem niniejszej pracy.
+
 
 
 \pagebreak
@@ -736,6 +825,10 @@ Powyższe pomiary zostały zrobione przy działającym układzie stabilizacji d�
 \bibitem{spie} Proc. SPIE 7229, Vertical-Cavity Surface-Emitting Lasers XIII, 722903 (February 06, 2009); doi:10.1117/12.808294
 \bibitem{steck} Daniel A. Steck, \emph{Rubidium 87 D Line Data, Rubidium 85 D Line Data}~,\url{http://steck.us/alkalidata}
 \bibitem{srivansan} R. Srinivasan,\textit{ Nonlinear Magneto-Optical Rotation – A possible tool for sensitive magnetometry}, Current Science \textbf{92}, 298 (2007)
+\bibitem{budker-resonance} Kimball D. F. et al.  \emph{Magnetometric sensitivity optimization for nonlinear optical rotation with
+frequency-modulated light: Rubidium D2 line} J. Appl. Phys.106, 063113 (2009)
+
+
 \bibitem{sensitivity} Budker, D., et al. \emph{Sensitive magnetometry based on nonlinear magneto-optical rotation.} Physical Review A 62.4 (2000): 043403.
 \bibitem{rotpol} Budker, D., D. J. Orlando, and V. Yashchuk, 1999b, Am. J. Phys. 67(7), 584).
 
