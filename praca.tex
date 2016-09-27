@@ -1,4 +1,5 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,10pt,twoside]{article}
+\usepackage[a4paper,left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
 \usepackage{latexsym}
 \usepackage[MeX]{polski}
 \usepackage[utf8]{inputenc}
@@ -79,9 +80,9 @@ Uniwersytet Jagielloński w Krakowie\\
 \newpage
 
 \begin{abstract}
-Zaprojektowano, zbudowano i sprawdzono układy elektroniczne pozwalające zasilać, modulować, i stabilizować długość fali diody laserowej o emisji powierzchniowej z pionową wnęką rezonansową (VCSEL), emitującego światło o długości fali dostrojonej do linii $D1$ rubidu ($794{,}98~ \mathrm{nm}$).
+Zaprojektowano, zbudowano i sprawdzono układy elektroniczne pozwalające zasilać, modulować i stabilizować długość fali diody laserowej o emisji powierzchniowej z pionową wnęką rezonansową (VCSEL). W oparciu o te układy zbudowano układ lasera diodowego emitujący światło o długości fali dostrojonej do linii $D1$ rubidu ($794{,}98~ \mathrm{nm}$).
 
-Zbadano zastosowanie tego lasera do precyzyjnego pomiaru pola magnetycznego wykorzystującego nieliniowy efekt Faradaya w parach rubidu. Pomiar pola magnetycznego następował poprzez obserwację skręcenia płaszczyzny polaryzacji światła wywołanego modulacją długości fali lasera. Elementem aktywnym optycznie była komórka szklana zawierająca atomy rubidu.  Układ detekcji skręcenia światła zawierał polaryzator Wollastona i dwie fotodiody, a uzyskany fotoprąd podlegał wzmocnieniu i detekcji we wzmacniaczu fazoczułym. 
+Następnie zbadano zastosowanie tego układu do precyzyjnego pomiaru pola magnetycznego wykorzystując do tego celu nieliniowy efekt Faradaya. Pomiarów pola magnetycznego dokonywano w parach rubidu poprzez obserwację skręcenia płaszczyzny polaryzacji światła wywołanego modulacją długości fali lasera. Elementem aktywnym optycznie była komórka szklana zawierająca atomy rubidu.  Układ detekcji skręcenia światła zawierał polaryzator Wollastona i dwie fotodiody, a uzyskany fotoprąd podlegał wzmocnieniu i detekcji we wzmacniaczu fazoczułym. 
 
 Stabilizacja długości fali i pomiar magnetorotacji zachodziły jednocześnie i wykorzystywały jedną komórkę z atomami.
  
@@ -90,21 +91,22 @@ Stabilizacja długości fali i pomiar magnetorotacji zachodziły jednocześnie i
 \chapter{Wstęp}
 \subsection{Cel pracy}
 
-
-
+%akapit chaotyczny. S.P.
+\begin{comment}
 Atomy rubidu, precesując w polu magnetycznym, oddziaływają ze światłem o długości fali dostrojonej do przejścia atomowego ($794{,}9832$~nm).
-Jeśli natężenie światła lub jego długość fali jest modulowane synchronicznie z częstością precesji (Larmora), polaryzacja światła ulega skręceniu, wahając się z podwójną częstością Larmora (w ogólnym przypadku z inną wielokrotnością częstości modulacji).
+Jeśli natężenie światła lub jego długość fali jest modulowane synchronicznie z częstością precesji (częstość Larmora), polaryzacja światła ulega skręceniu, wahając się z podwójną częstością Larmora (w ogólnym przypadku z inną wielokrotnością częstości modulacji).
 Amplituda tego skręcenia jest miarą zgodności częstości modulacji, zadawanej przez nas, z częstością Larmora, proporcjonalnej wprost do wartości pola magnetycznego. 
+\end{comment}
 
-Celem pracy było zbudowanie i zbadanie autonomicznego układu optoelektronicznego, który służyłby do optycznej magnetometrii wykorzystującej atomy rubidu.
+Celem niniejszej pracy było zbudowanie i zbadanie autonomicznego układu optoelektronicznego, który służyłby do optycznej magnetometrii wykorzystującej atomy rubidu jako ośrodek magneto-optycznie czynny.
 
 Budowany układ miał za zadanie:
 \begin{itemize}
  \item Wytwarzać światło dające się dostroić do linii D1 rubidu, o odpowiedniej stabilności i wąskim profilu spektralnym.
  \item Pozwalać na modulację amplitudy lub długości fali źródła światła.
- \item Zawierać komórkę z atomami rubidu, wyposażoną w grzałkę nie zaburzającą pola magnetycznego
- \item Umożliwiać ciągłe, automatyczne dostrajanie długości fali lasera do przejścia atomowego. 
- \item Mierzyć amplitudę skręcenia polaryzacji światła po przejściu przez komórkę, umożliwiając obserwację magnetorotacji
+ \item Zawierać komórkę z atomami rubidu, wyposażoną w grzałkę nie zaburzającą pomiarów pola magnetycznego, tzn. wytwarzającą zaniedbywalne pola magnetyczne w obszarze komórki.
+ \item Umożliwiać automatyczne dostrajanie długości fali lasera do przejścia atomowego. 
+ \item Mierzyć amplitudę skręcenia polaryzacji światła po przejściu przez komórkę, umożliwiając obserwację magnetorotacji.
 \end{itemize}
 
 W niniejszej pracy opisano budowę takiego układu, jak również wyniki pierwszych pomiarów wykonanych przy jego pomocy.
@@ -116,18 +118,18 @@ W niniejszej pracy opisano budowę takiego układu, jak również wyniki pierwsz
 Lasery półprzewodnikowe wykorzystują fakt, że rekombinacja nośników ładunku w półprzewodniku może wiązać się z emisją fotonów o energii równej różnicy energii między pasmem przewodzenia a pasmem walencyjnym. Rekombinacja z emisją promieniowania jest możliwa tylko w materiałach z prostą przerwą energetyczną.
 
 
-Zetknięcie półprzewodników - domieszkowanego ujemnie (zawierającego dodatkowe elektrony walencyjne) i domieszkowanego dodatnio (zawierającego mniej elektronów walencyjnych niż kryształ macierzysty) powoduje przemieszczenie ładunków znajdujących się na ich granicy i powstanie warstwy zaporowej (zubożonej). Taką dwuelektrodową strukturę nazywa się diodą. Przepuszczając prąd z obszaru o domieszkowaniu \textit{p} do obszaru \textit{n}, wymusza się rekombinację nośników w warstwie zaporowej.  
+Zetknięcie półprzewodników - domieszkowanego ujemnie (zawierającego dodatkowe elektrony walencyjne) i domieszkowanego dodatnio (zawierającego mniej elektronów walencyjnych niż kryształ macierzysty) powoduje przemieszczenie ładunków znajdujących się na ich granicy i powstanie warstwy zaporowej (zubożonej). Taką dwuelektrodową strukturę nazywa się diodą. Przepuszczając prąd z obszaru o domieszkowaniu \textit{p} do obszaru \textit{n}, wymusza się rekombinację nośników w warstwie zaporowej, co prowadzi do emisji promieniowania.  
 
-Zwiększając gęstość prądu, oprócz oczywistego wzrostu natężenia światła, można doprowadzić także do tak licznego obsadzenia pasma przewodnictwa kosztem pasma walencyjnego, że zajdzie inwersja obsadzeń, co z kolei może umożliwić akcję laserową. Drugim koniecznym warunkiem zajścia akcji laserowej jest umieszczenie ośrodka ze wzmocnieniem optycznym w rezonatorze, którego dobroć musi być wystarczająca by natężenie światła emitowanego w sposób wymuszony mogło dominować nad światłem emitowanym spontanicznie.
+Zwiększając gęstość prądu, oprócz oczywistego wzrostu natężenia światła, można doprowadzić także do tak licznego obsadzenia pasma przewodnictwa kosztem pasma walencyjnego, że zajdzie inwersja obsadzeń. Może to umożliwić akcję laserową. Drugim koniecznym warunkiem zajścia akcji laserowej jest umieszczenie ośrodka ze wzmocnieniem optycznym w rezonatorze, którego dobroć musi być wystarczająca by natężenie światła emitowanego w sposób wymuszony mogło dominować nad światłem emitowanym spontanicznie.
 
-Pierwszą realizacją lasera półprzewodnikowego jest laser z emitujący światło poprzecznie do kierunku przepływu prądu. Jego schematyczna budowa przedstawiona jest na rysunku \ref{rys-eel}. Wysoką gęstość prądu uzyskuje się poprzez przestrzenne modelowanie domieszkowania, w skutek czego obszar aktywny, przez który przepływa cały prąd złącza, ma szerokość ok. 10~$\mathrm{\mu m}$ i grubość rzędu 2~$\mathrm{\mu m}$. Rezonator optyczny jest utworzony pomiędzy bocznymi krawędziami kryształu, oszlifowanymi równolegle. Jedna z krawędzi jest posrebrzona. Dodatkowe pokrycie odbijające drugiej ścianki nie jest konieczne, ze względu na odbicie powodowane dużą różnicą współczynników załamania kryształu i powietrza.
+Pierwszą realizacją lasera półprzewodnikowego jest laser emitujący światło poprzecznie do kierunku przepływu prądu. Jego schematyczna budowa przedstawiona jest na rysunku \ref{rys-eel}. Wysoką gęstość prądu uzyskuje się poprzez takie przestrzenne modelowanie domieszkowania w płaszczyźnie złącza, że cały prąd złącza przepływa przez obszar aktywny, który ma szerokość ok. 10~$\mathrm{\mu m}$ i grubość rzędu 2~$\mathrm{\mu m}$. Zapewnia to wysoką gęstość prądu, potrzebną do uzyskania inwersji obsadzeń. Rezonator optyczny jest utworzony pomiędzy bocznymi krawędziami kryształu, oszlifowanymi równolegle. Jedna z krawędzi jest posrebrzona w celu zwiększenia współczynnika odbicia. Dodatkowe pokrycie odbijające drugiej ścianki nie jest konieczne, ze względu na odbicie powodowane dużą różnicą współczynników załamania kryształu półprzewodnika i powietrza.
 
 \begin{figure}
 \begin{center}
  \includegraphics[width=0.7\textwidth]{./obrazki/rys-eel.png}
  % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
 \end{center}
-\caption{Budowa diody laserowej emitującej światło poprzecznie (na podstawie: \cite{rys-laserki})}
+\caption{Budowa diody laserowej emitującej światło poprzecznie do struktury złącza (na podstawie: \cite{rys-laserki})}
 \label{rys-eel}
 \end{figure}
 
@@ -141,17 +143,20 @@ Pierwszą realizacją lasera półprzewodnikowego jest laser z emitujący świat
 \label{rys-vcsel}
 \end{figure}
 
-Taka konstrukcja diody laserowej ma jednak liczne wady. Są to:
+Omówiona powyżej konstrukcja diody laserowej ma jednak liczne wady. Są to:
 \begin{itemize}
- \item Wysoki koszt - produkcja wymaga nietypowego procesu, jakim jest dokładna obróbka bocznych krawędzi struktury
+ \item Wysoki koszt - produkcja wymaga nietypowego procesu, jakim jest dokładna obróbka bocznych krawędzi struktury.
  \item Duży prąd progowy dla laserowania, przez co niska sprawność - ze względu na relatywnie dużą powierzchnię złącza.
  \item Długi obszar aktywny (od kilku do kilkuset $\mathrm{\mu m}$) sprawia, że laser może pracować w wielu modach podłużnych.
  \item Astygmatyzm emitowanego światła, ze względu na asymetryczne wymiary obszaru aktywnego.
  \item Wrażliwość na pasożytnicze sprzężenia optyczne ze względu na niską dobroć rezonatora
 \end{itemize}
 
-Wolna od powyższych wad jest konstrukcja lasera o emisji powierzchniowej z pionową wnęką rezonansową (VCSEL -\textit{Vertical Cavity Surface Emitting Laser}). Jego budowa jest przedstawiona na rysunku \ref{rys-vcsel}. W takim laserze prąd przepływa przez obszar mający postać punktu, nie paska, a emisja światła zachodzi w kierunku powierzchni kryształu. W takiej sytuacji nie jest możliwe stworzenie rezonatora na samych jedynie powierzchniach kryształu. Jako że tworzenie warstw równolegle do powierzchni półprzewodnika, o precyzyjnie regulowanej grubości, nie nastręcza żadnych technologicznych trudności, zwierciadła są wykonane jako tzw. rozproszone zwierciadła Bragga, czyli wiele naprzemiennych warstw substancji o różnych współczynnikach załamania. Dla określonej długości fali pomiędzy falami odbitymi od kolejnych granic ośrodków zachodzi konstruktywna interferencja, co pozwala takiej strukturze bardzo efektywnie odbijać światło, pełniąc przy okazji rolę filtra pasmowego, umożliwiając wzmocnienie tylko jednej długości fali. Typowe wartości współczynnika odbicia to $99\%$ dla zwierciadła przedniego i $99{,}9\%$ dla tylnego. Tak utworzony rezonator, optyczny ma szereg wyróżniających cech. Jest bardzo krótki, przez co mody są bardzo dobrze odseparowane, co bardzo ułatwia pracę w jednym modzie poprzecznym. Ze względu na bardzo wysoką dobroć rezonatora, pomimo niewielkiej jego długości, udaje się uzyskać niewielką szerokość linii. Wysoka dobroć sprawia również, że lasery VCSEL są praktycznie niewrażliwe na pasożytnicze sprzężenia optyczne.
-Ze względu na warstwową budowę, obszar aktywny ma emisję poprzeczną, co pozwala laserom VCSEL emitować światło o praktycznie idealnym rozkładzie przestrzennym ($\mathrm{M^2} \cong 0$). Wysoka gęstość prądu przepływająca przez punktowy obszar aktywny pozwala uzyskać niski prąd progu laserowania, co sprawia, że lasery VCSEL są jednymi z najbardziej wydajnych źródeł światła jakie dotychczas wynaleziono, osiągając sprawność ponad 60\% \cite{spie}. Brak konieczności obróbki krawędzi bocznych pozwala testować gotowe struktury jeszcze na waflu (krysztale bazowym), jak również oddzielać je od siebie standardowymi metodami, tj. przez cięcie piłą. 
+Wolna od powyższych wad jest konstrukcja lasera o emisji powierzchniowej z pionową wnęką rezonansową (VCSEL -\textit{Vertical Cavity Surface Emitting Laser}). Jego budowa jest przedstawiona na rysunku \ref{rys-vcsel}. W takim laserze prąd przepływa przez obszar mający postać koła, nie paska, a emisja światła zachodzi w kierunku powierzchni kryształu. W takiej sytuacji nie jest możliwe stworzenie rezonatora na samych jedynie powierzchniach kryształu, ze względu na mniejszą gęstość prądu w obszarze aktywnym. W takiej sytuacji konieczne jest zwiększenie dobroci rezonatora poprzez zwiększenie współczynnika odbicia zwierciadeł. Jako że tworzenie warstw równolegle do powierzchni półprzewodnika, o precyzyjnie regulowanej grubości, nie nastręcza żadnych technologicznych trudności, zwierciadła są wykonane jako tzw. rozproszone zwierciadła Bragga. Tworzy je wiele naprzemiennych warstw substancji o różnych współczynnikach załamania. Dla określonej długości fali pomiędzy falami odbitymi od kolejnych granic ośrodków zachodzi konstruktywna interferencja, co pozwala takiej strukturze bardzo efektywnie odbijać światło, pełniąc przy okazji rolę filtra pasmowego, umożliwiając wzmocnienie tylko jednej długości fali. Typowe wartości współczynnika odbicia to $99\%$ dla zwierciadła przedniego i $99{,}9\%$ dla tylnego. Tak utworzony rezonator, optyczny ma szereg wyróżniających cech. Jest bardzo krótki, przez co mody są bardzo dobrze odseparowane, co bardzo ułatwia pracę w jednym modzie poprzecznym. Ze względu na bardzo wysoką dobroć rezonatora, pomimo niewielkiej jego długości udaje się uzyskać niewielką szerokość linii. Wysoka dobroć sprawia również, że lasery VCSEL są praktycznie niewrażliwe na pasożytnicze sprzężenia optyczne.
+Ze względu na warstwową budowę, obszar aktywny ma emisję poprzeczną, co pozwala laserom VCSEL emitować światło o praktycznie idealnym rozkładzie przestrzennym ($\mathrm{M^2} \cong 0$). Wysoka dobroć rezonatora pozwala uzyskać niski prąd progu laserowania, co sprawia, że lasery VCSEL są jednymi z najbardziej wydajnych źródeł światła jakie dotychczas wynaleziono, (sprawność ponad 60\% \cite{spie}). 
+\begin{comment}Mimo tego, że akcja laserowa zachodzi już przy niskiej gęstości prądu w obszarze aktywnym, maksymalna gęstość prądu jest nawet większa niż da laserów z emisją poprzeczną.
+\end{comment}
+Brak konieczności obróbki krawędzi bocznych pozwala testować gotowe struktury jeszcze na waflu (krysztale bazowym), jak również oddzielać je od siebie standardowymi metodami, tj. przez cięcie piłą. 
 
 Lasery VCSEL mają również swoje wady. Mała długość rezonatora skutkuje poszerzeniem linii. Jest ona na ogół kilkanaście razy szersza od linii generowanej przez lasery z emisją boczną. Niewielki rozmiar i przez to bardzo wysoka gęstość prądu w obszarze ograniczają maksymalną moc do (w przypadku małych diod) kilku miliwatów, podczas gdy porównywalnej wielkości diody z emisją boczną uzyskują moce rzędu setek miliwatów. Problemem jest dodatkowo skłonność laserów VCSEL do pracy wielomodowej.
 
@@ -160,10 +165,10 @@ Lasery VCSEL mają również swoje wady. Mała długość rezonatora skutkuje po
 
 Częstotliwość $\nu$ przejścia $D1$ w rubidzie wynosi $3{,}77 \cdot 10^{14}~
 \mathrm{Hz}$, podczas gdy szerokość pojedynczej linii absorpcyjnej,
-nawet poszerzonej Dopplerowsko, jest rzędu $10^8~\mathrm{Hz}$. Oznacza to, że 
+nawet poszerzonej dopplerowsko, jest rzędu $10^8~\mathrm{Hz}$. Oznacza to, że 
 chcąc utrzymać długość fali dostrojoną do przejścia atomowego,
-trzeba zapewnić dokładność względną rzędu $10^{-7}$. Oznacza to na przykład, że przy założeniu zależności temperaturowej $0{,}05 ~\mathrm{nm/K}$ (tak zmierzono), temperatura struktury lasera musi być ustalona z dokładnością do $4~mK$. Zapewnienie,
-że nie tylko temperatura, ale inne czynniki, jak prąd diody i efekty jej 
+trzeba zapewnić dokładność względną rzędu $10^{-7}$. Na przykład, przy założeniu zależności temperaturowej $0{,}05 ~\mathrm{nm/K}$ (tak zmierzono), temperatura struktury lasera musi być ustalona z dokładnością do $4~\mathrm{mK}$. Zapewnienie,
+że nie tylko temperatura, ale dodatkowo inne czynniki mające wpływ na długość fali, jak prąd diody i efekty jej 
 starzenia się, będą niezmienne przez długi okres czasu, jest zadaniem 
 praktycznie niemożliwym.
 
@@ -173,9 +178,9 @@ Jeśli więc tak dokładna stabilność długości fali jest wymagana, trzeba uc
 stabilizacji, w której koryguje się długość fali na bieżąco, zamiast utrzymywać 
 wszystkie parametry na stałym poziomie.
 Taka stabilizacja może dojść do skutku, jeżeli istnieje możliwość strojenia 
-lasera w zakresie zawierającym linię absorpcyjną, a detekcja tej absorpcji pozwala stwierdzić, czy laser jest dostrojony, czy nie.
+lasera w zakresie zawierającym linię absorpcyjną, a detekcja tej absorpcji pozwala stwierdzić, czy laser jest dostrojony czy nie.
 
-Pierwszy, najprostszy, sposób stabilizacji polega na takiej korekcji długości 
+Pierwszy, najprostszy sposób stabilizacji polega na takiej korekcji długości 
 fali, by absorpcja w ośrodku pozostawała ciągle taka sama.
 Metoda jest zilustrowana wykresem na rysunku \ref{fig:lock1}. Jeśli absorpcja 
 jest zbyt duża, laser przestrajany jest ,,w lewo'', a jeśli zbyt mała, ,,w 
@@ -196,10 +201,10 @@ Jeśli zmieniony zostanie kierunek korekty (z lewa na prawo), uzyskamy stabiliza
 \label{fig:lock1}
 \end{figure} 
 
-Metoda ta ma ewidentną zaletę, jaką jest prostota, oraz brak potrzeby dodatkowego zaburzania (tj. modulacji) długości fali.
+Metoda ta ma ewidentną zaletę, jaką jest prostota oraz brak potrzeby dodatkowego zaburzania (tj. modulacji) długości fali.
 Niestety, ma ona również szereg wad. Pierwszą z nich jest niemożliwość ustawienia się na środku linii. Jak widać na
-rysunku \ref{fig:lock1}, zakres poprawnej pracy (zamalowany na zielono), jest silnie asymetryczny -- rozciąga się 
-bez końca w lewo i jedynie krótki odcinek na prawo względem punktu stabilizacji. Warto zauważyć, że sytuacja jest tu tym gorsza, im
+rysunku \ref{fig:lock1}, zakres poprawnej pracy (zamalowany na zielono) jest silnie asymetryczny i rozciąga się 
+bez końca w lewo i jedynie przez krótki odcinek na prawo względem punktu stabilizacji. Warto zauważyć, że sytuacja jest tu tym gorsza, im
 bliżej środka linii chcemy się ustawić.
 
 \begin{figure}[h!]
@@ -216,29 +221,28 @@ bliżej środka linii chcemy się ustawić.
 \end{figure} 
 
 
-Dużo bardziej poważną wadą jest jednak ogromna wrażliwość na fluktuacje mocy lasera, jeżeli absorpcja w ośrodku jest niewielka.\footnote{Fluktuacje temperatury powodują także zmiany absorpcji w ośrodku ale, w zakresie temperatur bliskich pokojowej, efekt ten jest bez znaczenia.} 
+Dużo bardziej poważną wadą jest jednak wrażliwość tego rozwiązania na fluktuacje mocy lasera, jeżeli absorpcja w ośrodku jest niewielka.\footnote{Fluktuacje temperatury powodują także zmiany absorpcji w ośrodku ale, w zakresie temperatur bliskich pokojowej, efekt ten jest bez znaczenia.} 
 Rysunek \ref{fig:lock2} ilustruje ten problem. Jeśli, jak na rysunku, absorpcja w ośrodku jest na poziomie 2\%, poziom odniesienia
 należy ustawić na 99\% transmisji. Oznacza, to, że jeśli moc lasera zmieni się, albo do detektora dotrze światło zewnętrzne o wartości
-zaledwie 1\% przechodzącej wiązki, stabilizacja stanie się niemożliwa.
+zaledwie 1\% natężenia wiązki laserowej, stabilizacja stanie się niemożliwa.
 
 \begin{figure}
 
 \includegraphics[width=\textwidth]{./obrazki/lock_g5.eps}
-\caption{Zasada działania stabilizacji z użyciem detekcji fazoczułej. Sygnał niebieski -- linia absorpcyjna, czerwony -- sygnał błędu. Zielona linia oznacza punkt stabilizacji. Widać, że odpowiedź (czarne sinusoidy) na sygnał modulujący (niebieskie) zależy od lokalnego nachylenia krzywej absorpcji i ma przeciwną fazę po dwóch stronach punktu stabilizacji}
+\caption{Zasada działania stabilizacji z użyciem światła o modulowanej długości fali. Sygnał niebieski -- linia absorpcyjna, czerwony -- sygnał błędu. Zielona linia oznacza punkt stabilizacji. Widać, że odpowiedź (czarne sinusoidy) na sygnał modulujący (niebieskie) zależy od lokalnego nachylenia krzywej absorpcji i ma przeciwną fazę po dwóch stronach punktu stabilizacji}
 \label{fig:lock3}
 \end{figure} 
 
-Istnieje jednak metoda stabilizacji wolna od tych wad.
-Polega ona na ciągłej zmianie długości fali w kontrolowany sposób i obserwacji zmian transmisji tym wywołanych. (patrz rysunek \ref{fig:lock3})
+Metodą stabilizacji wolną od tych wad jest metoda  polegająca na kontrolowanej modulacji długości fali i obserwacji zmian transmisji tym wywołanych (patrz rysunek \ref{fig:lock3}).
 
- Długość fali lasera jest podmodulowana, czyli periodycznie zmienia się w czasie. Ilustrują to niebieskie, pionowe sinusoidy na rysunku. Ich amplituda odpowiada amplitudzie wahań długości fali.
-  Zależnie od położenia względem środka krzywej rezonansowej, zmiana absorpcji wywołana modulacją (czarne, poziome sinusoidy) może mieć
- różną amplitudę, i co najważniejsze, być w fazie, lub przeciwfazie do modulacji.
+ W takim przypadku długość fali lasera jest periodycznie zmieniana w czasie. Ilustrują to niebieskie, pionowe sinusoidy na rysunku. Ich amplituda odpowiada amplitudzie wahań długości fali.
+W szczególności, zależnie od położenia względem środka krzywej rezonansowej, zmiana absorpcji wywołana modulacją (czarne, poziome sinusoidy) może mieć
+ różną amplitudę i co najważniejsze, być w fazie, lub przeciwfazie do modulacji.
   Amplituda zmian absorpcji jest więc \textit{de facto} pochodną krzywej absorpcyjnej po długości fali (czerwona krzywa). 
   Ma ona antysymetryczny przebieg względem środka linii, a z jej znaku (pod warunkiem, że w otoczeniu jest tylko jedna linia absorpcyjna)
  można jednoznacznie odczytać, w którą stronę powinna nastąpić korekta.
  
- Taka metoda stabilizacji pozwala całkowicie wyeliminować zależność długości fali od fluktuacji mocy (jak na rys. \ref{fig:lock2})  i maksymalnie zminimalizować wpływ zmiennej głębokości linii absorpcyjnych (zależność ta znika całkowicie w punkcie, gdzie sygnał błędu jest zerowy, czyli na środku linii).
+ Taka metoda stabilizacji pozwala całkowicie wyeliminować zależność długości fali od fluktuacji mocy  i zminimalizować wpływ zmiennej głębokości linii absorpcyjnych (zależność ta znika całkowicie w punkcie, gdzie sygnał błędu jest zerowy, czyli na środku linii).
 
 Zmiana absorpcji jest proporcjonalna (przez czynnik równy pochodnej absorpcji przy bieżącej długości fali) do wielkości zmiany długości fali. Oznacza to, że gdy długość fali jest zmieniana harmonicznie, jak $\cos \omega t$, absorpcja zmienia się także harmonicznie, co można zapisać jako $A \cos \omega t$. Dokładne wyznaczenie amplitudy (parametru $A$)
 umożliwia technika nazywana detekcją fazoczułą.
@@ -443,7 +447,7 @@ Detekcję fazoczułą dwóch sygnałów -- zmian absorpcji na częstotliwości m
 \pagebreak
 
 
-\chapter{Wykonane pomiary}
+\section{Wykonane pomiary}
 
 Po zbudowaniu układów elektronicznych opisanych w rozdziale \ref{ch:aparatura} można było przejść do testów i pomiarów.
 
@@ -614,7 +618,7 @@ Powyższe pomiary zostały zrobione przy działającym układzie stabilizacji d�
  \label{fig:panodam2}
 \end{figure}
 
-\chapter{Zbudowana aparatura}
+\section{Zbudowana aparatura}
 \label{ch:aparatura}
 \subsection{Użyta dioda}
 
@@ -824,7 +828,7 @@ Gdyby zastosować dwa oddzielne wzmacniacze dla fotodiod, generacja sygnału sum
 Wyjścia obydwu torów są doprowadzone do dzielników 20:1, które mają na celu dopasowanie impedancji wyjściowej do kabla $50~\Omega$. To z pozoru kontrowersyjne rozwiązanie nie pogarsza precyzji pomiaru -- dalsze przyrządy pomiarowe po prostu pracują na czulszym zakresie.
 
 
-\chapter{Podsumowanie}
+\section{Podsumowanie}
 
 Pomiary wykonane w niniejszej pracy dowodzą, że da się:
 \begin{itemize}
