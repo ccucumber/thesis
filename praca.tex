@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt,twoside]{article}
+\documentclass[a4paper,10pt,twoside]{report}
 \usepackage[a4paper,left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
 \usepackage{latexsym}
 \usepackage[MeX]{polski}
@@ -46,7 +46,7 @@
 %\renewcommand\abstractname{Abstrakt} !(Jaworska-Gołąb stajl)
 
 \usepackage{titlesec}
-\newcommand{\sectionbreak}{\clearpage}
+%\newcommand{\sectionbreak}{\clearpage}
 
 %polskie numerowanie sekcji (z kropką na końcu)
 \makeatletter
@@ -89,7 +89,7 @@ Stabilizacja długości fali i pomiar magnetorotacji zachodziły jednocześnie i
 \end{abstract}
 
 \chapter{Wstęp}
-\subsection{Cel pracy}
+\section{Cel pracy}
 
 %akapit chaotyczny. S.P.
 \begin{comment}
@@ -112,7 +112,7 @@ Budowany układ miał za zadanie:
 W niniejszej pracy opisano budowę takiego układu, jak również wyniki pierwszych pomiarów wykonanych przy jego pomocy.
 
 
-\subsection{Laser VCSEL}
+\section{Laser VCSEL}
 
 
 Lasery półprzewodnikowe wykorzystują fakt, że rekombinacja nośników ładunku w półprzewodniku może wiązać się z emisją fotonów o energii równej różnicy energii między pasmem przewodzenia a pasmem walencyjnym. Rekombinacja z emisją promieniowania jest możliwa tylko w materiałach z prostą przerwą energetyczną.
@@ -161,7 +161,7 @@ Brak konieczności obróbki krawędzi bocznych pozwala testować gotowe struktur
 Lasery VCSEL mają również swoje wady. Mała długość rezonatora skutkuje poszerzeniem linii. Jest ona na ogół kilkanaście razy szersza od linii generowanej przez lasery z emisją boczną. Niewielki rozmiar i przez to bardzo wysoka gęstość prądu w obszarze ograniczają maksymalną moc do (w przypadku małych diod) kilku miliwatów, podczas gdy porównywalnej wielkości diody z emisją boczną uzyskują moce rzędu setek miliwatów. Problemem jest dodatkowo skłonność laserów VCSEL do pracy wielomodowej.
 
 
-\subsection{Stabilizacja długości fali lasera}
+\section{Stabilizacja długości fali lasera}
 
 Częstotliwość $\nu$ przejścia $D1$ w rubidzie wynosi $3{,}77 \cdot 10^{14}~
 \mathrm{Hz}$, podczas gdy szerokość pojedynczej linii absorpcyjnej,
@@ -251,7 +251,7 @@ umożliwia technika nazywana detekcją fazoczułą.
 
 \pagebreak
 
-\subsection{Magnetorotacja i nieliniowy efekt Faradaya}
+\section{Magnetorotacja i nieliniowy efekt Faradaya}
 
 Magnetometria optyczna określa techniki, w których światło jest używane  do wykrywania oddziaływań momentów magnetycznych atomów z polem magnetycznym.
 
@@ -259,7 +259,7 @@ Atomy posiadają momenty magnetyczne ze względu na spiny elektronów i jąder a
 
 W obecności pola magnetycznego $\vec B$ moment magnetyczny $\vec \mu$ ulega pod wpływem momentu siły
 \begin{equation}
-\tau =\vec \mu \times \vec B
+\vec \tau =\vec \mu \times \vec B
 \end{equation}
 precesji o częstości
 \begin{equation}
@@ -271,16 +271,18 @@ Fotony padającego światła, będąc absorbowane przez atomy w próbce, przepro
 %Zapis stanów w bazie $|F,m_F\rangle$ pozwala na przejrzystą analizę możliwych przejść.
 %Przykładowe przejście, Przykładowe przejście, $F=1 \rightarrow F'=0$, przedstawia rysunek \ref{poziomyL}
 
-Niektóre przejścia między stanami są wykluczone ze względu na zasady zachowania: momentu pędu i parzystości funkcji falowej. 
+Tylko niektóre przejścia między stanami są możliwe ze względu na zasady zachowania: momentu pędu i parzystości funkcji falowej. 
 
-Do wytłumaczenia teoretycznych podstaw magnetometrii optycznej został wybrany najprostszy układ poziomów atomu -- układ $\Lambda$ o dwóch podpoziomach stanu podstawowego i niezdegenerowanym stanie wzbudzonym (F=1/2 i F'=0).
-Taki układ pokazany jest na rysunku \ref{poziomyL}. Na początku zakładamy, że pole magnetyczne $\vec B=0$, więc stany podstawowe są zdegenerowane.
+Do wytłumaczenia teoretycznych podstaw magnetometrii optycznej został wybrany najprostszy układów poziomów atomu -- o dwóch podpoziomach stanu podstawowego i wzbudzonego, F=1/2 i F'=1/2.
+Taki układ pokazany jest na rysunku \ref{poziomyL}. Na początku zakładamy, że pole magnetyczne $\vec B=0$, więc stany podstawowe mają równe energie.
+ Mimo, że stan wzbudzony ma dwa podpoziomy, w omawianym przykładzie tylko jeden z nich jest osiągany, więc praktycznie jest to układ $\Lambda$.
+
 Jeśli stan takiego atomu rozpisać w bazie stanów $\lvert m_z \rangle$, okaże się, że opis oddziaływania ze światłem jest szczególnie prosty. Poszczególne polaryzacje światła mogą dokonać następującej zmiany stanu atomów:
 \begin{center}
 \begin{description}
 \item[polaryzacja $\sigma_+$] zwiększa $m_z$ o 1,
 \item[polaryzacja $\sigma_-$] zmniejsza $m_z$ o 1,
-\item[polaryzacja $\pi$] pozostawia $m_z$ bez zmian.
+\item[polaryzacja $\pi$] pozostawia $m_z$ bez zmian. Tym niemniej, ze względu na CO??, takie przejście jest niemożliwe (przy zadanej osi kwantyzacji $z$).
 \end{description}
 \end{center}
 
@@ -291,13 +293,66 @@ Jeśli stan takiego atomu rozpisać w bazie stanów $\lvert m_z \rangle$, okaże
  \includegraphics[width=0.8\textwidth]{./obrazki/pumping1.pdf}
  % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
 \end{center}
-\caption{ Schemat poziomów energetycznych dla przejścia $F=1/2 \rightarrow F'=0$. U góry orientacja w przestrzeni, u dołu zobrazowany proces pompowania optycznego.}
+\caption{ Schemat poziomów energetycznych dla przejścia $F=1/2 \rightarrow F'=1/2$. U góry orientacja osi w przestrzeni, u dołu zobrazowany proces pompowania optycznego.}
 \label{poziomyL}
 \end{figure}
 
-Oświetlenie atomów światłem o polaryzacji $\sigma_+$ (jak na rysunku) powoduje przepompowanie populacji atomów do stanu o $m_z$ maksymalnym ($m_z$=+1/2, oznaczmy go $\lvert + \rangle_z$). Dalsza absorpcja światła o polaryzacji $\sigma_+$ nie jest możliwa, ponieważ populacja stanu o $m_z$=-1/2 ($\lvert - \rangle_z$) jest pusta. Taki stan nazywamy stanem ciemnym, ponieważ nie absorbuje padającego światła. Dla zadanej polaryzacji  światła $\sigma_+$ stan ciemny to $\lvert + \rangle_z$, a stan jasny który absorbowałby światło to $\lvert - \rangle_z$. Oddziaływanie ze światłem wytworzyło uporządkowanie atomów, przenosząc atomy do jednego, określonego stanu kwantowego.
+Proces pompowania optycznego, czyli (TUTAJ?? U NAS??) procesu selektywnego obsadzania podpoziomów struktury nadsubtelnej, zostanie wyjaśniony przy pomocy rysunku \ref{fig:Px-}. Przedstawia on zależności od czasu: pola magnetycznego oraz natężenia światła (które zadajemy) i prawdopodobieństwa znalezienia atomu w stanie $\lvert - \rangle_z$.
+
+\begin{figure}[h!]
+\begin{center}
+ %\includegraphics[width=0.8\textwidth]{./obrazki/figure3.JPG}
+ \includegraphics[width=0.8\textwidth]{./obrazki/pumping25.pdf}
+ % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+\end{center}
+\caption{ Ewolucja obsadzenia stanu $\lvert - \rangle_z$ w czasie. Po lewej stronie wykresu uporządkowanie atomów wzrasta na skutek pompowania optycznego. W t=0 włączone jest pole magnetyczne i populacja atomów zaczyna oscylować pomiędzy stanami $\lvert - \rangle_z$ i $\lvert + \rangle_z$ }
+\label{fig:Px-}
+\end{figure}
+
+Przed włączeniem światła, populacje podpoziomów stanu podstawowego są równe i wynoszą $\rho_{--}=\rho_{++}=1/2$. Jest to zobrazowane na rysunku \ref{poziomyL}, jako kupki równej wielkości. Na rysunku \ref{Px-} odpowiada to fazie 1. 
+
+Oświetlenie atomów światłem o polaryzacji $\sigma_+$ (jak na rysunku \ref{poziomyL}) powoduje przepompowanie populacji atomów ze stanu o $m_z=-1$ (oznaczmy go $\lvert - \rangle_z$) do pozostałych dwóch stanów, $m_z=0$ i $m_z=1$. Dzieje się tak, ponieważ światło $\sigma_+$ może wzbudzać tylko atomy w stanie $\lvert - \rangle_z$, po czym wzbudzony atom może ,,spaść" do dowolnego podpoziomu stanu podstawowego. W efekcie, atomy są usuwane ze stanu $\lvert - \rangle_z$ i gromadzą się w stanie $\lvert + \rangle_z$. Gdy populacja stanu o $m_z$=-1 ($\lvert - \rangle_z$) jest pusta, dalsza absorpcja światła o polaryzacji $\sigma_+$ nie jest możliwa. Taki stan atomu, który nie absorbuje padającego światła  nazywamy stanem ciemnym. Dla zadanej polaryzacji  światła $\sigma_+$ stan ciemny to $\lvert + \rangle_z$, a stan jasny który absorbowałby światło to $\lvert - \rangle_z$. Oddziaływanie ze światłem tworzy więc uporządkowanie atomów, przenosząc atomy do jednego, określonego stanu kwantowego.
  
-Jeśli w takiej sytuacji nagle, nieadiabatycznie, pole $\vec B$ zostanie ,,włączone", stany podstawowe przestaną być zdegenerowane. W bazie związanej z osią $\hat y$, równoległą do $\vec B$, energia stanu o $m_y$=1/2 jest przesunięta o $+\frac{\hbar \Omega_L}{2}$, a stanu o $m_y$=-1/2 przesunięta o $-\frac{\hbar \Omega_L}{2}$. Oznaczmy te stany $\lvert + \rangle_y$ i $\lvert - \rangle_y$.
+Wyłączenie światła powoduje zatrzymanie procesu porządkowania, co pokazane jest jako etap 3 na rysunku \ref{fig:Px-}. Na rysunku nie jest widoczne cofanie się uporządkowania (polaryzacji??), ale oczywiście musi istnieć proces powodujący wyrównanie populacji podpoziomów podstawowych, który po długim czasie doprowadzi układ do stanu nieuporządkowania, jak na etapie 1.
+
+Proces pompowania optycznego można opisać przy pomocy równań kinetycznych (\emph{rate equations}, niektórzy nazywają je też równaniami rat).
+
+Atom przebywa w stanie wzbudzonym tylko przez bardzo krótki czas, natychmiast spadając do stanu podstawowego. Pozwala to zapisać, że populacje stanów $\lvert - \rangle_z$ i $\lvert + \rangle_z$ zawierają w sumie wszystkie atomy:
+
+\begin{equation}
+\rho_{--}+\rho_{++}=1
+\end{equation}
+
+Równania kinetyczne wyglądają więc następująco:
+
+
+\begin{equation}
+\left\{
+\begin{array}{rcl}
+\frac{d \rho_{++}}{d t} &=&  R \rho_{--} - \Gamma/2 (\rho_{++}- \rho_{--} )\\
+\frac{d \rho_{--}}{d t} &=&- R \rho_{--} - \Gamma/2(\rho_{--}- \rho_{++} )
+\end{array}
+\right.
+\end{equation}
+
+
+
+
+Gdzie $R$ to szybkość pompowania \footnote{równa ilości fotonów na jednostkę czasu razy prawdopodobieństwo przejścia  $\alpha=$1/3 ( jest to współczynnik Clebscha-Gordana dla j=1/2(atom) i J=1(foton))}, R -- , a $\Gamma/2$ -- stała czasowa procesu dekoherencji stanu podstawowego.
+
+Rozwiązanie powyższego układu równań daje adiabatyczne dojście do minimalnego obsadzenia stanu $\lvert - \rangle_z$: \nopagebreak
+
+\begin{equation}
+\rho_{--}=\frac{\Gamma}{2(R+\Gamma)} + \frac{R}{2 (R+\Gamma)} e^{-t (\Gamma + R)}
+\end{equation}
+
+W przypadku $\Gamma=0$ rozwiązanie upraszcza się do szczególnie prostej formy:
+\begin{equation}
+\rho_{--}= \frac{1}{2} e^{-t ( R)}
+\end{equation} 
+ 
+Załóżmy, że mając przygotowany układ w stanie ciemnym, wyłączamy światło (pompowanie) i ,,włączamy" pole magnetyczne $\vec B$.
+Stany podstawowe przestaną być zdegenerowane. W bazie związanej z osią $\hat y$, równoległą do $\vec B$, energia stanu o $m_y$=1/2 jest przesunięta o $+\frac{\hbar \Omega_L}{2}$, a stanu o $m_y$=-1/2 przesunięta o $-\frac{\hbar \Omega_L}{2}$. Oznaczmy te stany $\lvert + \rangle_y$ i $\lvert - \rangle_y$.
 
 Przejście z bazy $\hat z$ do $\hat y$ dla układu o spinie 1/2 jest dane jako:
 
@@ -308,32 +363,23 @@ Przejście z bazy $\hat z$ do $\hat y$ dla układu o spinie 1/2 jest dane jako:
 
 Znając przesunięcie poziomów energetycznych, zakładając, że układ był, gdy włączono pole magnetyczne, w chwili $t=0$ w stanie ciemnym $\lvert + \rangle_z$, możemy przewidzieć ewolucję stanu b bazie $\hat y$:
 \begin{equation}
-\lvert \psi(t) \rangle = \sqrt{\frac{1}{2}} \left( e^{i \Omega_L t/2} \lvert - \rangle_y + e^{i \Omega_L t/2} \lvert + \rangle_y \right)
+\lvert \psi(t) \rangle = \sqrt{\frac{1}{2}} \left( e^{-i \Omega_L t/2} \lvert - \rangle_y + e^{i \Omega_L t/2} \lvert + \rangle_y \right)
 \end{equation} 
  
-Prawdopodobieństwo znalezienia atomu w stanie jasnym, oddziałującym ze światłem, jest więc równe
+Prawdopodobieństwo znalezienia atomu w stanie jasnym, oddziałującym ze światłem, jest więc równe:
 
  \begin{equation}
 P \left( x,- \right)= \lvert \langle \psi(t) \lvert - \rangle_z \rvert^2 = \sin^2 (\Omega_L t/2)= \frac{1}{2}\left(1-\cos(\Omega_L t/2) \right),
 \label{Px-} 
 \end{equation} 
 
-Periodycznie oscylujące z częstością $\Omega_L$ powyższe prawdopodobieństwo niesie za sobą oscylacje absorpcji i współczynnika załamania w ośrodku. Mierząc częstotliwość oscylacji, można wyznaczyć częstość Larmora, a z niej indukcję $\vec B$.
+Oscylacje populacji pomiędzy stanem jasnym, a ciemnym zaznaczone są na \ref{fig:Px-} jako obszar 5. Oscylujące z częstością $\Omega_L$ prawdopodobieństwo oddziaływania ze światłem niesie za sobą oscylacje absorpcji i współczynnika załamania w ośrodku. Mierząc częstotliwość oscylacji, można by wyznaczyć częstość Larmora, a z niej indukcję $\vec B$.
 
-W praktyce oscylacje obsadzenia stanu ciemnego zanikną z dwóch powodów. Pierwszym z nich jest interakcja ze światłem, która w układzie z polem magnetycznym nie prowadzi do pompowania optycznego, ale do mieszania stanów $\lvert - \rangle_z$ i $\lvert + \rangle_z$. Drugim jest spontaniczny rozpad ( dekoherencja) uporządkowania w czasie.
 
-Ewolucja w czasie prawdopodobieństwa \ref{Px-} jest pokazana na rysunku \ref{fig:Px-}
+W praktyce jednak, obserwacja oscylacji obsadzenia stanu ciemnego wiąże się z koniecznością przepuszczania światła przez ośrodek. W takiej sytuacji, przy obecności pola magnetycznego, interakcja ze światłem nie będzie prowadzić do pompowania optycznego, ale do mieszania stanów $\lvert - \rangle_z$ i $\lvert + \rangle_z$ i w konsekwencji do niszczenia orientacji ośrodka. Gdyby nawet pozostawić układ bez oddziaływania ze światłem, nastąpi spontaniczny rozpad uporządkowania w czasie, ze względu na proces dekoherencji. Zanik uporządkowania przedstawia obszar 6 na rysunku \ref{fig:Px-}.
 
-\begin{figure}[h!]
-\begin{center}
- %\includegraphics[width=0.8\textwidth]{./obrazki/figure3.JPG}
- \includegraphics[width=0.8\textwidth]{./obrazki/pumping2.pdf}
- % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
-\end{center}
-\caption{ Ewolucja obsadzenia stanu $\lvert - \rangle_z$ w czasie. Po lewej stronie wykresu uporządkowanie atomów wzrasta na skutek pompowania optycznego. W t=0 włączone jest pole magnetyczne i populacja atomów zaczyna oscylować pomiędzy stanami $\lvert - \rangle_z$ i $\lvert + \rangle_z$ }
-\label{fig:Px-}
-\end{figure}
 
+GDYBY JEDNAK ŚWIECIĆ PERIODYCZNIE, TO UPORZĄDKOWANIE BY ZOSTAŁO.
 
 
 Dla światła o polaryzacji liniowej $\sigma$ również występuje stan ciemny, ale nazywany nie uporządkowaniem, ale orientacją, ze względu na jego zerowy wypadkowy moment magnetyczny.
@@ -444,183 +490,10 @@ Detekcję fazoczułą dwóch sygnałów -- zmian absorpcji na częstotliwości m
 
 
 
-\pagebreak
 
-
-\section{Wykonane pomiary}
-
-Po zbudowaniu układów elektronicznych opisanych w rozdziale \ref{ch:aparatura} można było przejść do testów i pomiarów.
-
-
-
-
-\subsection{Spektroskopia rubidu}
-
-Jako pierwszy przeprowadzono następujący, trochę nietypowy pomiar.
-Zmierzono absorpcję w komórce dla wielu pojedynczych długości fali, zmierzonych lambdametrem. Z tych wyników skonstruowano wykres.
-Taki pomiar był potrzebny by uwiarygodnić wskazania miernika długości fali, oraz aby w dalszych pomiarach móc powiązać kształt sygnału absorpcji w komórce (zwanego dalej spektroskopią) z długością fali tudzież odstrojeniem od przejścia atomowego.
- 
-Wynik pomiaru z komórki o pokryciu parafinowym przedstawia rys. \ref{fig:spekpara}, a z komórki z gazem buforowym rys. \ref{fig:spekgaz}.
-
-Widać, że w komórce z gazem buforowym nastąpiło bardzo znaczące obniżenie absorpcji (z ok. 50\% do ok. 5\%), jak również poszerzenie linii. Przesunięcie centrum linii było mniejsze od niepewności pomiaru. Dalsze pomiary wykazały, że pomimo absorpcji niższej o rząd wielkości (co utrudnia dokładny pomiar absorpcji i skręcenia), komórka z gazem buforowym lepiej sprawdziła się w pomiarach pola magnetycznego, pozwalając obserwować dużo węższe rezonanse (patrz rozdział \ref{sec:magnetorotacja}). Przyczyną było prawdopodobnie niesprawne pokrycie anty-relaksacyjne komórki z parafiną.
-
-
-\begin{figure}[h!]
-\centering
- \includegraphics[width=\textwidth]{spek_para.eps}
- % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Spektroskopia komórki z pokryciem parafinowym. Pomiar w $T=50^{\circ}C$}
- \label{fig:spekpara}
-\end{figure}
-
-
-
-\begin{figure}[h!]
-\centering
- \includegraphics[width=\textwidth]{spek_gaz.eps}
- % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Spektroskopia komórki z gazem. Widoczne znaczne poszerzenie linii i obniżona transmisja. $T=50^{\circ}C$}
- \label{fig:spekgaz}
-\end{figure}
-
-
-\section{Sygnał błędu}
-
-Zmierzono zależność sygnału błędu stabilizacji długości fali, to jest zależność amplitudy sygnału z wyjścia wzmacniacza fazoczułego pracującego na częstotliwości modulacji (,,pierwszej harmonicznej``). Sygnał ten można interpretować jako wartość pochodnej krzywej absorpcji.
-
-Na rysunku \ref{fig:panoda} przedstawiona jest zależność tego sygnału od amplitudy modulacji. Widać, że wraz ze wzrostem amplitudy modulacji amplituda sygnału pochodnej rośnie, ale następuje też jego poszerzenie wzdłuż osi odciętych. Jest to spowodowane tym, że przy zwiększaniu amplitudy modulacji, w pewnym momencie długości fali lasera nie można jej już traktować jako stałej, ale zachodzi jej ''rozsmarowanie" w pewnym zakresie. Efekt jest zauważalny, gdy ta szerokość staje się porównywalna z szerokością obserwowanych linii absorpcyjnych. Powyżej pewnej amplitudy modulacji nie następuje już dalszy wzrost amplitudy sygnału błędu, a jedynie jego dalsze poszerzanie. Można to dostrzec na trzech najwyższych przebiegach na rys. \ref{fig:panoda}.
-
-Rysunek \ref{fig:panodp} przedstawia zależność sygnału błędu od mocy światła przechodzącego przez komórkę. Poszerzenie sygnału ze wzrostem mocy światła praktycznie nie występuje. Oznacza to, że moc światła nie jest zbyt wysoka, tj. nie wysyca populacji atomów w komórce.
-
-%DODAĆ PORZĄDNE OSIE X.
-
-\begin{figure}[h!]
-\centering
- \includegraphics[width=\textwidth]{panoramy_1H_oda.eps}
- % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Zależność sygnału błędu od amplitudy modulacji długości fali. $f_{mod}=101kHz, P_{las}=20 \mu W$}
- \label{fig:panoda}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
- \includegraphics[width=\textwidth]{panoramy_1H_odp.eps}
- % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Zależność sygnału błędu od amplitudy mocy lasera. $f_{mod}=101kHz, A_{mod}=1000mV$}
- \label{fig:panodp}
-\end{figure}
-
-\section{Magnetorotacja}
-\label{sec:magnetorotacja}
-
-
-Zmieniając częstotliwość modulacji długości fali lasera, możemy doprowadzić do sytuacji, gdy ta częstotliwość pokrywa się z częstotliwością precesji atomów w polu magnetycznym.
-Zachodzi wtedy skręcenie polaryzacji (liniowo spolaryzowanego) światła padającego na komórkę. Skręcenie jest mierzone przez polarymetr, a jego amplitudę wyznacza wzmacniacz fazoczuły, który może mierzyć sygnał na częstotliwości modulacji oraz jej harmonicznych. Zależność amplitudy skręcenia w zależności od indukcji pola magnetycznego w komórce przedstawia rys. \ref{fig:magnetorot1}. Widać, że przebieg tej zależności ma postać krzywej rezonansowej.
-
-\begin{figure}[h!]
-\centering
- \includegraphics[width=\textwidth]{magnetorot1.eps}
- % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Przykładowa zależność magnetorotacji, po detekcji fazoczułej, w zależności od pola magnetycznego. Pole magnetyczne wyrażone w jednostkach częstości Larmora dla ${}^{87} \mathrm{Rb}$.
- $f_{mod}=101kHz, P_{las}=15 \mu W$}
- \label{fig:magnetorot1}
-\end{figure}
-
-Jednym z podstawowych celów niniejszej pracy była weryfikacja parametrów magnetorotacji, którą można uzyskać przez interakcję światła ze zbudowanego lasera z atomami.
-Parametrami charakteryzującymi taki rezonans są jego  szerokość -- węższy rezonans pozwala dokładniej wyznaczyć pole magnetyczne, oraz amplituda -- większa również pozwala dokładniej mierzyć pole (przez poprawę stosunku sygnału do szumu).
-
-Na rysunku \ref{wykresikioda} znajduje się zależność szerokości i amplitudy sygnału magnetorotacji od amplitudy modulacji. Widać, że zbyt duża amplituda modulacji powoduje zmniejszenie skręcenia. Jest to związane z tym, że przy zbyt szerokiej modulacji światło jest przez coraz dłuższy ułamek okresu modulacji odstrojone od profilu absorpcji atomów. 
-
-\begin{figure}[h!]
-\centering
-\subfigure[]{
-\includegraphics[width=0.45\textwidth]{wykr_AodA1H.eps}
-\label{fig:goda1H}
-}
-\subfigure[]{
-\includegraphics[width=0.45\textwidth]{wykr_GodA1H.eps} 
-\label{fig:aoda1H}
-}
-
-
-\subfigure[]{
-\includegraphics[width=0.45\textwidth]{wykr_AodA2H.eps}
-\label{fig:goda1H}
-}
-\subfigure[]{
-\includegraphics[width=0.45\textwidth]{wykr_GodA2H.eps} 
-\label{fig:aoda1H}
-}
-\caption{ a) Amplituda rezonansu na 1 harmonicznej w zależności od $A_m$ b) Szerokość rezonansu na 1 harmonicznej w zależności od $A_m$ 
-c) Amplituda rezonansu na 2 harmonicznej w zależności od $A_m$ d) Szerokość rezonansu na 2 harmonicznej w zależności od $A_m$}
-\label{wykresikioda}
-\end{figure}
-
-
-Na rysunku \ref{wykresikiodp} znajduje się zaś zależność powyższych parametrów od od mocy światła padającego na komórkę. Amplituda sygnału magnetorotacji jest wprost proporcjonalna od mocy lasera, ponieważ mierzona jest różnica natężeń światła w dwóch polaryzacjach. Zwiększanie mocy światła powoduje jednak poszerzenie rezonansu.
-
-
-\begin{figure}[h!]
-\centering
-\subfigure[]{
-\includegraphics[width=0.45\textwidth]{wykr_AodP1H.eps}
-\label{fig:goda1H}
-}
-\subfigure[]{
-\includegraphics[width=0.45\textwidth]{wykr_GodP1H.eps} 
-\label{fig:aoda1H}
-}
-
-\subfigure[]{
-\includegraphics[width=0.45\textwidth]{wykr_AodP2H.eps}
-\label{fig:goda1H}
-}
-\subfigure[]{
-\includegraphics[width=0.45\textwidth]{wykr_GodP2H.eps} 
-\label{fig:aoda1H}
-}
-\caption{ a) Amplituda rezonansu na 1 harmonicznej w zależności od $P_{las}$ b) Szerokość rezonansu na 1 harmonicznej w zależności od $P_{las}$ 
-c) Amplituda rezonansu na 2 harmonicznej w zależności od $P_{las}$ d) Szerokość rezonansu na 2 harmonicznej w zależności od $P_{las}$}
-\label{wykresikiodP}
-\end{figure}
-
-Powyższe pomiary zostały zrobione przy działającym układzie stabilizacji długości fali. Dostrajał on laser do długości fali, przy której sygnał błędu przechodził przez zero (przy przejściu $F=2 \rightarrow F'=2$).
-
-\begin{figure}[h!]
-\centering
- \includegraphics[width=\textwidth]{panoramy_1H_odf.eps}
- % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Zależność magnetorotacji od częstości modulacji. 1 harm. $f_{mod}=101kHz, P_{las}=20 \mu W, A_{mod}=1000mV W$}
- \label{fig:panodf1}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
- \includegraphics[width=\textwidth]{panoramy_2H_odf.eps}
- % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Zależność magnetorotacji od częstości modulacji. 2 harm. $f_{mod}=101kHz, P_{las}=20 \mu W, A_{mod}=1000mV W$}
- \label{fig:panodf2}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
- \includegraphics[width=\textwidth]{panoramy_1H_odam.eps}
- % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Zależność magnetorotacji od częstości modulacji. 1 harm. $f_{mod}=101kHz, P_{las}=20 \mu W, A_{mod}=1000mV W$}
- \label{fig:panodam1}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
- \includegraphics[width=\textwidth]{panoramy_2H_odam.eps}
- % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Zależność magnetorotacji od częstości modulacji. 2 harm. $f_{mod}=101kHz, P_{las}=20 \mu W, A_{mod}=1000mV W$}
- \label{fig:panodam2}
-\end{figure}
-
-\section{Zbudowana aparatura}
+\chapter{Zbudowana aparatura}
 \label{ch:aparatura}
-\subsection{Użyta dioda}
+\section{Użyta dioda}
 
 
 Do wykonania pomiarów została użyta dioda wyprodukowana przez firmę $Vixar$, o oznaczeniu $V795S-002-0001$.
@@ -657,7 +530,7 @@ Obudowa & TO-46 z pięcioma nogami
 \end{center}
 
 
-\subsection{Układ zasilania}
+\section{Układ zasilania}
 
 Na rysunku \ref{sch-psu} przedstawiony jest schemat pierwszego z układów elektronicznych użytych w pracy -- zasilacza diody. Jego zadaniem jest zasilanie diody laserowej prądem o regulowanej, stabilnej w czasie wartości i jak najniższej fluktuacji (szumie). Zbyt duży poziom szumu obecny w niededykowanym zasilaczu znanej firmy był jednym z powodów zaprzestania prac z laserem o emisji powierzchniowej, co jest opisane w pracy mgr. Justyny Mech \cite{mgrJustynaMech}.
 
@@ -679,7 +552,7 @@ Napięcie wzorcowe, dostarczane na nóżkę 3 potencjometru pochodzi z diody Zen
 \label{sch-psu}
 \end{figure}
 
-\subsection{Układ modulacji}
+\section{Układ modulacji}
 
 Po zbadaniu modułu zasilania, kolejnym krokiem było zbadanie, jak szybko można modulować prąd diody, co ma na celu szybką zmianę długości fali. Jako że te diody służą do transmisji danych z prędkością kilku Gb/s, modulacja częstościami na poziomie kilkuset MHz powinna być realna. 
 
@@ -725,7 +598,7 @@ Docelowy układ przedstawia rysunek \ref{sch-mod}. Na płytce znajdują się dio
 \label{wyk-mod}
 \end{figure}
 
-\subsection{Cyfrowe strojenie}
+\section{Cyfrowe strojenie}
 
 Aby uprościć proces dostrajania do linii po uruchomieniu lasera, opracowano układ pozwalający na sterowanie prądem lasera z programu uruchomionego na komputerze.
 Umożliwia on rejestrację zależności absorpcji w komórce od prądu, detekcję linii absorpcyjnych, a później automatyczne dostrojenie lasera do wybranej linii.
@@ -775,7 +648,7 @@ Aby uzyskać ten efekt, wykonywane są następujące operacje:
 
 
 
-\subsection{Stabilizacja długości fali}
+\section{Stabilizacja długości fali}
 
 Po dostrojeniu lasera zachodzi konieczność ciągłej korekty długości fali, tak by pozostać na linii absorpcyjnej.
 
@@ -799,7 +672,7 @@ Sygnały z trzech członów są sumowane przez wzmacniacz \textit{U3C}. Zwora \t
 
 Dodatkowe wyjście \textit{Z4} pozwala na monitorowanie sygnału wybranego zworą \textit{P3}.
 
-\subsection{Polarymetr wraz z układem detekcji}
+\section{Polarymetr wraz z układem detekcji}
 
 Laser, dostrojony do pożądanego przejścia atomowego, oddziałuje z atomami rubidu w komórce.
 Skutkiem tego oddziaływania jest osłabienie wiązki -- absorpcja oraz rotacja płaszczyzny polaryzacji światła.
@@ -828,7 +701,223 @@ Gdyby zastosować dwa oddzielne wzmacniacze dla fotodiod, generacja sygnału sum
 Wyjścia obydwu torów są doprowadzone do dzielników 20:1, które mają na celu dopasowanie impedancji wyjściowej do kabla $50~\Omega$. To z pozoru kontrowersyjne rozwiązanie nie pogarsza precyzji pomiaru -- dalsze przyrządy pomiarowe po prostu pracują na czulszym zakresie.
 
 
-\section{Podsumowanie}
+\chapter{Wyniki pomiarów}
+
+Po zbudowaniu układów elektronicznych opisanych w rozdziale \ref{ch:aparatura} nastąpił etap testów i pomiarów. Jako ośrodek optycznie czynny użyte zostały komórki szklane zawierające pary izotopu rubidu ${}^87Rb$. Jedna z nich posiadała pokrycie parafinowe, a druga zawierała gaz buforowy. Komórki były ogrzewane do temperatury $50~{}^\circ$C poprzez przepływ prądu przez bifilarnie skręcony drut oporowy (takie skręcenie sprawia, że pola magnetyczne wytwarzane przez dwa druty praktycznie całkowicie się znoszą).
+Komórki zostały umieszczone wewnątrz ekranu magnetycznego, który ekranował pole magnetyczne Ziemi. Umieszczony wewnątrz ekranu solenoid pozwalał zadawać pole magnetyczne oddziałujące na atomy.
+
+\nopagebreak
+\section{Spektroskopia rubidu}
+Jako pierwszy przeprowadzono następujący, nieco nietypowy pomiar.
+W pomiarze tym zmierzono absorpcję w komórce dla wielu pojedynczych długości fali, wyznaczonych przy pomocy miernika długości fali, tzw. lambdametru i z uzyskanych wyników skonstruowano wykres , o bezwzględnej osi częstotliwości.
+Taki pomiar był potrzebny by uwiarygodnić wskazania miernika długości fali, oraz aby w dalszych pomiarach móc powiązać sygnał absorpcji w komórce (zwany dalej spektroskopią) z długością fali tudzież odstrojeniem od przejścia atomowego.
+ 
+Wynik pomiaru z komórki o pokryciu parafinowym przedstawia rys. \ref{fig:spekpara}, a z komórki z gazem buforowym rys. \ref{fig:spekgaz}.
+
+
+Jak widać, w komórce z parafinowym pokryciem ścian widoczne są dość wyraźne dwa przejścia absorpcyjne związane z przejściem ze stanu podstawowego $F=2$ do jednego z dwóch stanów wzbudzonych ($F'=1$ lub $F'=2$). Dla temperatury par atomowych równej ok. 50$^\circ$C, absorpcja w komórce z parafiną wynosi ok. 50\%. Dla porównania, w komórce z gazem buforowym nastąpiło bardzo znaczące zmniejszenie absorpcji (z ok. 50\% w komórce parafinowej do ok. 5\%). Linie absorpcyjne uległy również znaczącemu poszerzeniu. Dodatkowym efektem powinno być pochodzące od gazu buforowego ciśnieniowe przesunięcie linii absorpcyjnych, ale ponieważ było mniejsze od niepewności pomiaru, nie można go było jednoznacznie zidentyfikować. Dalsze pomiary wykazały, że pomimo absorpcji niższej o rząd wielkości (co utrudnia dokładny pomiar absorpcji i skręcenia), komórka z gazem buforowym lepiej sprawdziła się w pomiarach pola magnetycznego, pozwalając obserwować dużo węższe rezonanse (patrz rozdział \ref{sec:magnetorotacja}). Przyczyną była bardzo zła jakość pokrycia antyrelaksacyjnego wykorzystanego do produkcji komórki parafinowej przez firmę \textit{Precision Glassblowing}\footnote{Późniejsze pomiary tzn. pomiary wykonane z komórką w ramach badań innych niż omawiane w tej pracy wykazały, że pokrycie antyrelaksacyjne komórki praktycznie nie powoduje wydłużenia czasu życie polaryzacji atomowej.}
+
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{spek_para.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Spektroskopia komórki z pokryciem parafinowym. Pomiar w $T=50^{\circ}C$}
+ \label{fig:spekpara}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{spek_gaz.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Spektroskopia komórki z gazem. Widoczne znaczne poszerzenie linii i obniżona transmisja. $T=50^{\circ}C$}
+ \label{fig:spekgaz}
+\end{figure}
+
+
+\section{Sygnał błędu}
+
+Po rejestracji spektroskopii absorpcyjnej, przeprowadzono pomiary mające na celu sprawdzenie, czy stabilizacja lasera metodą opisaną w \ref{pl:stab1h} jest możliwa.
+
+Zmierzono zależność amplitudy sygnału absorpcyjnego zaobserwowanego przy oświetleniu komórki światłem o modulowanej długości fali. Sygnał rejestrowany był jako suma natężeń mierzonych przez dwa kanały polarymetru, a analizowany przy pomocy wzmacniacza fazoczułego pracującego na częstotliwości modulacji (pierwszej harmonicznej). Dla niezbyt dużych amplitud modulacji, tzn. zakresów modulacji częstości mniejszych niż szerokość obserwowanych linii absorpcyjnych, sygnał ten można interpretować jako pochodną sygnału absorpcji po długości fali.
+%Na podstawie tego sygnału będzie pracował układ automatycznego dostrajania lasera do przejścia.
+
+Na rysunku \ref{fig:panoda} przedstawiona jest zależność sygnału błędu od odstrojenia lasera, dla kilku amplitud modulacji. Dla odniesienia został również sygnał spektroskopii absorpcyjnej w naturalnym rubidzie (mieszaninie izotopów ${}^87Rb$ i ${}^85Rb$).
+Na rysunku dla każdej z amplitud modulacji zaznaczone są dwie krzywe. Są to sygnały w fazie i w kwadraturze uzyskane ze wzmacniacza fazoczułego.
+
+Widać, że wraz ze wzrostem amplitudy modulacji amplituda sygnału pochodnej rośnie, ale następuje też jego poszerzenie wzdłuż osi odciętych. Jest to spowodowane tym, że przy zwiększaniu amplitudy modulacji, w pewnym momencie amplituda modulacji staje się porównywalna, a później nawet większa od szerokości dopplerowskiej linii absorpcyjnych.  Powyżej pewnej amplitudy modulacji nie następuje już dalszy wzrost amplitudy sygnału błędu, a jedynie jego dalsze poszerzanie. Można to dostrzec na trzech najwyższych przebiegach na rys. \ref{fig:panoda}, co pozwala sądzić, że amplituda modulacji 1000~mV odpowiada mniej więcej połowie szerokości dopplerowskiej przejścia.
+
+
+Analogiczne pomiary sygnału błędu przeprowadzone zostały w funkcji mocy światła przechodzącego przez komórkę. Jak widać, poszerzenie sygnału ze wzrostem mocy światła praktycznie nie występuje. 
+
+%DODAĆ PORZĄDNE OSIE X.
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{panoramy_1H_oda.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zależność sygnału błędu od amplitudy modulacji długości fali. $f_{mod}=101kHz, P_{las}=20 \mu W$. Wykresy zostały rozsunięte w pionie dla lepszej przejrzystości rysunku.}
+ \label{fig:panoda}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{panoramy_1H_odp.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zależność sygnału błędu od amplitudy mocy lasera. $f_{mod}=101kHz, A_{mod}=1000mV$}
+ \label{fig:panodp}
+\end{figure}
+
+\section{Stabilizacja długości fali}
+Zarejestrowane sygnały błędu miały pożądany, antysymetryczny wokół centrum linii, kształt i wysoki stosunek sygnału do szumu.  
+Po podłączeniu sygnału błędu do zbudowanego układu sterownika PID, stabilizacja długości fali stała się możliwa.
+
+Rysunek \ref{wlmprzedipo} pokazuje znaczące zmniejszenie fluktuacji długości fali po włączeniu stabilizacji. W tabeli \ref{tabela} zestawiona jest amplituda fluktuacji długości fali bez i ze stabilizacją. 
+
+
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=0.7\textwidth]{wlm_przedipo.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zależność długości fali lasera od czasu, przed i po włączeniu układu stabilizacji długości fali.}
+ \label{fig:wlmprzedipo}
+\end{figure}
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline 
+• & Bez stabilizacji & Ze stabilizacją\\ 
+\hline 
+$\delta\lambda$ [pm]& 0.26 & 0.048 \\ 
+\hline 
+$\delta\nu$ [MHz]& 127 & 23 \\ 
+\hline 
+\end{tabular} 
+\caption{Średniokwadratowa amplituda fluktuacji długości fali $\delta\lambda$ i częstości $\delta\nu$ lasera, zarejestrowana prze i po włączeniu układu stabilizacji. }
+\end{table}
+
+\section{Magnetorotacja}
+\label{sec:magnetorotacja}
+
+
+Zmieniając częstotliwość modulacji długości fali lasera, możemy doprowadzić do sytuacji, gdy ta częstotliwość pokrywa się z wielokrotnością częstotliwości precesji atomów w polu magnetycznym.
+W takim przypadku zachodzi skręcenie polaryzacji (liniowo spolaryzowanego) światła padającego na komórkę. Skręcenie jest mierzone przez polarymetr, a jego amplitudę wyznacza wzmacniacz fazoczuły.
+
+DYSKUSJA 2H i 1H i w ogóle.
+
+ Zależność amplitudy skręcenia w zależności od indukcji pola magnetycznego w komórce przedstawia rys. \ref{fig:magnetorot1}. Widać, że przebieg tej zależności ma postać krzywej rezonansowej, \begin{comment} następuje jednak niewielkie \end{comment}.
+% CO NASTĘPUJE??? 
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{magnetorot1.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Przykładowa zależność magnetorotacji, po detekcji fazoczułej, w zależności od pola magnetycznego. Pole magnetyczne wyrażone w jednostkach częstości Larmora dla ${}^{87} \mathrm{Rb}$.
+ $f_{mod}=101~\mathrm{kHz}, P_{lasera}=15~\mu$W. Do danych dopasowano składowe krzywej rezonansowej \ref{krzywa}}
+ \label{fig:magnetorot1}
+\end{figure}
+
+Jednym z podstawowych celów niniejszej pracy było wyznaczenie parametrów magnetorotacji, którą można uzyskać przez interakcję światła ze zbudowanego lasera z atomami.
+Parametrami charakteryzującymi taki rezonans są jego  szerokość -- węższy rezonans pozwala dokładniej wyznaczyć pole magnetyczne, oraz amplituda -- większa również pozwala dokładniej mierzyć pole (przez poprawę stosunku sygnału do szumu).
+
+Na rysunku \ref{wykresikioda} znajduje się zależność szerokości i amplitudy sygnału magnetorotacji od amplitudy modulacji. Widać, że zbyt duża amplituda modulacji powoduje zmniejszenie skręcenia. Jest to związane z tym, że przy zbyt szerokiej modulacji światło jest przez coraz dłuższy ułamek okresu modulacji odstrojone od profilu absorpcji atomów. 
+
+\begin{figure}[h!]
+\centering
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_AodA1H.eps}
+\label{fig:goda1H}
+}
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_GodA1H.eps} 
+\label{fig:aoda1H}
+}
+
+
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_AodA2H.eps}
+\label{fig:goda1H}
+}
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_GodA2H.eps} 
+\label{fig:aoda1H}
+}
+\caption{ a) Amplituda rezonansu na 1 harmonicznej w zależności od $A_m$ b) Szerokość rezonansu na 1 harmonicznej w zależności od $A_m$ 
+c) Amplituda rezonansu na 2 harmonicznej w zależności od $A_m$ d) Szerokość rezonansu na 2 harmonicznej w zależności od $A_m$}
+\label{wykresikioda}
+\end{figure}
+
+\begin{comment}
+Na rysunku \ref{wykresikiodp} znajduje się zaś zależność powyższych parametrów od od mocy światła padającego na komórkę. Amplituda sygnału magnetorotacji jest wprost proporcjonalna od mocy lasera, ponieważ mierzona jest różnica natężeń światła w dwóch polaryzacjach. Zwiększanie mocy światła powoduje jednak poszerzenie rezonansu.
+\end{comment}
+
+%MOŻE TO JEDNAK ODKOMENTOWAĆ< SZYMKU >
+
+\begin{figure}[h!]
+\centering
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_AodP1H.eps}
+\label{fig:goda1H}
+}
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_GodP1H.eps} 
+\label{fig:aoda1H}
+}
+
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_AodP2H.eps}
+\label{fig:goda1H}
+}
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{wykr_GodP2H.eps} 
+\label{fig:aoda1H}
+}
+\caption{ a) Amplituda rezonansu na 1 harmonicznej w zależności od $P_{las}$ b) Szerokość rezonansu na 1 harmonicznej w zależności od $P_{las}$ 
+c) Amplituda rezonansu na 2 harmonicznej w zależności od $P_{las}$ d) Szerokość rezonansu na 2 harmonicznej w zależności od $P_{las}$}
+\label{wykresikiodP}
+\end{figure}
+
+Powyższe pomiary zostały zrobione przy działającym układzie stabilizacji długości fali. Dostrajał on laser do długości fali, przy której sygnał błędu przechodził przez zero (przy przejściu $F=2 \rightarrow F'=2$).
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{panoramy_1H_odf.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zależność magnetorotacji od częstości modulacji. 1 harmoniczna $f_{mod}=101kHz, P_{lasera}=20~\mathrm{ \mu W}, A_{mod}=1000~\mathrm{mV}$}
+ \label{fig:panodf1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{panoramy_2H_odf.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zależność magnetorotacji od częstości modulacji. 2 harmoniczna $f_{mod}=101kHz, P_{lasera}=20~\mathrm{ \mu W}, A_{mod}=1000~\mathrm{mV}$}
+ \label{fig:panodf2}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{panoramy_1H_odam.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zależność magnetorotacji od amplitudy modulacji. 1 harmoniczna $f_{mod}=101kHz,P_{lasera}=20~\mathrm{ \mu W}, A_{mod}=101~\mathrm{kHz}$}
+ \label{fig:panodam1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=\textwidth]{panoramy_2H_odam.eps}
+ % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
+ \caption{Zależność magnetorotacji od amplitudy modulacji. 1 harmoniczna $f_{mod}=101kHz,P_{lasera}=20~\mathrm{ \mu W}, A_{mod}=101~\mathrm{kHz}$}
+ \label{fig:panodam2}
+\end{figure}
+
+
+
+\chapter{Podsumowanie}
 
 Pomiary wykonane w niniejszej pracy dowodzą, że da się:
 \begin{itemize}
@@ -845,6 +934,9 @@ Pomiary wykonane w niniejszej pracy dowodzą, że da się:
 \bibitem{rys-laserki} \url{http://wwwold.fi.isc.cnr.it/users/giovanni.giacomelli/Semic/Samples/samples.html}, dostęp 7.12.2015
 \bibitem{mgrJustynaMech}  Mech, Justyna \emph{Lasery VCSEL do zastosowań w spektroskopii}, praca magisterska pod kierunkiem Jerzego Zachorowskiego, 2009
 \bibitem{spie} Zhou, D., Seurin, J. F., Xu, G., Miglo, A., Li, D., Wang, Q., Sundaresh, M., Wilton, S., Matheussen, J., and  Ghosh, C., \emph{Progress on vertical-cavity surface-emitting laser arrays for infrared illumination applications},  Proc. of SPIE Vol. 9001, 90010E (2014)
+\bibitem{cohen}  C. Cohen-Tannoudji, A. Kastler,
+\emph{Optical  Pumping}, Progress in Optics, Vol. V, 1966, ed. by
+Wolf E. (North-Holland)
 \bibitem{steck} Daniel A. Steck, \emph{Rubidium 87 D Line Data, Rubidium 85 D Line Data}~,\url{http://steck.us/alkalidata}
 \bibitem{srivansan} R. Srinivasan,\textit{ Nonlinear Magneto-Optical Rotation – A possible tool for sensitive magnetometry}, Current Science \textbf{92}, 298 (2007)
 \bibitem{budker-resonance} Kimball D. F. et al.  \emph{Magnetometric sensitivity optimization for nonlinear optical rotation with
