@@ -7,6 +7,7 @@
 \usepackage[dvi-ps]{graphicx}
 \usepackage{indentfirst}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \graphicspath{{./obrazki/}}
 \usepackage{url}
 \usepackage[usenames,dvipsnames]{pstricks}
@@ -29,58 +30,54 @@
 %\renewcommand\bibname{Literatura} %pakiet tocbibind zmienia nazwę rozdziału Literatura na Bibliografia - w ten sposób można przywrócić poprzenią nazwę
 
 \linespread{1.3} %1.3 daje interlinie 1.5
-
-
-\frenchspacing
-
-\pagestyle{fancy}
-\lhead{\footnotesize \leftmark}
-\chead{}
-\rhead{}%\footnotesize Instytut Fizyki, Uniwersytet Jagielloński}
-\lfoot{}%\footnotesize Grzegorz Pałka, fizyka teoretyczna}
-\cfoot{\thepage{ z }\pageref{LastPage}}
-\rfoot{}%\footnotesize rok akademicki 2011/2012}
-\renewcommand{\headrulewidth}{0.3pt}
-\renewcommand{\footrulewidth}{0.3pt}
-
-%\renewcommand\abstractname{Abstrakt} !(Jaworska-Gołąb stajl)
-
-\usepackage{titlesec}
-%\newcommand{\sectionbreak}{\clearpage}
-
 %polskie numerowanie sekcji (z kropką na końcu)
 \makeatletter
  \renewcommand\@seccntformat[1]{\csname the#1\endcsname.\quad}
  \renewcommand\numberline[1]{#1.\hskip0.7em}
 \makeatother
 
-
-\date{1 stycznia 2016}
-\title{Zautomatyzowany układ kontroli lasera diodowego do zastosowań w magnetometrii optycznej.}
-\author{Michał Włodarczyk}
-\date{\footnotesize{\today}}
+%\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\frenchspacing
+\author{\begin{Large}Michał Włodarczyk\end{Large}\\\vspace{100pt} nr albumu:1054744\\
+ Praca magisterska wykonana pod kierunkiem\\
+\vspace{100pt} dr Szymona Pustelnego
+\\\includegraphics[scale=0.45]{logouj.pdf} \vspace{20pt} \\Wydział Fizyki, Astronomii i Informatyki Stosowanej\\Kraków 2016}
+\title{\begin{LARGE}\textbf{Zautomatyzowany układ kontroli lasera diodowego do zastosowań w magnetometrii optycznej.}\end{LARGE}}
+\date{}
 \begin{document}
-\bibliographystyle{plain}
-
-
+\pagenumbering{roman}
 \maketitle
-\vspace{0.25\textheight}
-\begin{large}
-\centering
-Zakład Fotoniki\\
-Instytut Fizyki im. Mariana Smoluchowskiego\\
-Uniwersytet Jagielloński w Krakowie\\
-\end{large}
-\thispagestyle{empty}
+\thispagestyle{plain}
 
+
+\begin{flushright}{\textit{Bardzo dziękuję \\ \vspace{5pt}
+ dr. Szymonowi Pustelnemu \\
+za opiekę nad moją pracą \\
+jak również wielką cierpliwość i wiarę\\
+że pomimo wielu przeciwności losu\\ w końcu zostanie ukończona.}}\vspace{20pt}
+
+{\textit{prof. dr Jerzemu Zachorowskiemu\\dziękuję za cenne uwagi\\ i pomoc w zrozumieniu wielu trudnych zagadnień.}}\vspace{20pt}
+
+{\textit{Przemkowi Włodarczykowi\\dziękuję za pomoc w budowie układów elektronicznych.}}\vspace{20pt}
+
+\end{flushright}
+
+\vspace{15cm}
+
+
+\newpage
+\mbox{}
 \newpage
 \tableofcontents
-\thispagestyle{plain}
-\setcounter{page}{1}
-\newpage
+
+%\thispagestyle{plain}
+ \pagenumbering{arabic}
+%\setcounter{page}{1}
+%\newpage
+
 
 \begin{abstract}
-Zaprojektowano, zbudowano i sprawdzono układy elektroniczne pozwalające zasilać, modulować i stabilizować długość fali diody laserowej o emisji powierzchniowej z pionową wnęką rezonansową (VCSEL). W oparciu o te układy zbudowano układ lasera diodowego emitujący światło o długości fali dostrojonej do linii $D1$ rubidu ($794{,}98~ \mathrm{nm}$).
+Zaprojektowano, zbudowano i scharakteryzowano układy elektroniczne pozwalające zasilać, modulować i stabilizować długość fali diody laserowej o emisji powierzchniowej z pionową wnęką rezonansową (VCSEL). W oparciu o te układy zbudowano układ lasera diodowego emitujący światło o długości fali dostrojonej do linii $D1$ rubidu ($794{,}98~ \mathrm{nm}$).
 
 Następnie zbadano zastosowanie tego układu do precyzyjnego pomiaru pola magnetycznego wykorzystując do tego celu nieliniowy efekt Faradaya. Pomiarów pola magnetycznego dokonywano w parach rubidu poprzez obserwację skręcenia płaszczyzny polaryzacji światła wywołanego modulacją długości fali lasera. Elementem aktywnym optycznie była komórka szklana zawierająca atomy rubidu.  Układ detekcji skręcenia światła zawierał polaryzator Wollastona i dwie fotodiody, a uzyskany fotoprąd podlegał wzmocnieniu i detekcji we wzmacniaczu fazoczułym. 
 
@@ -275,14 +272,15 @@ Tylko niektóre przejścia między stanami są możliwe ze względu na zasady za
 
 Do wytłumaczenia teoretycznych podstaw magnetometrii optycznej został wybrany najprostszy układów poziomów atomu -- o dwóch podpoziomach stanu podstawowego i wzbudzonego, F=1/2 i F'=1/2.
 Taki układ pokazany jest na rysunku \ref{poziomyL}. Na początku zakładamy, że pole magnetyczne $\vec B=0$, więc stany podstawowe mają równe energie.
- Mimo, że stan wzbudzony ma dwa podpoziomy, w omawianym przykładzie tylko jeden z nich jest osiągany, więc praktycznie jest to układ $\Lambda$.
+ Mimo, że stan wzbudzony ma dwa podpoziomy, w omawianym przykładzie tylko jeden z nich jest osiągany, więc w praktyce jest to układ $\Lambda$.
 
 Jeśli stan takiego atomu rozpisać w bazie stanów $\lvert m_z \rangle$, okaże się, że opis oddziaływania ze światłem jest szczególnie prosty. Poszczególne polaryzacje światła mogą dokonać następującej zmiany stanu atomów:
 \begin{center}
 \begin{description}
 \item[polaryzacja $\sigma_+$] zwiększa $m_z$ o 1,
 \item[polaryzacja $\sigma_-$] zmniejsza $m_z$ o 1,
-\item[polaryzacja $\pi$] pozostawia $m_z$ bez zmian. Tym niemniej, ze względu na CO??, takie przejście jest niemożliwe (przy zadanej osi kwantyzacji $z$).
+\item[polaryzacja $\pi$] pozostawia $m_z$ bez zmian.
+% Tym niemniej, ze względu na CO??, takie przejście jest niemożliwe (przy zadanej osi kwantyzacji $z$).
 \end{description}
 \end{center}
 
@@ -297,7 +295,7 @@ Jeśli stan takiego atomu rozpisać w bazie stanów $\lvert m_z \rangle$, okaże
 \label{poziomyL}
 \end{figure}
 
-Proces pompowania optycznego, czyli (TUTAJ?? U NAS??) procesu selektywnego obsadzania podpoziomów struktury nadsubtelnej, zostanie wyjaśniony przy pomocy rysunku \ref{fig:Px-}. Przedstawia on zależności od czasu: pola magnetycznego oraz natężenia światła (które zadajemy) i prawdopodobieństwa znalezienia atomu w stanie $\lvert - \rangle_z$.
+Proces pompowania optycznego, czyli selektywnego obsadzania podpoziomów struktury nadsubtelnej, zostanie wyjaśniony przy pomocy rysunku \ref{fig:Px-}. Przedstawia on zależności od czasu: pola magnetycznego oraz natężenia światła (które zadajemy) i prawdopodobieństwa znalezienia atomu w stanie $\lvert - \rangle_z$.
 
 \begin{figure}[h!]
 \begin{center}
@@ -313,7 +311,7 @@ Przed włączeniem światła, populacje podpoziomów stanu podstawowego są rów
 
 Oświetlenie atomów światłem o polaryzacji $\sigma_+$ (jak na rysunku \ref{poziomyL}) powoduje przepompowanie populacji atomów ze stanu o $m_z=-1$ (oznaczmy go $\lvert - \rangle_z$) do pozostałych dwóch stanów, $m_z=0$ i $m_z=1$. Dzieje się tak, ponieważ światło $\sigma_+$ może wzbudzać tylko atomy w stanie $\lvert - \rangle_z$, po czym wzbudzony atom może ,,spaść" do dowolnego podpoziomu stanu podstawowego. W efekcie, atomy są usuwane ze stanu $\lvert - \rangle_z$ i gromadzą się w stanie $\lvert + \rangle_z$. Gdy populacja stanu o $m_z$=-1 ($\lvert - \rangle_z$) jest pusta, dalsza absorpcja światła o polaryzacji $\sigma_+$ nie jest możliwa. Taki stan atomu, który nie absorbuje padającego światła  nazywamy stanem ciemnym. Dla zadanej polaryzacji  światła $\sigma_+$ stan ciemny to $\lvert + \rangle_z$, a stan jasny który absorbowałby światło to $\lvert - \rangle_z$. Oddziaływanie ze światłem tworzy więc uporządkowanie atomów, przenosząc atomy do jednego, określonego stanu kwantowego.
  
-Wyłączenie światła powoduje zatrzymanie procesu porządkowania, co pokazane jest jako etap 3 na rysunku \ref{fig:Px-}. Na rysunku nie jest widoczne cofanie się uporządkowania (polaryzacji??), ale oczywiście musi istnieć proces powodujący wyrównanie populacji podpoziomów podstawowych, który po długim czasie doprowadzi układ do stanu nieuporządkowania, jak na etapie 1.
+Wyłączenie światła powoduje zatrzymanie procesu porządkowania, co pokazane jest jako etap 3 na rysunku \ref{fig:Px-}. Na rysunku nie jest widoczne cofanie się uporządkowania (polaryzacji??), ale oczywiście musi istnieć proces powodujący wyrównanie populacji podpoziomów podstawowych, który po długim czasie doprowadzi układ do stanu nieuporządkowania, jak na etapie 1. Etap 4 odpowiada dalszemu porządkowaniu pod wpływem światła.
 
 Proces pompowania optycznego można opisać przy pomocy równań kinetycznych (\emph{rate equations}, niektórzy nazywają je też równaniami rat).
 
@@ -340,7 +338,7 @@ Równania kinetyczne wyglądają więc następująco:
 
 Gdzie $R$ to szybkość pompowania \footnote{równa ilości fotonów na jednostkę czasu razy prawdopodobieństwo przejścia  $\alpha=$1/3 ( jest to współczynnik Clebscha-Gordana dla j=1/2(atom) i J=1(foton))}, R -- , a $\Gamma/2$ -- stała czasowa procesu dekoherencji stanu podstawowego.
 
-Rozwiązanie powyższego układu równań daje adiabatyczne dojście do minimalnego obsadzenia stanu $\lvert - \rangle_z$: \nopagebreak
+Rozwiązanie powyższego układu równań daje adiabatyczne dojście do minimalnego obsadzenia stanu $\lvert - \rangle_z$, zależnego od natężenia $\Gamma$ procesu dekoherencji (mieszającego stany): \nopagebreak
 
 \begin{equation}
 \rho_{--}=\frac{\Gamma}{2(R+\Gamma)} + \frac{R}{2 (R+\Gamma)} e^{-t (\Gamma + R)}
@@ -378,10 +376,10 @@ Oscylacje populacji pomiędzy stanem jasnym, a ciemnym zaznaczone są na \ref{fi
 
 W praktyce jednak, obserwacja oscylacji obsadzenia stanu ciemnego wiąże się z koniecznością przepuszczania światła przez ośrodek. W takiej sytuacji, przy obecności pola magnetycznego, interakcja ze światłem nie będzie prowadzić do pompowania optycznego, ale do mieszania stanów $\lvert - \rangle_z$ i $\lvert + \rangle_z$ i w konsekwencji do niszczenia orientacji ośrodka. Gdyby nawet pozostawić układ bez oddziaływania ze światłem, nastąpi spontaniczny rozpad uporządkowania w czasie, ze względu na proces dekoherencji. Zanik uporządkowania przedstawia obszar 6 na rysunku \ref{fig:Px-}.
 
+Jeśli by jednak atomów nie oświetlać w sposób ciągły, a jedynie błyskać światłem w sposób synchroniczny z częstotliwością precesji Larmora, można uzyskać niezanikającą w czasie orientację ośrodka, precesującą w polu i generującą periodyczne wahania współczynnika absorpcji w ośrodku. Odpowiada
+to sytuacji 7 na rys \ref{fig:Px-}.
 
-GDYBY JEDNAK ŚWIECIĆ PERIODYCZNIE, TO UPORZĄDKOWANIE BY ZOSTAŁO.
-
-
+\begin{comment}
 Dla światła o polaryzacji liniowej $\sigma$ również występuje stan ciemny, ale nazywany nie uporządkowaniem, ale orientacją, ze względu na jego zerowy wypadkowy moment magnetyczny.
 
 %\begin{comment}
@@ -400,9 +398,17 @@ Różnicę pomiędzy uporządkowaniem a orientacją widać na rysunku \ref{alor}
 \caption{Wizualizacja prawdopodobieństwa znalezienia atomów w stanie o danym kierunku w przestrzeni (żółty wykres 3D) i obsadzenia podpoziomów stanu podstawowego (różowe słupki) dla: a) Uporządkowania(\textit{alignment}) atomów wywołanego światłem spolaryzowanym kołowo b) Orientacji (\textit{orientation}) atomów wywołąnej światłem spolaryzowanym liniowo. Ilustracja dla poziomu podstawowego o $F=1$, więc o trzech podpoziomach $m_F$}
 \label{alor}
 \end{figure}
+\end{comment}
 
-%\end{comment}
-Ośrodek, w którym jest wytworzona taka orientacja wykazuje anizotropię współczynnika załamania, ponieważ dla jednej z polaryzacji liniowych występuje stan ciemny, a polaryzacja do niej prostopadła jest absorbowana. Ośrodek może być więc rozpatrywany jako płytka falowa \footnote{W pracy \cite{rotpol} użyto porównania do polaryzatora ale, jako że nie następuje wytłumienie światła o polaryzacji prostopadłej do osi, wydaje się ono mniej trafne}.  Nie skręca jednak płaszczyzny polaryzacji wiązki pompującej, ponieważ ta jest współliniowa z jednym z jej azymutów.
+Proces periodycznej oscylacji stanu ośrodka między stanem jasnym i ciemnym jest źródłem nieliniowego efektu Faradaya, leżącego u podstaw magnetometrii optycznej.
+
+Analogiczny efekt orientacji atomów ośrodka może występować także pod wpływem światła o polaryzacji liniowej. Także struktura poziomów atomu może być dużo bardziej skomplikowana niż F=1/2$\rightarrow$F'=1/2. W dalszej części pracy opisane będą efekty oddziaływania światła spolaryzowanego liniowo i wzbudzającego przejście ze stanu o F=2 na F'=2. Występuje tam pięć podpoziomów magnetycznych $m_F$, ale zasada, że modulowane w czasie światło wzbudza magnetyczną orientację ośrodka pozostaje niezmieniona.
+
+
+Ośrodek, w którym jest wytworzona taka orientacja wykazuje anizotropię współczynnika załamania, ponieważ dla jednej z polaryzacji (teraz: liniowych) występuje stan ciemny, a polaryzacja do niej prostopadła jest absorbowana. Ośrodek może być więc rozpatrywany jako płytka falowa \footnote{W pracy \cite{rotpol} użyto porównania do polaryzatora ale, jako że nie następuje wytłumienie światła o polaryzacji prostopadłej do osi, wydaje się ono mniej trafne}.
+
+\begin{comment}  Nie skręca jednak płaszczyzny polaryzacji wiązki pompującej, ponieważ ta jest współliniowa z jednym z jej azymutów.
+\end{comment}
 
 W polu magnetycznym momenty magnetyczne, jak również wytworzona orientacja, obracają się z częstością Larmora $\omega_L$. Obrót ,,płytki falowej" powoduje skręcenie polaryzacji padającego światła.
 
@@ -497,14 +503,14 @@ Detekcję fazoczułą dwóch sygnałów -- zmian absorpcji na częstotliwości m
 
 
 Do wykonania pomiarów została użyta dioda wyprodukowana przez firmę $Vixar$, o oznaczeniu $V795S-002-0001$.
-W strukturze, przedstawionej na rys. (\ref{struktura}), producent umieścił cztery identyczne złącza. Tym niemniej, po ich sprawdzeniu i wybraniu najlepszej z nich, z sobie tylko znanych powodów zdecydował się odłączyć pozostałe trzy.
+W strukturze, przedstawionej na rys. (\ref{struktura}), producent umieścił cztery identyczne złącza. \footnote{Tym niemniej, po ich sprawdzeniu i wybraniu najlepszej z nich, z sobie tylko znanych powodów zdecydował się odłączyć pozostałe trzy.}
 
-W trakcie pomiarów dioda uległa uszkodzeniu. Dzięki uprzejmości prof. dr hab. Marka Idzika z Wydziału FIS AGH, udało się przyłączyć pozostałe trzy struktury do wyprowadzeń w obudowie.
+W trakcie pomiarów dioda uległa uszkodzeniu. Dzięki uprzejmości prof. dr hab. Marka Idzika z Wydziału FIS AGH, udało się przyłączyć pozostałe struktury do wyprowadzeń w obudowie.
 Wszystkie trzy okazały się sprawne.
 
 \begin{figure}[h!]
 \begin{center}
- \includegraphics[width=0.7\textwidth]{./obrazki/vcsel_struktura.png}
+ \includegraphics[width=0.3\textwidth]{./obrazki/vcsel_struktura.png}
  % rys-eel.gif: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
 \end{center}
 \caption{Użyta dioda laserowa (Vixar Inc.)}
@@ -808,13 +814,24 @@ $\delta\nu$ [MHz]& 127 & 23 \\
 Zmieniając częstotliwość modulacji długości fali lasera, możemy doprowadzić do sytuacji, gdy ta częstotliwość pokrywa się z wielokrotnością częstotliwości precesji atomów w polu magnetycznym.
 W takim przypadku zachodzi skręcenie polaryzacji (liniowo spolaryzowanego) światła padającego na komórkę. Skręcenie jest mierzone przez polarymetr, a jego amplitudę wyznacza wzmacniacz fazoczuły.
 
-DYSKUSJA 2H i 1H i w ogóle.
+Wytwarzanie orientacji ośrodka może jednak następować raz bądź dwa razy na okres przebiegu modulującego. Jeśli laser jest dostrojony do zbocza linii rezonansowej, przez jedną połowę okresu modulacji jest lepiej dostrojony do przejścia, a przez drugą gorzej.
+Częstość modulacji jest wtedy równa częstości Larmora:
+\begin{equation}
+f_mod=\frac{\Omega_L}{2 \pi}
+\end{equation}
+Jeśli jednak laser jest dostrojony dokładnie do centrum linii, to  odstrojenie następuje dwa razy na okres modulacji, gdy długość fali jest maksymalnie odstrojona w prawo i gdy jest maksymalnie odstrojona w lewo. Daje to rezonans na połowie częstości Larmora, ponieważ w takim przypadku.
+\begin{equation}
+ f_mod=\frac{ \Omega_L}{2 \pi}
+\end{equation}
+Dodatkowo, w atomach o wyższej ilości podpoziomów nadsubtelnych, orientacja magnetyczna atomów może mieć postać nie dipolową, ale multipolową. Taka sytuacja jest tożsama z obserwacją zmultiplikowanej częstości Larmora (tj obserwacji rotacji momentów magnetycznych nie z częstością $\Omega_L =\gamma \vec B$ ale $k \Omega_L =k \gamma \vec B, k \in \mathbb{N}$). Dla poziomu podstawowego o F=2 w ${}^{87}Rb$ maksymalne $k=2$.
 
- Zależność amplitudy skręcenia w zależności od indukcji pola magnetycznego w komórce przedstawia rys. \ref{fig:magnetorot1}. Widać, że przebieg tej zależności ma postać krzywej rezonansowej, \begin{comment} następuje jednak niewielkie \end{comment}.
-% CO NASTĘPUJE??? 
+Opisane efekty zachodzą od siebie niezależnie, co pozwala wzbudzać rezonanse na kilku częstościach dla jednego pola magnetycznego, jak również dla ustalonej częstotliwości modulacji obserwować rezonanse dla kilku pól magnetycznych.
+
+
+ Zależność amplitudy skręcenia w zależności od indukcji pola magnetycznego w komórce przedstawia rys. \ref{fig:magnetorot1}. Widać, że przebieg tej zależności ma postać krzywej rezonansowej,  następuje jednak niewielkie przekręcenie sygnału pomiędzy kanałami w fazie i w kwadraturze. Jest to spowodowane opóźnieniami fazowymi w układzie modulacji lasera oraz (głównie) w układzie detekcji światła.
 \begin{figure}[h!]
 \centering
- \includegraphics[width=\textwidth]{magnetorot1.eps}
+ \includegraphics[width=0.7\textwidth]{magnetorot1.eps}
  % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
  \caption{Przykładowa zależność magnetorotacji, po detekcji fazoczułej, w zależności od pola magnetycznego. Pole magnetyczne wyrażone w jednostkach częstości Larmora dla ${}^{87} \mathrm{Rb}$.
  $f_{mod}=101~\mathrm{kHz}, P_{lasera}=15~\mu$W. Do danych dopasowano składowe krzywej rezonansowej \ref{krzywa}}
@@ -827,32 +844,34 @@ Parametrami charakteryzującymi taki rezonans są jego  szerokość -- węższy 
 Na rysunku \ref{wykresikioda} znajduje się zależność szerokości i amplitudy sygnału magnetorotacji od amplitudy modulacji. Widać, że zbyt duża amplituda modulacji powoduje zmniejszenie skręcenia. Jest to związane z tym, że przy zbyt szerokiej modulacji światło jest przez coraz dłuższy ułamek okresu modulacji odstrojone od profilu absorpcji atomów. 
 
 \begin{figure}[h!]
+
 \centering
 \subfigure[]{
 \includegraphics[width=0.45\textwidth]{wykr_AodA1H.eps}
-\label{fig:goda1H}
+\label{fig:aoda1H}
 }
 \subfigure[]{
 \includegraphics[width=0.45\textwidth]{wykr_GodA1H.eps} 
-\label{fig:aoda1H}
+\label{fig:goda1H}
 }
 
 
 \subfigure[]{
 \includegraphics[width=0.45\textwidth]{wykr_AodA2H.eps}
-\label{fig:goda1H}
+\label{fig:aoda2H}
 }
 \subfigure[]{
 \includegraphics[width=0.45\textwidth]{wykr_GodA2H.eps} 
-\label{fig:aoda1H}
+\label{fig:goda2H}
 }
+\label{wykresikioda}
 \caption{ a) Amplituda rezonansu na 1 harmonicznej w zależności od $A_m$ b) Szerokość rezonansu na 1 harmonicznej w zależności od $A_m$ 
 c) Amplituda rezonansu na 2 harmonicznej w zależności od $A_m$ d) Szerokość rezonansu na 2 harmonicznej w zależności od $A_m$}
-\label{wykresikioda}
+
 \end{figure}
 
-\begin{comment}
-Na rysunku \ref{wykresikiodp} znajduje się zaś zależność powyższych parametrów od od mocy światła padającego na komórkę. Amplituda sygnału magnetorotacji jest wprost proporcjonalna od mocy lasera, ponieważ mierzona jest różnica natężeń światła w dwóch polaryzacjach. Zwiększanie mocy światła powoduje jednak poszerzenie rezonansu.
+
+Na rysunku \ref{wykresikiodP} znajduje się zaś zależność powyższych parametrów rezonansu od od mocy światła padającego na komórkę.\begin{comment} Amplituda sygnału magnetorotacji jest wprost proporcjonalna od mocy lasera, ponieważ mierzona jest różnica natężeń światła w dwóch polaryzacjach. Zwiększanie mocy światła powoduje jednak poszerzenie rezonansu.
 \end{comment}
 
 %MOŻE TO JEDNAK ODKOMENTOWAĆ< SZYMKU >
@@ -881,13 +900,18 @@ c) Amplituda rezonansu na 2 harmonicznej w zależności od $P_{las}$ d) Szeroko�
 \label{wykresikiodP}
 \end{figure}
 
-Powyższe pomiary zostały zrobione przy działającym układzie stabilizacji długości fali. Dostrajał on laser do długości fali, przy której sygnał błędu przechodził przez zero (przy przejściu $F=2 \rightarrow F'=2$).
+Powyższe pomiary zostały zrobione przy działającym układzie stabilizacji długości fali. Dostrajał on laser do długości fali, przy której sygnał błędu przechodził przez zero (przy przejściu $F=2 \rightarrow F'=2$). Była to długość fali bliska centrum linii, przesunięta jednak nieco w stronę sąsiedniej linii ( przejścia $F=2 \rightarrow F'=1$ ).
+
+Rysunki \ref{fig:panodf1} i \ref{fig:panodf2} pokazują położenie rezonansów w zależności od pola magnetycznego (na osi $x$ wykresów) dla kilku częstotliwości modulacji. Widać występowanie kilku rezonansów, ze względu na omówiony efekt jedno-- i dwukrotnego pompowania atomów w trakcie okresu przebiegu modulującego.
+
+Na rysunkach \ref{fig:panodam1}, \ref{fig:panodam2} pokazują położenie i kształt rezonansów przy stałej częstotliwości modulacji, ale zmieniającej się amplitudzie modulacji. Pojawianie się dodatkowych rezonansów przy zwiększaniu amplitudy modulacji nie jest łatwe do wyjaśnienia. Można to przypisywać przesuwaniu się punktu dostrojenia lasera wraz z amplitudą modulacji, oddziaływaniu z sąsiednią linią przy dużych amplitud modulacji oraz zmianie charakteru pompowania z jednokrotnego na dwukrotne podczas okresu przy zwiększaniu amplitudy.
+
 
 \begin{figure}[h!]
 \centering
  \includegraphics[width=\textwidth]{panoramy_1H_odf.eps}
  % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Zależność magnetorotacji od częstości modulacji. 1 harmoniczna $f_{mod}=101kHz, P_{lasera}=20~\mathrm{ \mu W}, A_{mod}=1000~\mathrm{mV}$}
+ \caption{Zależność magnetorotacji od częstości modulacji. Na osi poziomej natężenie pola magnetycznego. 1 harmoniczna $f_{mod}=101kHz, P_{lasera}=20~\mathrm{ \mu W}, A_{mod}=1000~\mathrm{mV}$}
  \label{fig:panodf1}
 \end{figure}
 
@@ -895,7 +919,7 @@ Powyższe pomiary zostały zrobione przy działającym układzie stabilizacji d�
 \centering
  \includegraphics[width=\textwidth]{panoramy_2H_odf.eps}
  % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Zależność magnetorotacji od częstości modulacji. 2 harmoniczna $f_{mod}=101kHz, P_{lasera}=20~\mathrm{ \mu W}, A_{mod}=1000~\mathrm{mV}$}
+ \caption{Zależność magnetorotacji od częstości modulacji. Na osi poziomej natężenie pola magnetycznego. 2 harmoniczna $f_{mod}=101kHz, P_{lasera}=20~\mathrm{ \mu W}, A_{mod}=1000~\mathrm{mV}$}
  \label{fig:panodf2}
 \end{figure}
 
@@ -903,7 +927,7 @@ Powyższe pomiary zostały zrobione przy działającym układzie stabilizacji d�
 \centering
  \includegraphics[width=\textwidth]{panoramy_1H_odam.eps}
  % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Zależność magnetorotacji od amplitudy modulacji. 1 harmoniczna $f_{mod}=101kHz,P_{lasera}=20~\mathrm{ \mu W}, A_{mod}=101~\mathrm{kHz}$}
+ \caption{Zależność magnetorotacji od amplitudy modulacji. Na osi poziomej natężenie pola magnetycznego. 1 harmoniczna $f_{mod}=101kHz,P_{lasera}=20~\mathrm{ \mu W}, A_{mod}=101~\mathrm{kHz}$}
  \label{fig:panodam1}
 \end{figure}
 
@@ -911,7 +935,7 @@ Powyższe pomiary zostały zrobione przy działającym układzie stabilizacji d�
 \centering
  \includegraphics[width=\textwidth]{panoramy_2H_odam.eps}
  % front_all.svg: 1153x455 pixel, 72dpi, 40.68x16.05 cm, bb=0 0 1153 455
- \caption{Zależność magnetorotacji od amplitudy modulacji. 1 harmoniczna $f_{mod}=101kHz,P_{lasera}=20~\mathrm{ \mu W}, A_{mod}=101~\mathrm{kHz}$}
+ \caption{Zależność magnetorotacji od amplitudy modulacji. Na osi poziomej natężenie pola magnetycznego. 2 harmoniczna $f_{mod}=101kHz,P_{lasera}=20~\mathrm{ \mu W}, A_{mod}=101~\mathrm{kHz}$}
  \label{fig:panodam2}
 \end{figure}
 
@@ -919,14 +943,16 @@ Powyższe pomiary zostały zrobione przy działającym układzie stabilizacji d�
 
 \chapter{Podsumowanie}
 
-Pomiary wykonane w niniejszej pracy dowodzą, że da się:
-\begin{itemize}
-\item Samemu zbudować układ
-\item Wykonać stabilizację na 1 harmonicznej, a pomiar na drugiej
-\item Mierzyć pole
-\item Jeśli zajdzie potrzeba, zminiaturyzować układ do objętości ok. 1 dm${}^3$
-\item Może można jakoś kontynuować te badania?
-\end{itemize}
+Pomiary wykonane w niniejszej pracy dowiodły, że budowa lasera VCSEL z układem kontroli, umożliwiającym ciągłe dostrojenie do linii $D1$ rubidu jest możliwa. Światło zbudowanego lasera wywoływało pompowanie optyczne atomów, jak również pozwalało wykryć magnetorotację w ośrodku. Zarejestrowano charakterystyczne dla magnetometrii optycznej rezonanse w niskich polach magnetycznych.
+
+Zbudowany układ umożliwia na stabilizację długości fali na pierwszej, a pomiar skręcenia polaryzacji na drugiej harmonicznej sygnału modulującego długość fali.
+Potwierdzenie możliwości zastosowania tej metody było głównym celem pracy.
+
+Scharakteryzowany układ laserowy został zbudowany niewielkim kosztem, praktycznie od zera a mimo tego okazał się bardzo niezawodny. Jego użyteczność do pomiarów pola magnetycznego została pokazana.
+
+ W przyszłości, jeśli zajdzie potrzeba, możliwa jest miniaturyzacja całego układu elektro--optycznego do objętości ok. $1~\mathrm{dm^3}$ i wykonanie kompaktowego, autonomicznego czujnika pola magnetycznego o niezwykle wysokiej precyzji.
+Obecnie największa przeszkodą w miniaturyzacji są wzmacniacze fazoczułe. Obecnie użyte wzmacniacze to duże, ciężkie instrumenty laboratoryjne. Ich miniaturyzacja jest możliwa, jest to jednak skomplikowane i pracochłonne zadanie.
+
 
 
 \begin{thebibliography}{99}
